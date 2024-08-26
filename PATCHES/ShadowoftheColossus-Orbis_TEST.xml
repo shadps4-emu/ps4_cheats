@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA08804</ID>
+        <ID>CUSA08809</ID>
+        <ID>CUSA08034</ID>
+    </TitleID>
+    <Metadata Title="Shadow of the Colossus" Name="Debug Menu" Author="illusion" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x004244f8" Value="e9f0000000"/>
+            <Line Type="bytes" Address="0x004245ed" Value="488b03"/>
+            <Line Type="bytes" Address="0x004245f0" Value="483b4308"/>
+            <Line Type="bytes" Address="0x004245f4" Value="c6053589dd0200"/>
+            <Line Type="bytes" Address="0x004245fb" Value="e9fffeffff"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Shadow of the Colossus" Name="Skip Splash Logo + Demo Screens" Author="illusion" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x032fae20" Value="01"/>
+            <Line Type="bytes" Address="0x008c95bc" Value="c683c000000001"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Shadow of the Colossus" Name="60 FPS" Author="illusion" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01390090" Value="31c0c3"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Shadow of the Colossus" Name="Debug Menu" Author="illusion" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x004244f8" Value="e9f0000000"/>
+            <Line Type="bytes" Address="0x004245ed" Value="488b03"/>
+            <Line Type="bytes" Address="0x004245f0" Value="483b4308"/>
+            <Line Type="bytes" Address="0x004245f4" Value="c6053589dd0200"/>
+            <Line Type="bytes" Address="0x004245fb" Value="e9fffeffff"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Shadow of the Colossus" Name="Skip Splash Logo + Demo Screens" Author="illusion" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x032fae20" Value="01"/>
+            <Line Type="bytes" Address="0x008c95bc" Value="c683c000000001"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Shadow of the Colossus" Name="60 FPS" Author="illusion" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01390090" Value="31c0c3"/>
+        </PatchList>
+    </Metadata>
+</Patch>
