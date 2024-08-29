@@ -35,6 +35,8 @@ CUSA34766_01.05.json=Granblue Fantasy Relink
 **Example Cheat File:**
 
 *`CHEATS/CUSA07023_01.03_TEST.json`*
+<details>
+
 ```json
 {
   "name": "Sonic Mania",
@@ -125,6 +127,8 @@ CUSA34766_01.05.json=Granblue Fantasy Relink
   ]
 }
 ```
+</details>
+
 
 ### Patches
 
@@ -166,6 +170,9 @@ Set base address to `0x00400000` when importing binaries for consistency with PS
 #### Example Patch File
 
 *`PATCHES/ShadowoftheColossus-Orbis_TEST.xml`*
+
+<details>
+  
 ```xml
 <?xml version="1.0"?>
 <Patch>
@@ -216,6 +223,9 @@ Set base address to `0x00400000` when importing binaries for consistency with PS
     </Metadata>
 </Patch>
 ```
+</details>
+
+*Contains information obtained from [GoldHEN_Patch_Repository](https://github.com/GoldHEN/GoldHEN_Patch_Repository)
 
 ## Contributing
 
