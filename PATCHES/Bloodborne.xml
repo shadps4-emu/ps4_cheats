@@ -100,8 +100,6 @@
             <Line Type="bytes" Address="0x01bf9cd0" Value="90"/>
             <Line Type="bytes" Address="0x01bf9cd1" Value="90"/>
             <Line Type="bytes" Address="0x01bf9cd2" Value="e9a1feffff"/>
-            <Line Type="bytes" Address="0x020367c7" Value="488d351cd2c702"/>
-            <Line Type="bytes" Address="0x020369e8" Value="488d35b5cfc702"/>
             <Line Type="bytes" Address="0x021bc181" Value="488d3d70437803"/>
             <Line Type="bytes" Address="0x021bc188" Value="488b3f"/>
             <Line Type="bytes" Address="0x021bc18b" Value="c5fa598764020000"/>
@@ -186,9 +184,6 @@
             <Line Type="bytes" Address="0x02715d76" Value="90"/>
             <Line Type="bytes" Address="0x02715d77" Value="90"/>
             <Line Type="bytes" Address="0x02715d78" Value="90"/>
-            <Line Type="utf16" Address="0x04cb39ea" Value="This 60fps patch was"/>
-            <Line Type="utf16" Address="0x04cb39a4" Value="Made with love, by Lance McDonald"/>
-            <!-- yoink `assert()` -->
             <Line Type="bytes" Address="0x02fbf178" Value="4831c0c3"/>
         </PatchList>
     </Metadata>
