@@ -51,6 +51,13 @@
             <Line Type="bytes" Address="0x026a057b" Value="eb16"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Bloodborne" Name="Disable HTTP Requests" Author="bloo" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0227E2F0" Value="9090909090"/>
+            <Line Type="bytes" Address="0x023E4D96" Value="9090909090"/>
+            <Line Type="bytes" Address="0x024EE2A9" Value="9090909090"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="Bloodborne"
               Name="60 FPS (With Deltatime)"
               Note="You may encounter softlock during Laurence (optional DLC boss) cinematic.\nDisable patch to progress."
