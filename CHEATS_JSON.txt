@@ -2,4 +2,5 @@ CUSA00207_01.09.json=Bloodborne
 CUSA00208_01.09.json=Bloodborne
 CUSA00900_01.09.json=Bloodborne
 CUSA01363_01.09.json=Bloodborne
+CUSA03023_01.09.json=Bloodborne
 CUSA03173_01.09.json=Bloodborne
