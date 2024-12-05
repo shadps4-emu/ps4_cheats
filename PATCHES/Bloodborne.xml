@@ -59,6 +59,11 @@
             <Line Type="bytes" Address="0x024EE2A9" Value="9090909090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Bloodborne" Name="Skip Sound on Crash" Author="proteh" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x0000204E" Value="0x00000001"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="Bloodborne"
               Name="60 FPS (With Deltatime)"
               Note="You may encounter softlock during Laurence (optional DLC boss) cinematic.\nDisable patch to progress."
