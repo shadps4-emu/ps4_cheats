@@ -1481,7 +1481,7 @@
     </Metadata>
     	<Metadata Title="Bloodborne"
                   Name="Resolution Patch (240p)"
-                  Note="Exact Resolution is 426x240. Best used in 3:2 or 16:9"
+                  Note="Exact Resolution is 426x240. Best used in 16:9"
                   Author="LL4nc33"
                   PatchVer="1.0"
                   AppVer="01.09"
@@ -1549,7 +1549,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (450p)"
-              Note="Exact Resolution is 800x450. Best used in 3:2 or 16:9"
+              Note="Exact Resolution is 800x450. Best used in 16:9"
               Author="LL4nc33"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1617,7 +1617,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (576p)"
-              Note="Exact Resolution is 1024x576. Best used in 3:2 or 16:9"
+              Note="Exact Resolution is 1024x576. Best used in 16:9"
               Author="LL4nc33"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1685,7 +1685,7 @@
         </Metadata>
 	<Metadata Title="Bloodborne"
               Name="Resolution Patch (768p)"
-              Note="Exact Resolution is 1366x768. Best used in 3:2 or 16:9"
+              Note="Exact Resolution is 1366x768. Best used in 16:9"
               Author="LL4nc33"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1719,7 +1719,7 @@
 	</Metadata>
 	<Metadata Title="Bloodborne"
               Name="Resolution Patch (810p)"
-              Note="Exact Resolution is 1440x810. Best used in 3:2 or 16:9"
+              Note="Exact Resolution is 1440x810. Best used in 16:9"
               Author="LL4nc33"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1786,7 +1786,7 @@
     </Metadata>
     	<Metadata Title="Bloodborne"
                   Name="Resolution Patch (945p)"
-                  Note="Exact Resolution is 1680x945. Best used in 3:2 or 16:9"
+                  Note="Exact Resolution is 1680x945. Best used in 16:9"
                   Author="LL4nc33"
                   PatchVer="1.0"
                   AppVer="01.09"
@@ -1819,7 +1819,7 @@
 		</PatchList>
 	</Metadata>
     	<Metadata Title="Bloodborne" Name="Resolution Patch (1152p)"
-		  Note="Exact Resolution is 2048x1152. Best used in 3:2 or 16:9."
+		  Note="Exact Resolution is 2048x1152. Best used in 16:9."
 		  Author="LL4nc33"
 		  PatchVer="1.0"
 		  AppVer="01.09"
@@ -1852,7 +1852,7 @@
 		</PatchList>
 	</Metadata>
 	<Metadata Title="Bloodborne" Name="Resolution Patch (1215p)"
-	  Note="Exact Resolution is 2160x1215. Best used in 3:2 or 16:9."
+	  Note="Exact Resolution is 2160x1215. Best used in 16:9."
 	  Author="LL4nc33"
 	  PatchVer="1.0"
 	  AppVer="01.09"
@@ -1919,7 +1919,7 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" Name="Resolution Patch (1620p)"
-              Note="Exact Resolution is 2880x1620. Best used in 3:2 or 16:9."
+              Note="Exact Resolution is 2880x1620. Best used in 16:9."
               Author="LL4nc33"
               PatchVer="1.0"
               AppVer="01.09"
