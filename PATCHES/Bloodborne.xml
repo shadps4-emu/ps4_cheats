@@ -1347,10 +1347,78 @@
             <Line Type="bytes" Address="0x1972abe" Value="6401"/>
         </PatchList>
     </Metadata>
+    	<Metadata Title="Bloodborne"
+                  Name="Resolution Patch (240p)"
+                  Note="Exact Resolution is 426x240. Best used in 3:2 or 16:9"
+                  Author="LL4nc33"
+                  PatchVer="1.0"
+                  AppVer="01.09"
+                  AppElf="eboot.bin">
+		<PatchList>
+			<Line Type="bytes32" Address="0x055289f8" Value="0x000001AA"/>
+			<Line Type="bytes32" Address="0x055289fc" Value="0x000000F0"/>
+			<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a44c68" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c69" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+			<Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a452cc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cd" Value="90"/>
+			<Line Type="bytes" Address="0x01a452ce" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cf" Value="90"/>
+			<Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a452da" Value="90"/>
+			<Line Type="bytes" Address="0x01a452db" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dd" Value="90"/>
+		</PatchList>
+	</Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (360p)"
               Note="Recommended for weaker GPUs. Enemy HP bars are often invisible when in the center of the screen."
               Author="LeDragoX"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
+            <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
+            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
+            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
+            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a452da" Value="90"/>
+            <Line Type="bytes" Address="0x01a452db" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Resolution Patch (450p)"
+              Note="Exact Resolution is 800x450. Best used in 3:2 or 16:9"
+              Author="LL4nc33"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin">
@@ -1416,6 +1484,40 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+              Name="Resolution Patch (576p)"
+              Note="Exact Resolution is 1024x576. Best used in 3:2 or 16:9"
+              Author="LL4nc33"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x055289f8" Value="0x00000400"/>
+            <Line Type="bytes32" Address="0x055289fc" Value="0x00000240"/>
+            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
+            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
+            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a452da" Value="90"/>
+            <Line Type="bytes" Address="0x01a452db" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
               Name="Resolution Patch (720p)"
               Author="Lance McDonald (manfightdragon)"
               PatchVer="1.0"
@@ -1448,6 +1550,75 @@
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
         </PatchList>
     </Metadata>
+        </Metadata>
+	<Metadata Title="Bloodborne"
+              Name="Resolution Patch (768p)"
+              Note="Exact Resolution is 1366x768. Best used in 3:2 or 16:9"
+              Author="LL4nc33"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+		<PatchList>
+			<Line Type="bytes32" Address="0x055289f8" Value="0x00000556"/>
+			<Line Type="bytes32" Address="0x055289fc" Value="0x00000300"/>
+			<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a44c68" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c69" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+			<Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a452cc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cd" Value="90"/>
+			<Line Type="bytes" Address="0x01a452ce" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cf" Value="90"/>
+			<Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a452da" Value="90"/>
+			<Line Type="bytes" Address="0x01a452db" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dd" Value="90"/>
+		</PatchList>
+	</Metadata>
+	<Metadata Title="Bloodborne"
+              Name="Resolution Patch (810p)"
+              Note="Exact Resolution is 1440x810. Best used in 3:2 or 16:9"
+              Author="LL4nc33"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+		<PatchList>
+			<Line Type="bytes32" Address="0x055289f8" Value="0x000005A0"/>
+			<Line Type="bytes32" Address="0x055289fc" Value="0x0000032A"/>
+			<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a44c68" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c69" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+			<Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a452cc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cd" Value="90"/>
+			<Line Type="bytes" Address="0x01a452ce" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cf" Value="90"/>
+			<Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a452da" Value="90"/>
+			<Line Type="bytes" Address="0x01a452db" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dd" Value="90"/>
+		</PatchList>
+	</Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (900p)"
               Author="LeDragoX"
@@ -1481,6 +1652,107 @@
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
         </PatchList>
     </Metadata>
+    	<Metadata Title="Bloodborne"
+                  Name="Resolution Patch (945p)"
+                  Note="Exact Resolution is 1680x945. Best used in 3:2 or 16:9"
+                  Author="LL4nc33"
+                  PatchVer="1.0"
+                  AppVer="01.09"
+                  AppElf="eboot.bin">
+		<PatchList>
+			<Line Type="bytes32" Address="0x055289f8" Value="0x00000690"/>
+			<Line Type="bytes32" Address="0x055289fc" Value="0x000003B1"/>
+			<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a44c68" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c69" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+			<Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a452cc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cd" Value="90"/>
+			<Line Type="bytes" Address="0x01a452ce" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cf" Value="90"/>
+			<Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a452da" Value="90"/>
+			<Line Type="bytes" Address="0x01a452db" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dd" Value="90"/>
+		</PatchList>
+	</Metadata>
+    	<Metadata Title="Bloodborne" Name="Resolution Patch (1152p)"
+		  Note="Exact Resolution is 2048x1152. Best used in 3:2 or 16:9."
+		  Author="LL4nc33"
+		  PatchVer="1.0"
+		  AppVer="01.09"
+		  AppElf="eboot.bin">
+		<PatchList>
+			<Line Type="bytes32" Address="0x055289f8" Value="0x00000800"/>
+			<Line Type="bytes32" Address="0x055289fc" Value="0x00000480"/>
+			<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a44c68" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c69" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+			<Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a452cc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cd" Value="90"/>
+			<Line Type="bytes" Address="0x01a452ce" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cf" Value="90"/>
+			<Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a452da" Value="90"/>
+			<Line Type="bytes" Address="0x01a452db" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dd" Value="90"/>
+		</PatchList>
+	</Metadata>
+	<Metadata Title="Bloodborne" Name="Resolution Patch (1215p)"
+	  Note="Exact Resolution is 2160x1215. Best used in 3:2 or 16:9."
+	  Author="LL4nc33"
+	  PatchVer="1.0"
+	  AppVer="01.09"
+	  AppElf="eboot.bin">
+		<PatchList>
+			<Line Type="bytes32" Address="0x055289f8" Value="0x00000870"/>
+			<Line Type="bytes32" Address="0x055289fc" Value="0x000004BF"/>
+			<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a44c68" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c69" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+			<Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+			<Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+			<Line Type="bytes" Address="0x01a452cc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cd" Value="90"/>
+			<Line Type="bytes" Address="0x01a452ce" Value="90"/>
+			<Line Type="bytes" Address="0x01a452cf" Value="90"/>
+			<Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+			<Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+			<Line Type="bytes" Address="0x01a452da" Value="90"/>
+			<Line Type="bytes" Address="0x01a452db" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dc" Value="90"/>
+			<Line Type="bytes" Address="0x01a452dd" Value="90"/>
+		</PatchList>
+	</Metadata>
+
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (2560x1440)"
               Author="xzy"
@@ -1490,6 +1762,39 @@
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000A00"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x000005A0"/>
+            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
+            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
+            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a452da" Value="90"/>
+            <Line Type="bytes" Address="0x01a452db" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne" Name="Resolution Patch (1620p)"
+              Note="Exact Resolution is 2880x1620. Best used in 3:2 or 16:9."
+              Author="LL4nc33"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x055289f8" Value="0x00000B40"/>
+            <Line Type="bytes32" Address="0x055289fc" Value="0x00000654"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
             <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
             <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
