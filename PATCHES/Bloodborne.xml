@@ -22,7 +22,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="30 FPS Fix (Proper Frame Pacing)"
-              Note="Caps framerate to 30 with proper frame pacing."
+              Note="Caps framerate to 30 with proper frame pacing.\n\nWARNING: This will significantly increase input lag."
               Author="illusion, Lance McDonald (manfightdragon)"
               PatchVer="1.0"
               AppVer="01.09"
