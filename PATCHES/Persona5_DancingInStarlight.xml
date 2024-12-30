@@ -3,12 +3,24 @@
     <TitleID>
         <ID>CUSA12380</ID>
     </TitleID>
-    <Metadata Title="Persona 5: Dancing in Starlight" Name="Intro Skip" Note="Skips all boot logos" Author="DeathChaos" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin">
+    <Metadata Title="Persona 5: Dancing in Starlight"
+              Name="Intro Skip"
+              Note="Skips all boot logos"
+              Author="DeathChaos"
+              PatchVer="1.0"
+              AppVer="01.00"
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="mask" Address="75 ?? E8 ?? ?? ?? ?? 48 89 C7 49 89 7E ??" Value="eb" Offset="0"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Persona 5: Dancing in Starlight" Name="Force 4k Render Resolution" Note="Forces 4k Render Resolution as if PS4 Pro mode was enabled" Author="DeathChaos" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin">
+    <Metadata Title="Persona 5: Dancing in Starlight"
+              Name="Force 4k Render Resolution"
+              Note="Forces 4k Render Resolution as if PS4 Pro mode was enabled"
+              Author="DeathChaos"
+              PatchVer="1.0"
+              AppVer="01.00"
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="mask" Address="E8 ?? ?? ?? ?? 31 C9 85 C0 B8 38 04 00 00" Value="b801000000" Offset="0"/>
         </PatchList>
