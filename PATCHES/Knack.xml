@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA00006</ID>
+    </TitleID>
+    <Metadata Title="Knack"
+              Name="Resolution 1280x720"
+			  Author="Niko"
+			  PatchVer="1.0"
+			  AppVer="01.00"
+			  AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x0F89d00" Value="0x00000500"/>
+            <Line Type="bytes32" Address="0x0F89d04" Value="0x000002D0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Knack"
+              Name="Resolution2560x1440"
+			  Author="Niko" PatchVer="1.0"
+			  AppVer="01.00"
+			  AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x0F89d00" Value="0x00000A00"/>
+            <Line Type="bytes32" Address="0x0F89d04" Value="0x000005A0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Knack"
+              Name="Resolution3840x2160"
+			  Author="Niko"
+			  PatchVer="1.0"
+			  AppVer="01.00"
+			  AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x0F89d00" Value="0x00000F00"/>
+            <Line Type="bytes32" Address="0x0F89d04" Value="0x00000870"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Knack"
+              Name="Resolution7680x4320"
+			  Author="Niko"
+			  PatchVer="1.0"
+			  AppVer="01.00"
+			  AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x0F89d00" Value="0x00001E00"/>
+            <Line Type="bytes32" Address="0x0F89d04" Value="0x000010E0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Knack"
+              Name="Debug Level"			  
+			  Note="faz alguma coisa :D"
+			  Author="Niko"
+			  PatchVer="1.0"
+			  AppVer="01.00"
+			  AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="utf8" Address="0x0DED053" Value="scripts/maptestplane.cxx"/>
+        </PatchList>
+    </Metadata>
+</Patch>
