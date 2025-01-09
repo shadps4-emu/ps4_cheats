@@ -52,6 +52,46 @@
             <Line Type="bytes" Address="0x026a057b" Value="eb16"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Disable Reflections"
+              Author="bekiroj"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x026b2f58" Value="60000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Disable Texture Filtering"
+              Author="bekiroj"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0271a1c0" Value="60000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Disable Skybox Effects"
+              Author="bekiroj"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0271d230" Value="60000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Disable Depth of Field"
+              Author="bekiroj"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0270f140" Value="60000000"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="Bloodborne" Name="Disable HTTP Requests" Author="bloo" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x0227E2F0" Value="9090909090"/>
@@ -1457,6 +1497,39 @@
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000640"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000384"/>
+            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
+            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
+            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
+            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+            <Line Type="bytes" Address="0x01a452da" Value="90"/>
+            <Line Type="bytes" Address="0x01a452db" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
+            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Resolution Patch (1366x768)"
+              Author="bekiroj"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x055289f8" Value="0x00000558"/>
+            <Line Type="bytes32" Address="0x055289fc" Value="0x00000300"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
             <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
             <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
