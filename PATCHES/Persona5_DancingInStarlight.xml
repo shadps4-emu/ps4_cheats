@@ -25,4 +25,46 @@
             <Line Type="mask" Address="E8 ?? ?? ?? ?? 31 C9 85 C0 B8 38 04 00 00" Value="b801000000" Offset="0"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Persona 5: Dancing in Starlight"
+            Name="Force 1440p (2k) Render Resolution"
+            Note="Forces 1440p (2k) Render Resolution"
+            Author="Danu"
+            PatchVer="1.0"
+            AppVer="01.00"
+            AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x005d6ba2" Value="b8a0050000"/>
+            <Line Type="bytes" Address="0x005d6bd3" Value="b8000a0000"/>
+            <Line Type="bytes" Address="0x00852e28" Value="0000803e"/>
+            <Line Type="bytes" Address="0x00852e2c" Value="0000c03e"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Persona 5: Dancing in Starlight"
+            Name="Force 720p Render Resolution"
+            Note="Forces 720p Render Resolution"
+            Author="Danu"
+            PatchVer="1.0"
+            AppVer="01.00"
+            AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x005d6ba2" Value="b8d0020000"/>
+            <Line Type="bytes" Address="0x005d6bd3" Value="b800050000"/>
+            <Line Type="bytes" Address="0x00852e28" Value="0000803e"/>
+            <Line Type="bytes" Address="0x00852e2c" Value="0000403f"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Persona 5: Dancing in Starlight"
+            Name="Force 540p Render Resolution"
+            Note="Forces 540p (Essentially PS Vita's) Render Resolution"
+            Author="Danu"
+            PatchVer="1.0"
+            AppVer="01.00"
+            AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x005d6ba2" Value="b81c020000"/>
+            <Line Type="bytes" Address="0x005d6bd3" Value="b8c0030000"/>
+            <Line Type="bytes" Address="0x00852e28" Value="0000803e"/>
+            <Line Type="bytes" Address="0x00852e2c" Value="0000803f"/>
+        </PatchList>
+    </Metadata>
 </Patch>
