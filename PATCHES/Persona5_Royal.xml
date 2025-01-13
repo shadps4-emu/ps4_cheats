@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA17416</ID>
+    </TitleID>
+    <Metadata Title="Persona 5 Royal" Name="Force 4k Render Resolution" Note="Forces 4k Render Resolution by triggerring the PS4 Pro check" Author="Danu" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01851611" Value="b801000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Persona 5 Royal" Name="Force 1440p (2k) Render Resolution" Note="Forces 1440p (2k) Render Resolution" Author="Danu" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01851621" Value="41b8a0050000"/>
+            <Line Type="bytes" Address="0x0185162c" Value="b8000a0000"/>
+            <Line Type="bytes" Address="0x01bd26d0" Value="00000040"/>
+            <Line Type="bytes" Address="0x01bd26d4" Value="abaaaa3f"/>
+        </PatchList>
+</Patch>
