@@ -9,7 +9,7 @@
               Author="Danu"
               PatchVer="1.0"
               AppVer="01.02"
-              AppElf="eboot.bin"
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x01851611" Value="b801000000"/>
         </PatchList>
@@ -19,7 +19,7 @@
               Note="Forces 1440p (2k) Render Resolution"
               Author="Danu" PatchVer="1.0"
               AppVer="01.02"
-              AppElf="eboot.bin"
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x01851621" Value="41b8a0050000"/>
             <Line Type="bytes" Address="0x0185162c" Value="b8000a0000"/>
