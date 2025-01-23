@@ -41,6 +41,24 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Persona 4: Dancing All Night"
+            Name="Force Steam Deck Render Resolution"
+            Note="Forces 800p 16:10 (Essentially Steam Deck's) Render Resolution"
+            Author="Danu"
+            PatchVer="1.0"
+            AppVer="01.00"
+            AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0054cbd7" Value="c744240800050000"/>
+            <Line Type="bytes" Address="0x0054cbdf" Value="c744240c20030000"/>
+            <Line Type="bytes" Address="0x007d57e0" Value="00050000"/>
+            <Line Type="bytes" Address="0x007d57e4" Value="20030000"/>
+            <Line Type="bytes" Address="0x007d5800" Value="0000403f"/>
+            <Line Type="bytes" Address="0x007d5804" Value="cdcc2c3f"/>
+            <Line Type="bytes" Address="0x007d5808" Value="0000003f"/>
+            <Line Type="bytes" Address="0x007d580c" Value="0000003f"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Persona 4: Dancing All Night"
             Name="Force 720p Render Resolution"
             Note="Forces 720p Render Resolution"
             Author="Danu"

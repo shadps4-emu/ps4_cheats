@@ -40,6 +40,23 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Persona 3: Dancing in Moonlight"
+            Name="Force Steam Deck Render Resolution"
+            Note="Forces 800p 16:10 (Essentially Steam Deck's) Render Resolution"
+            Author="Danu"
+            PatchVer="1.0"
+            AppVer="01.00"
+            AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x005d40b2" Value="b820030000"/>
+            <Line Type="bytes" Address="0x005d40e3" Value="b800050000"/>
+            <Line Type="bytes" Address="0x0084ea68" Value="0000803e"/>
+            <Line Type="bytes" Address="0x0084ea6c" Value="0000403f"/>
+            <!-- commit warcrimes to get UI scaling to behave like P4D's --> 
+            <Line Type="bytes" Address="0x005d41f7" Value="48e968000000"/>
+            <Line Type="bytes" Address="0x005d4265" Value="c7442414cdcc2c3feb8e90"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Persona 3: Dancing in Moonlight"
             Name="Force 720p Render Resolution"
             Note="Forces 720p Render Resolution"
             Author="Danu"
