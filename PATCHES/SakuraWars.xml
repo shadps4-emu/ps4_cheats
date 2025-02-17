@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA13045</ID>
+        <ID>CUSA16404</ID>
+        <ID>CUSA16429</ID>
+    </TitleID>
+    <Metadata Title="Sakura Wars"
+              Name="60 FPS"
+              Author="squidbus"
+              PatchVer="1.0"
+              AppVer="01.01"
+              AppElf="eboot.bin">
+        <PatchList>
+            <!--
+                Each entry is for a specific game mode
+                First patch is to change the frame rate from 30.0 to 60.0.
+                Second is to change the video out flip rate divider from 2 to 1.
+            -->
+
+            <!-- GameModeStartUp -->
+            <Line Type="bytes32" Address="0x6fa119" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fa182" Value="0x00000001"/>
+
+            <!-- GameModeSaveInit -->
+            <Line Type="bytes32" Address="0x6fa569" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fa5d2" Value="0x00000001"/>
+
+            <!-- GameModeInterlude -->
+            <Line Type="bytes32" Address="0x6faf49" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fafb2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x6fb52d" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fb596" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x6fbf6a" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fbfd3" Value="0x00000001"/>
+
+            <!-- BattleSimulator -->
+            <Line Type="bytes32" Address="0x6fc989" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fc9f2" Value="0x00000001"/>
+
+            <!-- TitleLoop -->
+            <Line Type="bytes32" Address="0x6fe23c" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fe2a5" Value="0x00000001"/>
+
+            <!-- GameModeStaffRoll -->
+            <Line Type="bytes32" Address="0x6fede9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6fee52" Value="0x00000001"/>
+
+            <!-- GameModeEnding -->
+            <Line Type="bytes32" Address="0x6ff289" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6ff2f2" Value="0x00000001"/>
+
+            <!-- GameModeDevMenu -->
+            <Line Type="bytes32" Address="0x6ff8c5" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x6ff92e" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x700db9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x700e22" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x701109" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x701172" Value="0x00000001"/>
+
+            <!-- SakuraScriptTest -->
+            <Line Type="bytes32" Address="0x701559" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7015c2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x701979" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7019e2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x701d79" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x701de2" Value="0x00000001"/>
+
+            <!-- GameModeSaveDataTest -->
+            <Line Type="bytes32" Address="0x7020e9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x702152" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x7024f9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x702562" Value="0x00000001"/>
+
+            <!-- GameModeLitTest -->
+            <Line Type="bytes32" Address="0x702a89" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x702af2" Value="0x00000001"/>
+
+            <!-- GameModeOverSteamEdit -->
+            <Line Type="bytes32" Address="0x702f89" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x702ff2" Value="0x00000001"/>
+
+            <!-- GameModeGfxViewer -->
+            <Line Type="bytes32" Address="0x703449" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7034b2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x703849" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7038b2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x703c49" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x703cb2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x704049" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7040b2" Value="0x00000001"/>
+
+            <!-- GameModeDevEditRoom -->
+            <Line Type="bytes32" Address="0x704469" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7044d2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x704a09" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x704a72" Value="0x00000001"/>
+
+            <!-- GameModeArukasPartsMotionTest -->
+            <Line Type="bytes32" Address="0x704ec9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x704f32" Value="0x00000001"/>
+
+            <!-- GameModeArukasShadowCameraTest -->
+            <Line Type="bytes32" Address="0x705379" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7053e2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x705779" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x7057e2" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x705ba9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x705c12" Value="0x00000001"/>
+
+            <!-- GameModeKoikoiTest -->
+            <Line Type="bytes32" Address="0x705f49" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x705fb2" Value="0x00000001"/>
+
+            <!-- GameModeStaffRoll -->
+            <Line Type="bytes32" Address="0x7063a9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x706412" Value="0x00000001"/>
+
+            <!-- ProbeCapture -->
+            <Line Type="bytes32" Address="0x7069f9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x706a62" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x706df9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x706e62" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x7071f9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x707262" Value="0x00000001"/>
+
+            <!-- ? -->
+            <Line Type="bytes32" Address="0x7075f9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x707662" Value="0x00000001"/>
+
+            <!-- GameModeMoveLipsEdit -->
+            <Line Type="bytes32" Address="0x707cd9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x707d42" Value="0x00000001"/>
+
+            <!-- GameModeFacialPresetEditor -->
+            <Line Type="bytes32" Address="0x7081c9" Value="0x42700000"/>
+            <Line Type="bytes32" Address="0x708232" Value="0x00000001"/>
+
+            <!--
+                Fix for dash speed in battle.
+                Need to multiply the speed by 2 to compensate for doubled FPS.
+                TODO: Could be written as a mask_jump32 patch, but not currently supported by shadPS4.
+            -->
+
+            <!--
+                Jump source:
+                    Before:
+                        VMULSS     XMM1,XMM1,dword ptr [RAX + 0x4]
+                    After:
+                        JMP        0x15ec609
+            -->
+            <Line Type="bytes" Address="0xdd270d" Value="e9f79e8100"/>
+            <!--
+                Jump target:
+                    Before:
+                        Unneeded debug string
+                    After:
+                        VMULSS     XMM1,XMM1,dword ptr [RAX + 0x4]
+                        VADDSS     XMM1,XMM1,XMM1
+                        JMP        0xdd2712
+            -->
+            <Line Type="bytes" Address="0x15ec609" Value="c5f2594804c5f258c9e9fb607eff"/>
+
+            <!--
+                Fix for wall run speed in battle.
+                Need to multiply the speed by 2 to compensate for doubled FPS.
+                TODO: Could be written as mask_jump32 patches, but not currently supported by shadPS4.
+            -->
+
+            <!-- Horizontal speed -->
+            <!--
+                Jump source:
+                    Before:
+                        VMULSS     XMM3,XMM2,dword ptr [R15 + 0x8]
+                    After:
+                        JMP        0x15ec68f
+            -->
+            <Line Type="bytes" Address="0xdd9b09" Value="e9812b8100"/>
+            <!--
+                Jump target:
+                    Before:
+                        Unneeded debug path string
+                    After:
+                        VMULSS     XMM3,XMM2,dword ptr [R15 + 0x8]
+                        VADDSS     XMM3,XMM3,XMM3
+                        JMP        0xdd9b0f
+            -->
+            <Line Type="bytes" Address="0x15ec68f" Value="c4c16a595f08c5e258dbe971d47eff"/>
+
+            <!-- Vertical speed -->
+            <!--
+                Jump source:
+                    Before:
+                        VMOVSS     XMM0,dword ptr [RAX + 0x14]
+                    After:
+                        JMP        0x15ec71b
+            -->
+            <Line Type="bytes" Address="0xe2ae8e" Value="e988187c00"/>
+            <!--
+                Jump target:
+                    Before:
+                        Unneeded debug path string
+                    After:
+                        VMOVSS     XMM0,dword ptr [RAX + 0x14]
+                        VADDSS     XMM0,XMM0,XMM0
+                        JMP        0xe2ae93
+            -->
+            <Line Type="bytes" Address="0x15ec71b" Value="c5fa104014c5fa58c0e96ae783ff"/>
+        </PatchList>
+    </Metadata>
+</Patch>
