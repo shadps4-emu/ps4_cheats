@@ -169,73 +169,42 @@
             <!--
                 Fix for dash speed in battle.
                 Need to multiply the speed by 2 to compensate for doubled FPS.
-                TODO: Could be written as a mask_jump32 patch, but not currently supported by shadPS4.
-            -->
-
-            <!--
-                Jump source:
                     Before:
                         VMULSS     XMM1,XMM1,dword ptr [RAX + 0x4]
-                    After:
-                        JMP        0x15ec609
-            -->
-            <Line Type="bytes" Address="0xdd270d" Value="e9f79e8100"/>
-            <!--
-                Jump target:
-                    Before:
-                        Unneeded debug string
                     After:
                         VMULSS     XMM1,XMM1,dword ptr [RAX + 0x4]
                         VADDSS     XMM1,XMM1,XMM1
-                        JMP        0xdd2712
+                    Jump Target:
+                        Unused debug string
             -->
-            <Line Type="bytes" Address="0x15ec609" Value="c5f2594804c5f258c9e9fb607eff"/>
+            <Line Type="mask_jump32" Address="c5 f2 59 48 04 c5 f8 2e d9" Value="c5f2594804c5f258c9" Target="73 74 61 74 69 63 20 68 68" Size="5"/>
 
             <!--
                 Fix for wall run speed in battle.
                 Need to multiply the speed by 2 to compensate for doubled FPS.
-                TODO: Could be written as mask_jump32 patches, but not currently supported by shadPS4.
             -->
-
-            <!-- Horizontal speed -->
             <!--
-                Jump source:
+                Horizontal speed
                     Before:
                         VMULSS     XMM3,XMM2,dword ptr [R15 + 0x8]
-                    After:
-                        JMP        0x15ec68f
-            -->
-            <Line Type="bytes" Address="0xdd9b09" Value="e9812b8100"/>
-            <!--
-                Jump target:
-                    Before:
-                        Unneeded debug path string
                     After:
                         VMULSS     XMM3,XMM2,dword ptr [R15 + 0x8]
                         VADDSS     XMM3,XMM3,XMM3
-                        JMP        0xdd9b0f
+                    Jump Target:
+                        Unused debug string
             -->
-            <Line Type="bytes" Address="0x15ec68f" Value="c4c16a595f08c5e258dbe971d47eff"/>
-
-            <!-- Vertical speed -->
+            <Line Type="mask_jump32" Address="c4 c1 6a 59 5f 08 c5 f8 2e d8" Value="c4c16a595f08c5e258db" Target="73 74 61 74 69 63 20 68 68" Size="6"/>
             <!--
-                Jump source:
+                Vertical speed
                     Before:
                         VMOVSS     XMM0,dword ptr [RAX + 0x14]
-                    After:
-                        JMP        0x15ec71b
-            -->
-            <Line Type="bytes" Address="0xe2ae8e" Value="e988187c00"/>
-            <!--
-                Jump target:
-                    Before:
-                        Unneeded debug path string
                     After:
                         VMOVSS     XMM0,dword ptr [RAX + 0x14]
                         VADDSS     XMM0,XMM0,XMM0
-                        JMP        0xe2ae93
+                    Jump Target:
+                        Unused debug string
             -->
-            <Line Type="bytes" Address="0x15ec71b" Value="c5fa104014c5fa58c0e96ae783ff"/>
+            <Line Type="mask_jump32" Address="c5 fa 10 40 14 48 8b 05 36 92 27 02" Value="c5fa104014c5fa58c0" Target="73 74 61 74 69 63 20 68 68" Size="5"/>
         </PatchList>
     </Metadata>
 </Patch>
