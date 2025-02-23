@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01127</ID>
+    </TitleID>
+    <Metadata Title="PT"
+              Name="Instant timeout"
+              Note="Skips the 10 second waiting at boot"
+              Author="kalaposfos"
+              PatchVer="1.0"
+              AppVer="01.00"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0xE7A78B" Value="9090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
+
