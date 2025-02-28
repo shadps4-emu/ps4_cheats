@@ -1545,6 +1545,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (2560x1440)"
+              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk"
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1578,7 +1579,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3200x1800)"
-              Note="High VRAM requirements."
+              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk"
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1612,7 +1613,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3840x2160)"
-              Note="Crashes unless 4090."
+              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk"
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1680,6 +1681,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (2560x1080) (21:9 2.37)"
+              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk"
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1714,6 +1716,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3440x1440) (21:9 2.38)"
+              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk"
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1748,6 +1751,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3840x1080) (32:9 ~3.55)"
+              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk"
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
