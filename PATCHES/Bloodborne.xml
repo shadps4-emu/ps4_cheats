@@ -98,7 +98,7 @@
               Author="auser1337, Kyo" 
               PatchVer="1.0" 
               AppVer="01.09" 
-              AppElf="eboot.bin"
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x0553b124" Value="01"/>
             <Line Type="bytes" Address="0x0553b128" Value="28"/>
@@ -108,7 +108,12 @@
             <Line Type="bytes" Address="0x0553b198" Value="01"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Bloodborne" Name="Disable HTTP Requests" Author="bloo" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
+    <Metadata Title="Bloodborne" 
+              Name="Disable HTTP Requests" 
+              Author="bloo" 
+              PatchVer="1.0" 
+              AppVer="01.09" 
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x0227E2F0" Value="9090909090"/>
             <Line Type="bytes" Address="0x023E4D96" Value="9090909090"/>
