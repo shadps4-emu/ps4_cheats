@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA15036</ID>
+    </TitleID>
+    <Metadata Title="Catherine: Full Body" Name="Initializer" Note="Fix broken calls which prevent game from launching" Author="marecl" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x046CF84" Value="9090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Catherine: Full Body" Name="Initializer" Note="Fix broken calls which prevent game from launching" Author="marecl" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x046CF84" Value="9090909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
