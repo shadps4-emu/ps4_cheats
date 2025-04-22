@@ -2,15 +2,30 @@
 <Patch>
     <TitleID>
         <ID>CUSA15036</ID>
+        <ID>CUSA14836</ID>
     </TitleID>
-    <Metadata Title="Catherine: Full Body" Name="Initializer" Note="Fix broken calls which prevent game from launching" Author="marecl" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="true">
+    <Metadata Title="Catherine: Full Body" Name="Initializer Fix" Note="Patch broken calls which prevent game from launching" Author="marecl" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="true">
         <PatchList>
-            <Line Type="bytes" Address="0x046CF84" Value="9090909090"/>
+            <Line Type="bytes" Address="0x46CF84" Value="9090909090"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Catherine: Full Body" Name="Initializer" Note="Fix broken calls which prevent game from launching" Author="marecl" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="true">
+    <Metadata Title="Catherine: Full Body" Name="Initializer Fix" Note="Patch broken calls which prevent game from launching" Author="marecl" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="true">
         <PatchList>
-            <Line Type="bytes" Address="0x046CF84" Value="9090909090"/>
+            <Line Type="bytes" Address="0x46CF84" Value="9090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Catherine: Full Body" Name="SkipIntro" Note="Skip Intro" Author="marecl" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x787970" Value="9090909090"/>
+            <Line Type="bytes" Address="0x7879CA" Value="9090909090"/>
+            <Line Type="bytes" Address="0x787A31" Value="9090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Catherine: Full Body" Name="SkipIntro" Note="Skip Intro" Author="marecl" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x787970" Value="9090909090"/>
+            <Line Type="bytes" Address="0x7879CA" Value="9090909090"/>
+            <Line Type="bytes" Address="0x787A31" Value="9090909090"/>
         </PatchList>
     </Metadata>
 </Patch>
