@@ -1399,15 +1399,15 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
-              Name="Increased Graphics Heap Sizes 2" 
+              Name="Increased Graphics Heap Sizes" 
               Author="auser1337, StevenMiller123" 
-              Note="MANUALLY ENABLE 'isDevKit' IN THE TOML CONFIG!!!" 
+              Note="Requires 'isDevKit = true' in the shadPS4 config. Needed for resolution patches above 1080p" 
               PatchVer="1.0" 
               AppVer="01.09" 
               AppElf="eboot.bin">
         <PatchList>
-            <Line Type="bytes" Address="0x04b36dda" Value="68d6"/>
-            <Line Type="bytes" Address="0x04b36de2" Value="c06e"/>
+            <Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
