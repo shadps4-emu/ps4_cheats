@@ -1676,6 +1676,8 @@
             <Line Type="bytes" Address="0x01a452db" Value="90"/>
             <Line Type="bytes" Address="0x01a452dc" Value="90"/>
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -1710,6 +1712,8 @@
             <Line Type="bytes" Address="0x01a452db" Value="90"/>
             <Line Type="bytes" Address="0x01a452dc" Value="90"/>
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -1744,6 +1748,8 @@
             <Line Type="bytes" Address="0x01a452db" Value="90"/>
             <Line Type="bytes" Address="0x01a452dc" Value="90"/>
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -1779,6 +1785,8 @@
             <Line Type="bytes" Address="0x01a452dc" Value="90"/>
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
             <Line Type="bytes" Address="0x0183a35d" Value="398ee33f"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -1882,6 +1890,8 @@
             <Line Type="bytes" Address="0x01a452dc" Value="90"/>
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
             <Line Type="bytes" Address="0x0183a35d" Value="26b41740"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -1917,6 +1927,8 @@
             <Line Type="bytes" Address="0x01a452dc" Value="90"/>
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
             <Line Type="bytes" Address="0x0183a35d" Value="8ee31840"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -1952,6 +1964,8 @@
             <Line Type="bytes" Address="0x01a452dc" Value="90"/>
             <Line Type="bytes" Address="0x01a452dd" Value="90"/>
             <Line Type="bytes" Address="0x0183a35d" Value="398e6340"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
