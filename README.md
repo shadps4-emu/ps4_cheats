@@ -225,7 +225,7 @@ Set base address to `0x00400000` when importing binaries for consistency with PS
 ```
 </details>
 
-*Contains information obtained from [GoldHEN_Patch_Repository](https://github.com/GoldHEN/GoldHEN_Patch_Repository)
+*Contains information obtained from [GoldHEN_Patch_Repository](https://github.com/illusion0001/PS4-PS5-Game-Patch)
 
 ## Contributing
 
