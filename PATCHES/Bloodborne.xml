@@ -257,7 +257,7 @@
             <Line Type="bytes" Address="0x02fbf178" Value="4831c0c3"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Bloodborne" Name="Debug Menu" Author="Whitehawkx, auser1337" Note="Requires debug font files" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
+    <Metadata Title="Bloodborne" Name="Restore Debug Menu (READ NOTES)" Author="Whitehawkx, auser1337" Note="This patch requires debug font files, It will crash without them. Access the menu by pressing left side of touchpad. " PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
         <PatchList>
             <Line Type="byte" Address="0x136D90D" Value="0x75"/>
             <Line Type="byte" Address="0x2199EEE" Value="0x48"/>
