@@ -9,31 +9,41 @@
             <Line Type="bytes" Address="0xE7A78B" Value="9090" />
         </PatchList>
     </Metadata>
-    <Metadata Title="P.T" Name="60 FPS" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.00"
+    <Metadata Title="P.T" Name="60 FPS"
+        Note="The original patch doesn't work on the emulator, use this instead.\nOriginally made by illusion, shadPS4 compatible version created by kalaposfos."
+        Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.00"
         AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x118a713" Value="be00000000" />
         </PatchList>
     </Metadata>
-    <Metadata Title="P.T" Name="Disable Lens Flare" Author="illusion" PatchVer="1.0" AppVer="01.00"
+    <Metadata Title="P.T" Name="Disable Lens Flare"
+        Note="The original patch doesn't work on the emulator, use this instead." Author="illusion"
+        PatchVer="1.0" AppVer="01.00"
         AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x10b332b" Value="4d31f690" />
         </PatchList>
     </Metadata>
-    <Metadata Title="P.T" Name="Disable Camera Blur" Author="illusion" PatchVer="1.0" AppVer="01.00"
+    <Metadata Title="P.T" Name="Disable Camera Blur"
+        Note="The original patch doesn't work on the emulator, use this instead." Author="illusion"
+        PatchVer="1.0" AppVer="01.00"
         AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x159ef0c" Value="4831c9" />
         </PatchList>
     </Metadata>
-    <Metadata Title="P.T" Name="Disable Screen Space Reflections" Author="illusion" PatchVer="1.0"
+    <Metadata Title="P.T" Name="Disable Screen Space Reflections"
+        Note="The original patch doesn't work on the emulator, use this instead." Author="illusion"
+        PatchVer="1.0"
         AppVer="01.00" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x159fd60" Value="c3" />
         </PatchList>
     </Metadata>
-    <Metadata Title="P.T" Name="Disable Film Grain" Author="illusion" PatchVer="1.0" AppVer="01.00"
+    <Metadata Title="P.T" Name="Disable Film Grain"
+        Note="The original patch doesn't work on the emulator, use this instead." Author="illusion"
+        PatchVer="1.0" AppVer="01.00"
         AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x10c9987" Value="eb1f" />
