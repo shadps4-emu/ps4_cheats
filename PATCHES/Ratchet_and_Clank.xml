@@ -3,9 +3,9 @@
     <TitleID>
         <ID>CUSA01073</ID>
         <ID>CUSA01047</ID>
-		<ID>CUSA01928</ID>
-		<ID>CUSA01686</ID>
-		<ID>CUSA02020</ID>
+	<ID>CUSA01928</ID>
+	<ID>CUSA01686</ID>
+	<ID>CUSA02020</ID>
     </TitleID>
     <Metadata Title="Ratchet and Clank" 
 			  Name="Bypass hang" 
@@ -16,7 +16,6 @@
 			  AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x1B5D994" Value="9090"/>
-            <PatchList/>
         </PatchList>
     </Metadata>
 </Patch>
