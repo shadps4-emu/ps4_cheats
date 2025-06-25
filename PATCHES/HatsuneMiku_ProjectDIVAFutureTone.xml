@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <TitleID>
-        <ID>CUSA08026</ID>
-        <ID>CUSA08053</ID>
+        <ID>CUSA03828</ID>
+        <ID>CUSA05030</ID>
         <ID>CUSA06093</ID>
         <ID>CUSA06211</ID>
-        <ID>CUSA05030</ID>
-        <ID>CUSA03828</ID>
+        <ID>CUSA08026</ID>
+        <ID>CUSA08053</ID>
     </TitleID>
     <Metadata Title="Hatsune Miku: Project DIVA Future Tone"
               Name="Unlock (Extra) Extreme"
