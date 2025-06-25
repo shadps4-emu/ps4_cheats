@@ -56,7 +56,7 @@
         <PatchList>
             <Line Type="bytes" Address="0xB29978" Value="398EE33F"/>
             <Line Type="bytes" Address="0x00b54c19" Value="41b8000f0000"/>
-            <Line Type="bytes" Address="0x00b54c1f" Value="41b987080000"/>
+            <Line Type="bytes" Address="0x00b54c1f" Value="41b970080000"/>
         </PatchList>
     </Metadata>
 </Patch>
