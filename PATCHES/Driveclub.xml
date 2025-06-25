@@ -7,28 +7,52 @@
         <ID>CUSA00093</ID>
         <ID>CUSA00879</ID>
     </TitleID>
-    <Metadata Title="Driveclub" Name="60 FPS" Note="Patch version 2.0 features deltatime." Author="illusion, u/Charlie_Muggins" PatchVer="2.0" AppVer="01.28" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="Driveclub" 
+              Name="60 FPS" 
+              Note="Patch version 2.0 features deltatime." 
+              Author="illusion, u/Charlie_Muggins" 
+              PatchVer="2.0" 
+              AppVer="01.28" 
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x01184800" Value="b801000000"/>
             <Line Type="bytes" Address="0x01184725" Value="48b001"/>
             <Line Type="bytes" Address="0x00a6306e" Value="9090"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Driveclub" Name="Resolution patch (2560x1080)" Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too" Author="u/Charlie_Muggins, kalaposfos" PatchVer="1.0" AppVer="01.28" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="Driveclub" 
+              Name="Resolution patch (2560x1080)" 
+              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too" 
+              Author="u/Charlie_Muggins, kalaposfos" 
+              PatchVer="1.0" 
+              AppVer="01.28" 
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0xB29978" Value="26B41740"/>
             <Line Type="bytes" Address="0x00b54c19" Value="41b8000a0000"/>
             <Line Type="bytes" Address="0x00b54c1f" Value="41b938040000"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Driveclub" Name="Resolution patch (2560x1440)" Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too" Author="u/Charlie_Muggins, kalaposfos" PatchVer="1.0" AppVer="01.28" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="Driveclub" 
+              Name="Resolution patch (2560x1440)" 
+              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too" 
+              Author="u/Charlie_Muggins, kalaposfos" 
+              PatchVer="1.0" 
+              AppVer="01.28" 
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0xB29978" Value="398EE33F"/>
             <Line Type="bytes" Address="0x00b54c19" Value="41b8000a0000"/>
             <Line Type="bytes" Address="0x00b54c1f" Value="41b9a0050000"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Driveclub" Name="Resolution patch (3840x2160)" Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too" Author="u/Charlie_Muggins, kalaposfos" PatchVer="1.0" AppVer="01.28" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="Driveclub" 
+              Name="Resolution patch (3840x2160)" 
+              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too" 
+              Author="u/Charlie_Muggins, kalaposfos" 
+              PatchVer="1.0" 
+              AppVer="01.28" 
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0xB29978" Value="398EE33F"/>
             <Line Type="bytes" Address="0x00b54c19" Value="41b8000f0000"/>
