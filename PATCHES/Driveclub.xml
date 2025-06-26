@@ -20,17 +20,43 @@
             <Line Type="bytes" Address="0x00a6306e" Value="9090"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Driveclub" 
-              Name="Resolution patch (2560x1080)" 
-              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too" 
-              Author="u/Charlie_Muggins, kalaposfos" 
-              PatchVer="1.0" 
-              AppVer="01.28" 
+    <Metadata Title="Driveclub"
+              Name="Resolution patch (2560x1080)"
+              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too"
+              Author="u/Charlie_Muggins, kalaposfos"
+              PatchVer="1.0"
+              AppVer="01.28"
               AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0xB29978" Value="26B41740"/>
-            <Line Type="bytes" Address="0x00b54c19" Value="41b8000a0000"/>
-            <Line Type="bytes" Address="0x00b54c1f" Value="41b938040000"/>
+            <Line Type="bytes" Address="0x00b54c1b" Value="000a0000"/>
+            <Line Type="bytes" Address="0x00b54c21" Value="38040000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
+              Name="Resolution patch (3840x1080)"
+              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too"
+              Author="u/Charlie_Muggins, kalaposfos"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0xB29978" Value="398e6340" />
+            <Line Type="bytes" Address="0x00b54c1b" Value="000f0000" />
+            <Line Type="bytes" Address="0x00b54c21" Value="38040000" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
+              Name="Resolution patch (1920x1200)"
+              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too"
+              Author="u/Charlie_Muggins, kalaposfos"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0xB29978" Value="cdcccc3f" />
+            <Line Type="bytes" Address="0x00b54c1b" Value="000f0000" />
+            <Line Type="bytes" Address="0x00b54c21" Value="b0040000" />
         </PatchList>
     </Metadata>
 </Patch>
