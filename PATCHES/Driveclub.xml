@@ -59,4 +59,15 @@
             <Line Type="bytes" Address="0x00b54c21" Value="b0040000" />
         </PatchList>
     </Metadata>
+    <Metadata Title="Driveclub"
+              Name="Run without sysmodules"
+              Note="Spoofs an error return for a stubbed font function.\nThe game will have no text and will take longer to boot."
+              Author="kalaposfos"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x00bb2f63" Value="9090" />
+        </PatchList>
+    </Metadata>
 </Patch>
