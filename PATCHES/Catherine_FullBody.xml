@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Patch>
     <TitleID>
-        <ID>CUSA15036</ID>
         <ID>CUSA14836</ID>
+        <ID>CUSA15036</ID>
     </TitleID>
     <Metadata Title="Catherine: Full Body" Name="Initializer Fix" Note="Patch broken calls which prevent game from launching" Author="marecl" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin">
         <PatchList>

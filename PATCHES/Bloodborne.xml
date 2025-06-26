@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <TitleID>
-        <ID>CUSA00900</ID>
         <ID>CUSA00207</ID>
-        <ID>CUSA03173</ID>
-        <ID>CUSA03023</ID>
         <ID>CUSA00208</ID>
-        <ID>CUSA01363</ID>
         <ID>CUSA00299</ID>
+        <ID>CUSA00900</ID>
+        <ID>CUSA01363</ID>
+        <ID>CUSA03023</ID>
+        <ID>CUSA03173</ID>
     </TitleID>
     <Metadata Title="Bloodborne"
               Name="Skip Intro"
