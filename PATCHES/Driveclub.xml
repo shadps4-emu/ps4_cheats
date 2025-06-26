@@ -48,7 +48,7 @@
     </Metadata>
     <Metadata Title="Driveclub"
               Name="Resolution patch (1920x1200) (16:10)"
-              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too"
+              Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too. Disclaimer: Aspect ratios narrower than 16:9 will crop the menu."
               Author="u/Charlie_Muggins, kalaposfos"
               PatchVer="1.0"
               AppVer="01.28"
