@@ -7,6 +7,7 @@
         <ID>CUSA00093</ID>
         <ID>CUSA00879</ID>
     </TitleID>
+
     <Metadata Title="Driveclub" 
               Name="60 FPS" 
               Note="Patch version 2.0 features deltatime." 
@@ -20,6 +21,7 @@
             <Line Type="bytes" Address="0x00a6306e" Value="9090"/>
         </PatchList>
     </Metadata>
+
     <Metadata Title="Driveclub"
               Name="Resolution patch (2560x1080)"
               Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too"
@@ -33,6 +35,7 @@
             <Line Type="bytes" Address="0x00b54c21" Value="38040000"/>
         </PatchList>
     </Metadata>
+
     <Metadata Title="Driveclub"
               Name="Resolution patch (3840x1080)"
               Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too"
@@ -46,6 +49,35 @@
             <Line Type="bytes" Address="0x00b54c21" Value="38040000" />
         </PatchList>
     </Metadata>
+
+    <Metadata Title="Driveclub"
+              Name="Resolution patch (5120x1080)"
+              Note="Custom ultrawide patch for 32:9 monitors; optimized for 1080p output"
+              Author="YourNameHere"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0xB29978" Value="8f969740" />
+            <Line Type="bytes" Address="0x00b54c1b" Value="00140000" />
+            <Line Type="bytes" Address="0x00b54c21" Value="38040000" />
+        </PatchList>
+    </Metadata>
+
+    <Metadata Title="Driveclub"
+              Name="Resolution patch (5120x1440)"
+              Note="Custom 32:9 QHD patch for ultrawide monitors"
+              Author="YourNameHere"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0xB29978" Value="66655540" />
+            <Line Type="bytes" Address="0x00b54c1b" Value="00140000" />
+            <Line Type="bytes" Address="0x00b54c21" Value="a0050000" />
+        </PatchList>
+    </Metadata>
+
     <Metadata Title="Driveclub"
               Name="Resolution patch (1920x1200) (16:10)"
               Note="Original for the PS4 made by u/Charlie_Muggins, extended by kalaposfos to work on shadPS4 too. Disclaimer: Aspect ratios narrower than 16:9 will crop the menu."
@@ -59,9 +91,10 @@
             <Line Type="bytes" Address="0x00b54c21" Value="b0040000" />
         </PatchList>
     </Metadata>
+
     <Metadata Title="Driveclub"
               Name="Run without sysmodules"
-              Note="Spoofs an error return for a stubbed font function.\nThe game will have no text and will take longer to boot."
+              Note="Spoofs an error return for a stubbed font function. The game will have no text and will take longer to boot."
               Author="kalaposfos"
               PatchVer="1.0"
               AppVer="01.28"
