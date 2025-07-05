@@ -24,6 +24,14 @@
             <Line Type="bytes" Address="0x0104fa6a" Value="9090909090909090909090909090909090909090909090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="The Last Guardian" Name="Resolution Patch: Native 2560x1440" Note="1440p" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes64" Address="0x01aec3e8" Value="0x05A00A0005A00A00"/>
+            <Line Type="bytes64" Address="0x01aec3f0" Value="0x0000000000000000"/>
+            <Line Type="bytes" Address="0x0104fa6a" Value="9090909090909090909090909090909090909090909090"/>
+        </PatchList>
+    </Metadata>
+    </Metadata>
     <Metadata Title="The Last Guardian" Name="Resolution Patch: Native 3840x2160" Note="4K" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes64" Address="0x01aec3e8" Value="0x08700f0008700f00"/>
