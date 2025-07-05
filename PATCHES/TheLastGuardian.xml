@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA03627</ID>
+        <ID>CUSA03745</ID>
+        <ID>CUSA04936</ID>
+    </TitleID>
+    <Metadata Title="The Last Gurdian" Name="60 FPS Unlock" Note="Warning: this patch's behavior is no different than changing your Vblank Divider to 2 in the settings" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0105151a" Value="be00000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last Guardian" Name="Resolution Patch: Native 640x360" Note="360p" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes64" Address="0x01aec3e8" Value="0x0168028001680280"/>
+            <Line Type="bytes64" Address="0x01aec3f0" Value="0x0000000000000000"/>
+            <Line Type="bytes" Address="0x0104fa6a" Value="9090909090909090909090909090909090909090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last Guardian" Name="Resolution Patch: Native 1280x720" Note="720p" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes64" Address="0x01aec3e8" Value="0x02D0050002D00500"/>
+            <Line Type="bytes64" Address="0x01aec3f0" Value="0x0000000000000000"/>
+            <Line Type="bytes" Address="0x0104fa6a" Value="9090909090909090909090909090909090909090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last Guardian" Name="Resolution Patch: Native 2560x1440" Note="1440p" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes64" Address="0x01aec3e8" Value="0x05A00A0005A00A00"/>
+            <Line Type="bytes64" Address="0x01aec3f0" Value="0x0000000000000000"/>
+            <Line Type="bytes" Address="0x0104fa6a" Value="9090909090909090909090909090909090909090909090"/>
+        </PatchList>
+    </Metadata>
+    </Metadata>
+    <Metadata Title="The Last Guardian" Name="Resolution Patch: Native 3840x2160" Note="4K" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes64" Address="0x01aec3e8" Value="0x08700f0008700f00"/>
+            <Line Type="bytes64" Address="0x01aec3f0" Value="0x0000000000000000"/>
+            <Line Type="bytes" Address="0x0104fa6a" Value="9090909090909090909090909090909090909090909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
