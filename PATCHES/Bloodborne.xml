@@ -2261,4 +2261,14 @@
             <Line Type="bytes" Address="0x0183a35d" Value="abaaaa3f"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Disable Face Customization (prevents most vertex explosions from occuring)"
+              Author="auser1337"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="byte" Address="0x01c4a436" Value="00"/>
+        </PatchList>
+    </Metadata>
 </Patch>
