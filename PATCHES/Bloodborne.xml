@@ -2262,7 +2262,7 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="Disable Face Customization (prevents most vertex explosions from occuring)"
+              Name="Disable Face Customization (prevents most vertex explosions from occurring)"
               Author="auser1337"
               PatchVer="1.0"
               AppVer="01.09"
