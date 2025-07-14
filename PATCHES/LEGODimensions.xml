@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01176</ID>
+    </TitleID>
+    <Metadata Title="LEGO Dimensions" Name="60 FPS" Note="Changes the engine target from 30 FPS to 60 FPS" Author="connorh315" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x00e6a043" Value="bb020000009090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="LEGO Dimensions" Name="60 FPS" Note="Changes the engine target from 30 FPS to 60 FPS" Author="connorh315" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x00a966ad" Value="bf0200000089389090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
