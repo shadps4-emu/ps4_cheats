@@ -8,8 +8,8 @@
         <ID>CUSA00879</ID>
     </TitleID>
     <Metadata Title="Driveclub" 
-              Name="60 FPS" 
-              Note="Patch version 2.0 features deltatime." 
+              Name="60 FPS with deltatime" 
+              Note="Patch version 2.0 features deltatime. this version will break some things in the game, if that is an issue for you, use the other 60 FPS patch." 
               Author="illusion, u/Charlie_Muggins" 
               PatchVer="2.0" 
               AppVer="01.28" 
@@ -18,6 +18,17 @@
             <Line Type="bytes" Address="0x01184800" Value="b801000000"/>
             <Line Type="bytes" Address="0x01184725" Value="48b001"/>
             <Line Type="bytes" Address="0x00a6306e" Value="9090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
+              Name="60 FPS with fixed tickrate"
+              Note="Enables 60 FPS with the engine's builtin way to do it, making this version work with features that break with the other 60 FPS patch enabled."
+              Author="kalaposfos"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x01762801" Value="67" />
         </PatchList>
     </Metadata>
     <Metadata Title="Driveclub"
