@@ -110,6 +110,17 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
+              Name="Light Grid Div 0x0" 
+              Author="hspir404" 
+              PatchVer="1.0" 
+              AppVer="01.09" 
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes32" Address="0x0553ae80" Value="0x00000000"/>
+            <Line Type="bytes32" Address="0x0553ae84" Value="0x00000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne" 
               Name="Disable HTTP Requests" 
               Author="bloo" 
               PatchVer="1.0" 
