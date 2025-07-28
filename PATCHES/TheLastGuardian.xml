@@ -6,7 +6,7 @@
         <ID>CUSA04936</ID>
         <ID>CUSA05152</ID>
     </TitleID>
-    <Metadata Title="The Last Gurdian" Name="60 FPS Unlock" Note="Warning: this patch's behavior is no different than changing your Vblank Divider to 2 in the settings" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+    <Metadata Title="The Last Guardian" Name="60 FPS Unlock" Note="Warning: this patch's behavior is no different than changing your Vblank Divider to 2 in the settings" Author="illusion, kalaposfos" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x0105151a" Value="be00000000"/>
         </PatchList>
