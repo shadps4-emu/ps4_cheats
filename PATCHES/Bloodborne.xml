@@ -649,74 +649,6 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="Resolution Patch (360p)"
-              Note="Recommended for weaker GPUs. Enemy HP bars are often invisible when in the center of the screen."
-              Author="LeDragoX"
-              PatchVer="1.0"
-              AppVer="01.09"
-              AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
-            <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
-            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
-            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
-            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
-            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a452da" Value="90"/>
-            <Line Type="bytes" Address="0x01a452db" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
-        </PatchList>
-    </Metadata>
-    <Metadata Title="Bloodborne"
-              Name="Resolution Patch (484p)"
-              Note="Recommended for weaker GPUs. Enemy HP bars are often invisible when in the center of the screen."
-              Author="LeDragoX, xzy"
-              PatchVer="1.0"
-              AppVer="01.09"
-              AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes32" Address="0x055289f8" Value="0x0000035c"/>
-            <Line Type="bytes32" Address="0x055289fc" Value="0x000001e4"/>
-            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
-            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
-            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
-            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a452da" Value="90"/>
-            <Line Type="bytes" Address="0x01a452db" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
-        </PatchList>
-    </Metadata>
-    <Metadata Title="Bloodborne"
               Name="Resolution Patch (560p)"
               Note="Lowest it can go without the target HP bar being invisible."
               Author="Ashen"
@@ -751,39 +683,6 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="Resolution Patch (612p)"
-              Author="Ashen"
-              PatchVer="1.0"
-              AppVer="01.09"
-              AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes32" Address="0x055289f8" Value="0x00000440"/>
-            <Line Type="bytes32" Address="0x055289fc" Value="0x00000264"/>
-            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
-            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
-            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
-            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a452da" Value="90"/>
-            <Line Type="bytes" Address="0x01a452db" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
-        </PatchList>
-    </Metadata>
-    <Metadata Title="Bloodborne"
               Name="Resolution Patch (720p)"
               Author="Lance McDonald (manfightdragon)"
               PatchVer="1.0"
@@ -792,39 +691,6 @@
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000500"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x000002d0"/>
-            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
-            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
-            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
-            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a452da" Value="90"/>
-            <Line Type="bytes" Address="0x01a452db" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
-        </PatchList>
-    </Metadata>
-     <Metadata Title="Bloodborne"
-              Name="Resolution Patch (1366x768)"
-              Author="bekiroj"
-              PatchVer="1.0"
-              AppVer="01.09"
-              AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes32" Address="0x055289f8" Value="0x00000558"/>
-            <Line Type="bytes32" Address="0x055289fc" Value="0x00000300"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
             <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
             <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
