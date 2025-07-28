@@ -488,6 +488,16 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+              Name="Bookmark and Capture outputs"
+              Author="Foxy Hooligans"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x04dba9be" Value="2f0064006100740061002f0062006c006f006f00640062006f0072006e0065002f000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
               Name="Enemy Control"
               Note="R3 to control targeted enemy / L3 to go back"
               Author="stagvant"
