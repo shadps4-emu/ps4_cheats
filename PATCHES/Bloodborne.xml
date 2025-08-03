@@ -110,6 +110,17 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
+              Name="Intel 12th Gen+ SFX Fix" 
+              Note="Disables part of SFX related code to workaround crash on newer Intel chips (SFX folder can be used with patch)" 
+              Author="emoose" 
+              PatchVer="1.0" 
+              AppVer="01.09" 
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="byte" Address="0x02CF83E0" Value="c3"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne" 
               Name="Light Grid Div 0x0" 
               Author="hspir404" 
               PatchVer="1.0" 
