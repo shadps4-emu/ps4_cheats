@@ -168,7 +168,7 @@
             <Line Type="bytes" Address="0x01bf9ca9" Value="488d054868d403"/>
             <Line Type="bytes" Address="0x01bf9cb0" Value="488b00"/>
             <Line Type="bytes" Address="0x01bf9cb3" Value="c745b8"/>
-            <Line Type="bytes" Address="0x01bf9cb6" Value="cdcccc3d"/> <!-- Max deltatime to pass to Havok, cdcccc3d = 0.10 = 10FPS (prevents large deltatimes being passed over and causing physics issue) -->
+            <Line Type="bytes" Address="0x01bf9cb6" Value="cdcc4c3e"/> <!-- Max deltatime to pass to Havok, cdcc4c3e = 0.2 = 5FPS (prevents large deltatimes being passed over and causing physics issue) -->
             <Line Type="bytes" Address="0x01bf9cba" Value="f30f108864020000"/>
             <Line Type="bytes" Address="0x01bf9cc2" Value="f30f1045b8"/>
             <Line Type="bytes" Address="0x01bf9cc7" Value="f30f5dc1"/>
@@ -216,7 +216,7 @@
             <Line Type="bytes" Address="0x02377d0d" Value="90"/>
             <Line Type="bytes" Address="0x02377d0e" Value="eb42"/>
             <Line Type="bytes" Address="0x02377d48" Value="eba2"/>
-            <Line Type="bytes" Address="0x02418E39" Value="cdcccc3d"/> <!-- Max deltatime to pass to game, cdcccc3d = 0.10 = 10FPS -->
+            <Line Type="bytes" Address="0x02418E39" Value="cdcc4c3e"/> <!-- Max deltatime to pass to game, cdcc4c3e = 0.2 = 5FPS -->
             <Line Type="bytes" Address="0x02418e3d" Value="f30f108b64020000"/>
             <Line Type="bytes" Address="0x02418e45" Value="f30f1045c8"/>
             <Line Type="bytes" Address="0x02418e4a" Value="f30f5dc1"/>
