@@ -146,8 +146,8 @@
     <Metadata Title="Bloodborne"
               Name="60 FPS (With Deltatime)"
               Note="You may encounter softlock during Laurence (optional DLC boss) cinematic.\nDisable patch to progress."
-              Author="Lance McDonald (manfightdragon), Kyo"
-              PatchVer="1.0"
+              Author="Lance McDonald (manfightdragon), Kyo, emoose"
+              PatchVer="1.1"
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
@@ -167,28 +167,12 @@
             <Line Type="bytes" Address="0x01bf9b77" Value="90"/>
             <Line Type="bytes" Address="0x01bf9ca9" Value="488d054868d403"/>
             <Line Type="bytes" Address="0x01bf9cb0" Value="488b00"/>
-            <Line Type="bytes" Address="0x01bf9cb3" Value="8b8064020000"/>
-            <Line Type="bytes" Address="0x01bf9cb9" Value="8945b8"/>
-            <Line Type="bytes" Address="0x01bf9cbc" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cbd" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cbe" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cbf" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc0" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc1" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc2" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc3" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc4" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc5" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc6" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc7" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc8" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cc9" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cca" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9ccb" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9ccc" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9ccd" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9cce" Value="90"/>
-            <Line Type="bytes" Address="0x01bf9ccf" Value="90"/>
+            <Line Type="bytes" Address="0x01bf9cb3" Value="c745b8"/>
+            <Line Type="bytes" Address="0x01bf9cb6" Value="cdcccc3d"/> <!-- Max deltatime to pass to Havok, cdcccc3d = 0.10 = 10FPS (prevents large deltatimes being passed over and causing physics issue) -->
+            <Line Type="bytes" Address="0x01bf9cba" Value="f30f108864020000"/>
+            <Line Type="bytes" Address="0x01bf9cc2" Value="f30f1045b8"/>
+            <Line Type="bytes" Address="0x01bf9cc7" Value="f30f5dc1"/>
+            <Line Type="bytes" Address="0x01bf9ccb" Value="f30f1145b8"/>
             <Line Type="bytes" Address="0x01bf9cd0" Value="90"/>
             <Line Type="bytes" Address="0x01bf9cd1" Value="90"/>
             <Line Type="bytes" Address="0x01bf9cd2" Value="e9a1feffff"/>
@@ -232,21 +216,11 @@
             <Line Type="bytes" Address="0x02377d0d" Value="90"/>
             <Line Type="bytes" Address="0x02377d0e" Value="eb42"/>
             <Line Type="bytes" Address="0x02377d48" Value="eba2"/>
-            <Line Type="bytes" Address="0x02418e3d" Value="8b8364020000"/>
-            <Line Type="bytes" Address="0x02418e43" Value="8945c8"/>
-            <Line Type="bytes" Address="0x02418e46" Value="90"/>
-            <Line Type="bytes" Address="0x02418e47" Value="90"/>
-            <Line Type="bytes" Address="0x02418e48" Value="90"/>
-            <Line Type="bytes" Address="0x02418e49" Value="90"/>
-            <Line Type="bytes" Address="0x02418e4a" Value="90"/>
-            <Line Type="bytes" Address="0x02418e4b" Value="90"/>
-            <Line Type="bytes" Address="0x02418e4c" Value="90"/>
-            <Line Type="bytes" Address="0x02418e4d" Value="90"/>
-            <Line Type="bytes" Address="0x02418e4e" Value="90"/>
-            <Line Type="bytes" Address="0x02418e4f" Value="90"/>
-            <Line Type="bytes" Address="0x02418e50" Value="90"/>
-            <Line Type="bytes" Address="0x02418e51" Value="90"/>
-            <Line Type="bytes" Address="0x02418e52" Value="90"/>
+            <Line Type="bytes" Address="0x02418E39" Value="cdcccc3d"/> <!-- Max deltatime to pass to game, cdcccc3d = 0.10 = 10FPS -->
+            <Line Type="bytes" Address="0x02418e3d" Value="f30f108b64020000"/>
+            <Line Type="bytes" Address="0x02418e45" Value="f30f1045c8"/>
+            <Line Type="bytes" Address="0x02418e4a" Value="f30f5dc1"/>
+            <Line Type="bytes" Address="0x02418e4e" Value="f30f1145c8"/>
             <Line Type="bytes" Address="0x02418e53" Value="90"/>
             <Line Type="bytes" Address="0x02418e54" Value="90"/>
             <Line Type="bytes" Address="0x02418e55" Value="90"/>
