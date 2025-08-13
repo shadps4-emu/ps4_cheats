@@ -71,6 +71,46 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Driveclub"
+              Name="Reset Disable"
+              Note="Disables reset to track timer"
+              Author="ZipperedRain" PatchVer="2.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="00FD4149" Value="90909090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
+              Name="Barrier Disable"
+              Note="Disables track barriers"
+              Author="ZipperedRain" PatchVer="2.0"
+              AppVer="01.28" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="00D75063" Value="909090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
+              Name="Disable Photomode Free Camera Collision"
+              Note="Disables car collision when using free camera, allowing you to look inside any car."
+              Author="TonySSS"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0xD59E02" Value="9090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
+              Name="Disable Photomode Processing"
+              Note="Disables photomode processing."
+              Author="TonySSS"
+              PatchVer="1.0" AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x9BDD65" Value="9090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
               Name="Run without sysmodules"
               Note="Spoofs an error return for a stubbed font function.\nThe game will have no text and will take longer to boot."
               Author="kalaposfos"
