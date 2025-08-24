@@ -58,7 +58,7 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
-              Name="Intel 12th Gen+ SFX Fix" 
+              Name="Intel 12th Gen+ SFX workaround" 
               Note="Disables part of SFX related code to workaround crash on Windows with newer Intel chips (SFX folder can be used with patch)" 
               Author="emoose" 
               PatchVer="1.0" 
