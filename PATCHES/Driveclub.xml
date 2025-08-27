@@ -121,4 +121,16 @@
             <Line Type="bytes" Address="0x00bb2f63" Value="9090" />
         </PatchList>
     </Metadata>
+        <Metadata Title="Driveclub"
+        Name="mac memory allocation workaround"
+        Note="Required for the game to boot on Mac. Works on other platforms too, but won't have any real effect there."
+        Author="kalaposfos, squidbus"
+        PatchVer="1.0"
+        AppVer="01.28"
+        AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x00b49247" Value="48b80000000080000000"/>
+            <Line Type="bytes" Address="0x00b4925a" Value="48be0000000080000000"/>
+        </PatchList>
+    </Metadata>
 </Patch>
