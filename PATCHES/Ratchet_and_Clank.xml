@@ -27,4 +27,11 @@
             <Line Type="bytes" Address="0x006e2aec" Value="9090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Ratchet and Clank" Name="Resolution 2560x1440" Author="ricnava00" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x01c4a9f2" Value="9090"/>
+            <Line Type="bytes" Address="0x01c4a9f4" Value="48b8000a0000a0050000"/>
+        </PatchList>
+    </Metadata>
 </Patch>
+
