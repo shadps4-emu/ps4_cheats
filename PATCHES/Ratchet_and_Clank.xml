@@ -7,14 +7,12 @@
         <ID>CUSA01928</ID>
         <ID>CUSA02020</ID>
     </TitleID>
-    <Metadata Title="Ratchet and Clank" Name="Bypass hang" Note="Skips the hang when creating a new game" Author="kalaposfos" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
+    <Metadata Title="Ratchet and Clank" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin">
         <PatchList>
-            <Line Type="bytes" Address="0x1B5D994" Value="9090"/>
-        </PatchList>
-    </Metadata>
-    <Metadata Title="Ratchet and Clank" Name="Bypass hang" Note="Skips the hang when creating a new game" Author="marecl" PatchVer="1.0" AppVer="01.07" AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes" Address="0x1B5CB14" Value="9090"/>
+            <Line Type="byte" Address="0x129AD3D" Value="0x80"/>
+            <Line Type="byte" Address="0x129ADBA" Value="0x80"/>
+            <Line Type="byte" Address="0x129B113" Value="0x80"/>
+            <Line Type="byte" Address="0x129B1EC" Value="0x80"/>
         </PatchList>
     </Metadata>
 </Patch>
