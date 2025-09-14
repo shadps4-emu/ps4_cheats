@@ -69,7 +69,8 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
-              Name="Light Grid Div 0x0" 
+              Name="Disable Dynamic Lighting (Performance Increase)" 
+			  Note="Sets light grid to 0x0 which effectively disables dynamic lighting.\nReduces visual quality but increases performance." 
               Author="hspir404" 
               PatchVer="1.0" 
               AppVer="01.09" 
