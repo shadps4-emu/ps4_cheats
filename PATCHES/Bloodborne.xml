@@ -495,7 +495,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Disable vsync"
-	          Note="This patch disables vsync to play ABOVE 60 FPS. Needs to be used with the 60 FPS patch and Vblank Divider set to 2 in the settings"
+	          Note="This patch disables vsync to play ABOVE 60 FPS. Needs to be used with the 60 FPS patch and the Vblank Frequency set to above 60hz in the settings (it is recommended to not go over 100hz as the game's engine has some issues over 100 FPS)."
               Author="illusion"
               PatchVer="1.0"
               AppVer="01.09"
