@@ -917,7 +917,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (2560x1440)"
-              Note="Requires 'isDevKit = true' in the shadPS4 config. Needed for resolution patches above 1080p"
+              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is 4000."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
@@ -953,7 +953,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3840x2160)"
-              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk. Requires 'isDevKit = true' in the shadPS4 config. Needed for resolution patches above 1080p"
+              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1057,7 +1057,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (2560x1080) (21:9 2.37)"
-			  Note="Requires 'isDevKit = true' in the shadPS4 config. Needed for resolution patches above 1080p"
+			  Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is 4000."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1094,7 +1094,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3440x1440) (21:9 2.38)"
-              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk. Requires 'isDevKit = true' in the shadPS4 config. Needed for resolution patches above 1080p"
+              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1131,7 +1131,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3840x1080) (32:9 ~3.55)"
-              Note="Resolutions above 1080p can break the game (missing geometry, invisible enemies, crashes) because of PS4 memory limitation. Use them at your own risk. Requires 'isDevKit = true' in the shadPS4 config. Needed for resolution patches above 1080p"
+              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
