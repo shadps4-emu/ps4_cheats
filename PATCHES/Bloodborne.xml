@@ -1134,8 +1134,8 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="Resolution Patch (1280x960) (4:3 ~1.33). "
-		      Note="As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called 16x10 and 4x3 UI Fixes (Steam Deck)) to workaround that issue is available on Nexusmods"
+              Name="Resolution Patch (1280x960) (4:3 ~1.33)"
+		      Note="As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called 16x10 and 4x3 UI Fixes (Steam Deck)) to workaround that issue is available on Nexusmods."
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
