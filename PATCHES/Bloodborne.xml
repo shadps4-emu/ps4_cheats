@@ -989,6 +989,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (1280x800) (16:10)"
+		      Note="As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called 16x10 and 4x3 UI Fixes (Steam Deck)) to workaround that issue is available on Nexusmods."
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1022,42 +1023,8 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="Resolution Patch (1706x720) (21:9)"
-              Author="Ashen"
-              PatchVer="1.0"
-              AppVer="01.09"
-              AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes32" Address="0x055289f8" Value="0x000006AA"/>
-            <Line Type="bytes32" Address="0x055289fc" Value="0x000002D0"/>
-            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
-            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
-            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
-            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a452da" Value="90"/>
-            <Line Type="bytes" Address="0x01a452db" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
-            <Line Type="bytes" Address="0x0183a35d" Value="26b41740"/>
-        </PatchList>
-    </Metadata>
-    <Metadata Title="Bloodborne"
               Name="Resolution Patch (2560x1080) (21:9 2.37)"
-			  Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is 4000."
+			  Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is 4000. As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called Ultrawide UI Fixes) to workaround that issue is available on Nexusmods."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1094,7 +1061,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3440x1440) (21:9 2.38)"
-              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000."
+              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000. As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called Ultrawide UI Fixes) to workaround that issue is available on Nexusmods."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1131,7 +1098,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3840x1080) (32:9 ~3.55)"
-              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000."
+              Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000. As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called Ultrawide UI Fixes) to workaround that issue is available on Nexusmods."
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
@@ -1167,7 +1134,8 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="Resolution Patch (1280x960) (4:3 ~1.33)"
+              Name="Resolution Patch (1280x960) (4:3 ~1.33). "
+		      Note="As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called 16x10 and 4x3 UI Fixes (Steam Deck)) to workaround that issue is available on Nexusmods"
               Author="xzy"
               PatchVer="1.0"
               AppVer="01.09"
