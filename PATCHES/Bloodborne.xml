@@ -268,13 +268,14 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="60 FPS (With Deltatime) + (Deltatime clamp)"
-              Note="Clamps Deltatime to 60 frames. \nIncreasing performance, smoother emulating, loading, etc. \nRagdolls+Cloth physics normalized at 60 frames. \nThe only downside to this patch is you MUST maintain 60 fps.\nIf your frames drop below 60, then the gamespeed also decreases."
-              Author="Lance McDonald (manfightdragon), Kyo, emoose"
+              Name="Uncap FPS (With Deltatime) + (30 fps Deltatime clamp)"
+              Note="Use something external or vblank frequency under game-specifc settings to set a custom fps cap. \nUncaps FPS without using 'disable vsync' \nClamps Deltatime to 30 fps. \nIncreases performance, smoother emulating, loading, etc. You MUST maintain 30 fps or higher, otherwise the game slows down below 30 due to deltatime clamp."
+              Author="Lance McDonald (manfightdragon), Kyo, emoose, stephen, indecisiveturtle"
               PatchVer="1.3"
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
+			<Line Type="bytes32" Address="0x02434806" Value="0x08516348"/>
             <Line Type="bytes" Address="0x00fbc40f" Value="eb1d"/>
             <Line Type="bytes" Address="0x013d2e16" Value="eb19"/>
             <Line Type="bytes" Address="0x013d2e18" Value="4156"/>
