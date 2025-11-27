@@ -241,7 +241,7 @@
             <Line Type="bytes" Address="0x02418e62" Value="90"/>
             <Line Type="bytes" Address="0x02418e63" Value="90"/>
             <Line Type="bytes" Address="0x02418e64" Value="488d05a5765203"/>
-            <Line Type="bytes32" Address="0x02434806" Value="0x08516348"/>
+            <Line Type="bytes" Address="0x0243487e" Value="41c74424188988883c"/>
             <Line Type="bytes" Address="0x02434887" Value="48b90000000001000000"/>
             <Line Type="bytes" Address="0x02483ec1" Value="c3"/>
             <Line Type="bytes" Address="0x02483ec2" Value="90"/>
