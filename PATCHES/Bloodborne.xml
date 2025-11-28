@@ -647,6 +647,20 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+			  Name="Disable Camera Auto Rotation via Movement"
+			  Note="Disables the camera from auto rotating when you move your character around, manual camera movement and lock-on still work."
+			  Author="Imedved, Kyo"
+			  PatchVer="1.0"
+		 	  AppVer="01.09"
+			  AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0183c6e8" Value="909090909090909090"/>
+            <Line Type="bytes" Address="0x0183c984" Value="909090909090909090"/>
+            <Line Type="bytes" Address="0x0183dde6" Value="909090909090909090"/>
+            <Line Type="bytes" Address="0x0183c870" Value="909090909090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
               Name="Unlock Game Region"
               Note="Unlocks the game region to support additional language options, switches the X and Circle buttons"
               Author="Lance McDonald (manfightdragon)"
