@@ -258,7 +258,7 @@
     <Metadata Title="Bloodborne"
               Name="Uncap FPS (With Deltatime) + (30 fps Deltatime clamp)"
               Note="Use something external or vblank frequency under game-specifc settings to set a custom fps cap. \nUncaps FPS without using 'disable vsync' \nClamps Deltatime to 30 fps. \nIncreases performance, smoother emulating, loading, etc. You MUST maintain 30 fps or higher, otherwise the game slows down below 30 due to deltatime clamp."
-              Author="Lance McDonald (manfightdragon), Kyo, Emoose, Stephen, Indecisiveturtle"
+              Author="Lance McDonald (manfightdragon), Kyo, emoose, StevenMiller123, raphaelthegreat"
               PatchVer="1.3"
               AppVer="01.09"
               AppElf="eboot.bin">
@@ -352,7 +352,10 @@
             <Line Type="bytes" Address="0x02418e62" Value="90"/>
             <Line Type="bytes" Address="0x02418e63" Value="90"/>
             <Line Type="bytes" Address="0x02418e64" Value="488d05a5765203"/>
-            <Line Type="bytes" Address="0x0243487e" Value="41c74424188988883c"/>
+            <Line Type="bytes" Address="0x024348b3" Value="41c74424188988083b"/>
+			<Line Type="bytes" Address="0x0243487e" Value="41c74424188988083b"/>
+			<Line Type="bytes" Address="0x0243485a" Value="41c74424188988083b"/>
+			<Line Type="bytes" Address="0x02434840" Value="41c74424188988083b"/>
             <Line Type="bytes" Address="0x02434887" Value="48b90000000001000000"/>
             <Line Type="bytes" Address="0x02483ec1" Value="c3"/>
             <Line Type="bytes" Address="0x02483ec2" Value="90"/>
@@ -641,6 +644,20 @@
         <PatchList>
             <Line Type="bytes" Address="0x025b3271" Value="4831f6"/>
             <Line Type="bytes" Address="0x0243487e" Value="41c74424186f12833a"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+			  Name="Disable Camera Auto Rotation via Movement"
+			  Note="Disables the camera from auto rotating when you move your character around, manual camera movement and lock-on still work."
+			  Author="Imedved, Kyo"
+			  PatchVer="1.0"
+		 	  AppVer="01.09"
+			  AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x0183c6e8" Value="909090909090909090"/>
+            <Line Type="bytes" Address="0x0183c984" Value="909090909090909090"/>
+            <Line Type="bytes" Address="0x0183dde6" Value="909090909090909090"/>
+            <Line Type="bytes" Address="0x0183c870" Value="909090909090909090"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
