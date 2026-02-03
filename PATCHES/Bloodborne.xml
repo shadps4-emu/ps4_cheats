@@ -726,8 +726,6 @@
 			<Line Type="bytes" Address="0x01972A7D" Value="C745D06F12833A"/>
 		    <Line Type="bytes" Address="0x026b90c5" Value="c745c880070000"/>
             <Line Type="bytes" Address="0x026b90cc" Value="c745cc38040000"/>
-			<Line Type="bytes32" Address="0x0553ae80" Value="0x00000001"/>
-            <Line Type="bytes32" Address="0x0553ae84" Value="0x00000001"/>
             <Line Type="bytes" Address="0x01F009F7" Value="EB"/>
             <Line Type="bytes" Address="0x01F00693" Value="909090909090"/>
             <Line Type="bytes" Address="0x02B00690" Value="C68558FFFF7FFF"/>
