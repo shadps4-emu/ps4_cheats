@@ -932,6 +932,18 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+              Name="1080p Light Grid (READ NOTES)"
+			  Note="1920x1080 light grid size for DynamicLightGrid Performance increase. Only usable with Debug Menu Rendering System GUIWidget under at the moment, you can find it under [Graphics > GFX > Rendering SystemGUIWidget]"
+              Author="xzy and auser1337"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+        	<Line Type="bytes" Address="0x026b90c5" Value="c745c880070000"/>
+       		<Line Type="bytes" Address="0x026b90cc" Value="c745cc38040000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
               Name="Resolution Patch (560p)"
               Note="Lowest it can go without the target HP bar being invisible."
               Author="Ashen"
@@ -1013,42 +1025,6 @@
 			<Line Type="bytes" Address="0x026b90cc" Value="c745cc84030000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000640"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000384"/>
-            <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5c" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5d" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a44c68" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c69" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6a" Value="90"/>
-            <Line Type="bytes" Address="0x01a44c6b" Value="90"/>
-            <Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
-            <Line Type="bytes" Address="0x01a452cc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cd" Value="90"/>
-            <Line Type="bytes" Address="0x01a452ce" Value="90"/>
-            <Line Type="bytes" Address="0x01a452cf" Value="90"/>
-            <Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
-            <Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
-            <Line Type="bytes" Address="0x01a452da" Value="90"/>
-            <Line Type="bytes" Address="0x01a452db" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dc" Value="90"/>
-            <Line Type="bytes" Address="0x01a452dd" Value="90"/>
-        </PatchList>
-    </Metadata>
-    <Metadata Title="Bloodborne"
-              Name="Resolution Patch (1920x1080) (16:9)"
-			  Note="Somewhat redundant as 1080p is the default resolution of the game, but it includes the 1920x1080 scale for light grid."
-              Author="xzy and auser1337"
-              PatchVer="1.0"
-              AppVer="01.09"
-              AppElf="eboot.bin">
-        <PatchList>
-        	<Line Type="bytes" Address="0x026b90c5" Value="c745c880070000"/>
-       		<Line Type="bytes" Address="0x026b90cc" Value="c745cc38040000"/>
-    		<Line Type="bytes32" Address="0x055289f8" Value="0x00000780"/>
-        	<Line Type="bytes32" Address="0x055289fc" Value="0x00000438"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
             <Line Type="bytes" Address="0x01a44c5a" Value="90"/>
             <Line Type="bytes" Address="0x01a44c5b" Value="90"/>
