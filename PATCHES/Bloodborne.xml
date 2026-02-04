@@ -932,7 +932,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="1080p Light Grid (READ NOTES)"
-			  Note="1920x1080 light grid size for DynamicLightGrid Performance increase. Only usable with Debug Menu Rendering System GUIWidget under at the moment, you can find it under [Graphics > GFX > Rendering SystemGUIWidget]"
+			  Note="1920x1080 light grid size for DynamicLightGrid Performance increase. Currently only usable with Debug Menu Rendering System GUIWidget, you can find it in the debug menu under [Graphics > GFX > Rendering SystemGUIWidget]"
               Author="xzy and auser1337"
               PatchVer="1.0"
               AppVer="01.09"
