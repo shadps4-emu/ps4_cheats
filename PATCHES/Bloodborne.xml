@@ -688,7 +688,6 @@
             <Line Type="bytes" Address="0x026b2f58" Value="60000000"/>
             <Line Type="bytes" Address="0x0270f140" Value="60000000"/>
             <Line Type="bytes" Address="0x0271d230" Value="60000000"/>
-            <Line Type="bytes" Address="0x04DCF670" Value="4B0079006F0073006B00690000000000"/>
             <Line Type="bytes" Address="0x05522750" Value="01"/>
             <Line Type="bytes" Address="0x0553B310" Value="00"/>
             <Line Type="bytes" Address="0x0553AC90" Value="01"/>
