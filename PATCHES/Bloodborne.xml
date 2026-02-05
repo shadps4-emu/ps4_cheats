@@ -1239,6 +1239,46 @@
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
         </PatchList>
     </Metadata>
+	<Metadata Title="Bloodborne"
+          Name="Resolution Patch (5120x2160) (5K2K / 21:9 ~2.37)"
+          Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 8000 to 12000."
+          Author="xzy, auser1337 and ollieatkinson"
+          PatchVer="1.0"
+          AppVer="01.09"
+          AppElf="eboot.bin"
+          isEnabled="true">
+    <PatchList>
+        	<Line Type="bytes" Address="0x026b90c5" Value="c745c800140000"/>
+        	<Line Type="bytes" Address="0x026b90cc" Value="c745cc70080000"/>
+        	<Line Type="bytes32" Address="0x055289f8" Value="0x00001400"/> <!-- 5120 -->
+        	<Line Type="bytes32" Address="0x055289fc" Value="0x00000870"/> <!-- 2160 -->
+        	<Line Type="bytes" Address="0x0183a35d" Value="26b41740"/>
+        	<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
+        	<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
+        	<Line Type="bytes" Address="0x01a44c5b" Value="90"/>
+        	<Line Type="bytes" Address="0x01a44c5c" Value="90"/>
+        	<Line Type="bytes" Address="0x01a44c5d" Value="90"/>
+        	<Line Type="bytes" Address="0x01a44c5e" Value="c4e1fa2ac8"/>
+        	<Line Type="bytes" Address="0x01a44c63" Value="b838040000"/>
+        	<Line Type="bytes" Address="0x01a44c68" Value="90"/>
+       	 	<Line Type="bytes" Address="0x01a44c69" Value="90"/>
+        	<Line Type="bytes" Address="0x01a44c6a" Value="90"/>
+        	<Line Type="bytes" Address="0x01a44c6b" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452c7" Value="b880070000"/>
+        	<Line Type="bytes" Address="0x01a452cc" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452cd" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452ce" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452cf" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452d0" Value="c4e1fa2ac8"/>
+        	<Line Type="bytes" Address="0x01a452d5" Value="b838040000"/>
+        	<Line Type="bytes" Address="0x01a452da" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452db" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452dc" Value="90"/>
+        	<Line Type="bytes" Address="0x01a452dd" Value="90"/>
+        	<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+        	<Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
+    	</PatchList>
+	</Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch (3840x1080) (32:9 ~3.55)"
               Note="Requires you to set a custom amount of additional Dmem in the game-specific settings, recommended amount is in between 6000 to 8000. As the game wasn't made to be played at aspect ratio different than 16:9 some issues may appear (mostly UI related), a mod (called Ultrawide UI Fixes) to workaround that issue is available on Nexusmods."
