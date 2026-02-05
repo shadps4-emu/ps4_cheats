@@ -43,7 +43,7 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="50% Text scale"
-			  Note="Smaller text, looks good on higher resolutions." 
+			  Note="Smaller text, looks good on higher resolutions.\nIf you want to try other resolution values: \n 90%:6666663F \n80%:CDCC4C3F \n70%:3333333F \n60%:9A99193F \n50%:0000003F" 
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
