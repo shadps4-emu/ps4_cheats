@@ -1250,8 +1250,8 @@
     <PatchList>
         	<Line Type="bytes" Address="0x026b90c5" Value="c745c800140000"/>
         	<Line Type="bytes" Address="0x026b90cc" Value="c745cc70080000"/>
-        	<Line Type="bytes32" Address="0x055289f8" Value="0x00001400"/> <!-- 5120 -->
-        	<Line Type="bytes32" Address="0x055289fc" Value="0x00000870"/> <!-- 2160 -->
+        	<Line Type="bytes32" Address="0x055289f8" Value="0x00001400"/>
+        	<Line Type="bytes32" Address="0x055289fc" Value="0x00000870"/>
         	<Line Type="bytes" Address="0x0183a35d" Value="26b41740"/>
         	<Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
         	<Line Type="bytes" Address="0x01a44c5a" Value="90"/>
