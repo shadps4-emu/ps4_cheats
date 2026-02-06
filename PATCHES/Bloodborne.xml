@@ -49,6 +49,13 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
+	    <Metadata Title="Bloodborne" Name="FMOD Crash Fix" Note="May unintentionally prevent some sound playback?" Author="Dasaav" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin" isEnabled="true">
+	        <PatchList>
+	            <Line Type="bytes" Address="0x01122534" Value="4989c8498d4d086681bdc8fcfffffe1f777e41898084000000"/>
+	            <Line Type="bytes32" Address="0x11f3e4d" Value="0x00000170"/>
+	            <Line Type="bytes32" Address="0x11f3eab" Value="0x00000118"/>
+	        </PatchList>
+	    </Metadata>
             <Line Type="bytes" Address="0x04D2913C" Value="0000003F"/>
         </PatchList>
     </Metadata>
