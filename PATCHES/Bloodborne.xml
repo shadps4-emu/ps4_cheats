@@ -379,7 +379,7 @@
     <Metadata Title="Bloodborne" 
 		      Name="Restore Debug Menu (READ NOTES)" 
 		      Author="Whitehawkx, auser1337" 
-		      Note="This patch requires debug font files, It will crash without them. Access the menu by pressing left side of touchpad. " 
+		      Note="This patch requires debug font files, which is available from nexusmods. It will crash without them. Access the menu by pressing left side of touchpad. " 
 		      PatchVer="1.0" 
 		      AppVer="01.09" 
 		      AppElf="eboot.bin">
