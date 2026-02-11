@@ -752,6 +752,20 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+			  Name="Increased camera distance"
+			  Note="Playercam further away from player."
+			  Author="Kyo"
+			  PatchVer="1.0"
+		 	  AppVer="01.09"
+			  AppElf="eboot.bin">
+        <PatchList>
+			<Line Type="bytes" Address="0x01836940" Value="30c990"/>
+			<Line Type="bytes" Address="0x05527a94" Value="00"/>
+			<Line Type="bytes" Address="0x0184107f" Value="c7430412270000"/>
+			<Line Type="bytes" Address="0x018410b1" Value="c7430812270000"/>
+		</PatchList>
+	</Metadata>
+    <Metadata Title="Bloodborne"
               Name="Unlock Game Region"
               Note="Unlocks the game region to support additional language options, switches the X and Circle buttons"
               Author="Lance McDonald (manfightdragon)"
