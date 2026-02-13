@@ -723,6 +723,8 @@
             <Line Type="bytes" Address="0x026c8722" Value="41c6877629000001c6402801"/>
             <Line Type="bytes" Address="0x026c876c" Value="41c6877729000000c6402801"/>
             <Line Type="bytes" Address="0x026c87b6" Value="41c6877b29000000c6402801"/>
+			<Line Type="bytes" Address="0x02695CB6" Value="C783A878000080070000"/>
+			<Line Type="bytes" Address="0x02695CC0" Value="C783AC78000038040000"/>
             <Line Type="bytes" Address="0x00fd34bf" Value="c644085000"/>
 			<Line Type="bytes" Address="0x01D13E0F" Value="48B90500000002000000"/>
 			<Line Type="bytes" Address="0x01D13E1D" Value="C7402C0000A040"/>
@@ -980,14 +982,41 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="1080p Light Grid (READ NOTES)"
-			  Note="1920x1080 light grid size for DynamicLightGrid Performance increase. Currently only usable with Debug Menu Rendering System GUIWidget, you can find it in the debug menu under [Graphics > GFX > Rendering SystemGUIWidget]"
-              Author="xzy and auser1337"
+			  Note="Increases performance by lowering Light grid draw calls. USE VERSION THAT MATCHES YOUR WINDOW/FULLSCREEN  RESOLUTION, NOT RENDER RESOLUTION PATCH."
+              Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-        	<Line Type="bytes" Address="0x026b90c5" Value="c745c880070000"/>
-       		<Line Type="bytes" Address="0x026b90cc" Value="c745cc38040000"/>
+		    <Line Type="bytes" Address="0x02695CB6" Value="C783A878000080070000"/>
+		    <Line Type="bytes" Address="0x02695CC0" Value="C783AC78000038040000"/>
+		    <Line Type="bytes" Address="0x053CF640" Value="31003000380030007000000000000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="1440p Light Grid (READ NOTES)"
+			  Note="Increases performance by lowering Light grid draw calls. USE VERSION THAT MATCHES YOUR WINDOW/FULLSCREEN  RESOLUTION, NOT RENDER RESOLUTION PATCH."
+              Author="Kyo"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+		    <Line Type="bytes" Address="0x02695CB6" Value="C783A8780000000A0000"/>
+		    <Line Type="bytes" Address="0x02695CC0" Value="C783AC780000A0050000"/>
+		    <Line Type="bytes" Address="0x053CF640" Value="31003400340030007000000000000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="4k Light Grid (READ NOTES)"
+			  Note="Increases performance by lowering Light grid draw calls. USE VERSION THAT MATCHES YOUR WINDOW/FULLSCREEN RESOLUTION, NOT RENDER RESOLUTION PATCH."
+              Author="Kyo"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+		    <Line Type="bytes" Address="0x02695CB6" Value="C783A8780000000F0000"/>
+		    <Line Type="bytes" Address="0x02695CC0" Value="C783AC78000070080000"/>
+		    <Line Type="bytes" Address="0x053CF640" Value="34006B00000000000000000000000000"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -998,8 +1027,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c884030000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cc30020000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x000003E4"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000230"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1033,8 +1060,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c800050000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745ccd0020000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000500"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x000002d0"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1068,8 +1093,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c840060000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cc84030000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000640"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000384"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1104,8 +1127,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c8000a0000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cca0050000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000A00"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x000005A0"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1142,8 +1163,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c8000f0000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cc70080000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000F00"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000870"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1180,8 +1199,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c800050000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cc20030000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000500"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000320"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1217,8 +1234,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c8000a0000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cc38040000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000A00"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000438"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1256,8 +1271,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c8700d0000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cca0050000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000D70"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x000005A0"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1296,8 +1309,6 @@
           AppElf="eboot.bin"
           isEnabled="true">
     <PatchList>
-        	<Line Type="bytes" Address="0x026b90c5" Value="c745c800140000"/>
-        	<Line Type="bytes" Address="0x026b90cc" Value="c745cc70080000"/>
         	<Line Type="bytes32" Address="0x055289f8" Value="0x00001400"/>
         	<Line Type="bytes32" Address="0x055289fc" Value="0x00000870"/>
         	<Line Type="bytes" Address="0x0183a35d" Value="26b41740"/>
@@ -1335,8 +1346,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c8000f0000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745cc38040000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000F00"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000438"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
@@ -1374,8 +1383,6 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026b90c5" Value="c745c800050000"/>
-			<Line Type="bytes" Address="0x026b90cc" Value="c745ccc0030000"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000500"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x000003C0"/>
             <Line Type="bytes" Address="0x01a44c55" Value="b880070000"/>
