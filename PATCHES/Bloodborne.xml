@@ -723,6 +723,9 @@
             <Line Type="bytes" Address="0x026c8722" Value="41c6877629000001c6402801"/>
             <Line Type="bytes" Address="0x026c876c" Value="41c6877729000000c6402801"/>
             <Line Type="bytes" Address="0x026c87b6" Value="41c6877b29000000c6402801"/>
+            <Line Type="bytes" Address="0x00fd34bf" Value="c644085000"/>
+			<Line Type="bytes" Address="0x01D13E0F" Value="48B90500000002000000"/>
+			<Line Type="bytes" Address="0x01D13E1D" Value="C7402C0000A040"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -765,6 +768,55 @@
 			<Line Type="bytes" Address="0x018410b1" Value="c7430812270000"/>
 		</PatchList>
 	</Metadata>
+    <Metadata Title="Bloodborne" 
+              Name="No Rally Decay" 
+              Note="Rally doesn't decay" 
+              Author="Kyo" 
+              PatchVer="1.0" 
+              AppVer="01.09" 
+              AppElf="eboot.bin">
+        <PatchList>
+			<Line Type="bytes32" Address="0x05527B10" Value="0x00000000"/>
+			<Line Type="bytes32" Address="0x05527B14" Value="0x00000000"/>
+			<Line Type="bytes32" Address="0x05527B0C" Value="0x00000000"/>
+			<Line Type="bytes32" Address="0x05527B18" Value="0x41200000"/>
+			<Line Type="bytes" Address="0x05952D74" Value="01"/>
+			<Line Type="bytes" Address="0x05952D75" Value="01"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne" 
+              Name="Player No Dead (Read note)" 
+              Note="Can take damage but never drop below 1hp. (baby mode)" 
+              Author="Kyo" 
+              PatchVer="1.0" 
+              AppVer="01.09" 
+              AppElf="eboot.bin">
+        <PatchList>
+			<Line Type="bytes32" Address="0x0593E888" Value="0x00000001"/>
+        </PatchList>
+    </Metadata>
+	<Metadata Title="Bloodborne" 
+              Name="Player Stealth (Read note)" 
+              Note="Enemies do not see or react to you (unless attacked)" 
+              Author="Kyo" 
+              PatchVer="1.0" 
+              AppVer="01.09" 
+              AppElf="eboot.bin">
+        <PatchList>
+			<Line Type="bytes" Address="0x0593E88E" Value="01"/>
+        </PatchList>
+    </Metadata>
+	<Metadata Title="Bloodborne" 
+              Name="Player Silent (Read note)" 
+              Note="Enemies do not hear you but can still see you." 
+              Author="Kyo" 
+              PatchVer="1.0" 
+              AppVer="01.09" 
+              AppElf="eboot.bin">
+        <PatchList>
+			<Line Type="bytes" Address="0x0593E88F" Value="01"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="Bloodborne"
               Name="Unlock Game Region"
               Note="Unlocks the game region to support additional language options, switches the X and Circle buttons"
