@@ -899,7 +899,7 @@
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-            <Line Type="bytes" Address="0x023b9190" Value="b805000000c3"/>
+            <Line Type="bytes" Address="0x023b9190" Value="b801000000c3"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
