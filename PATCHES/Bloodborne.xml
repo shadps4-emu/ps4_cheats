@@ -893,13 +893,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Unlock Game Region"
-              Note="Unlocks the game region to support additional language options, switches the X and Circle buttons"
-              Author="Lance McDonald (manfightdragon)"
+              Note="Unlocks the game region to support additional language options, Doesn't switch the X and Circle buttons"
+              Author="Lance McDonald (manfightdragon), Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin">
         <PatchList>
-            <Line Type="bytes" Address="0x023b9190" Value="b801000000c3"/>
+            <Line Type="bytes" Address="0x023b9190" Value="b805000000c3"/>
+			<Line Type="bytes" Address="0x023B8730" Value="31C0C3909090909090909090909090"/>
+			<Line Type="bytes" Address="0x01C2C890" Value="31C0C3909090909090909090909090"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
