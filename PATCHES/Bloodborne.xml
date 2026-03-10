@@ -1036,6 +1036,7 @@
 			<Line Type="bytes" Address="0x026C4C6F" Value="00"/>
 			<Line Type="bytes" Address="0x026C4FD7" Value="00"/>
 			<Line Type="bytes" Address="0x026C4660" Value="00"/>
+			<Line Type="bytes" Address="0x026C4F76" Value="01"/>
 			<Line Type="bytes" Address="0x019550F1" Value="41c745580000a041"/>
 			<Line Type="bytes" Address="0x019550F9" Value="41c7455c0000c841"/>
 			<Line Type="bytes" Address="0x01955101" Value="41c7456000004040"/>
