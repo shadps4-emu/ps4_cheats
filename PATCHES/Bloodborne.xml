@@ -104,7 +104,7 @@
     </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Model LOD 2 (Lowest)" 
-              Note="Lowest model detail, ce increase. Affects visuals, lower Model LOD." 
+              Note="Lowest model detail, performance increase. Affects visuals, lower Model LOD." 
               Author="Kyo, auser1337" 
               PatchVer="1.0" 
               AppVer="01.09" 
@@ -115,7 +115,7 @@
     </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Model LOD 1 (Lower)" 
-              Note="Slightly lower model detail, ce increase. Affects visuals, lower Model LOD." 
+              Note="Slightly lower model detail, performance increase. Affects visuals, lower Model LOD." 
               Author="Kyo, auser1337" 
               PatchVer="1.0" 
               AppVer="01.09" 
@@ -126,7 +126,7 @@
     </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Model LOD -2 (Highest)" 
-              Note="Highest model detail, ce increase. Affects visuals, Higher model LOD." 
+              Note="Highest model detail, performance increase. Affects visuals, Higher model LOD." 
               Author="Kyo, auser1337" 
               PatchVer="1.0" 
               AppVer="01.09" 
