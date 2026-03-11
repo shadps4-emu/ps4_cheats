@@ -66,7 +66,7 @@
     </Metadata>
 	<Metadata Title="Bloodborne"
 			  Name="Enable Screen Space Reflections (READ NOTE)"
-			  Note="This will DECREASE performance, BUT it enables SSR, very nice reflections on reflective surfaces, was never in the base game but can be enabled through debug functions."
+			  Note="This will DECREASE ce, BUT it enables SSR, very nice reflections on reflective surfaces, was never in the base game but can be enabled through debug functions."
 			  Author="Kyo"
 			  PatchVer="1.0"
 			  AppVer="01.09"
@@ -104,7 +104,7 @@
     </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Model LOD 2 (Lowest)" 
-              Note="Lowest model detail, performance increase. Affects visuals, lower Model LOD." 
+              Note="Lowest model detail, ce increase. Affects visuals, lower Model LOD." 
               Author="Kyo, auser1337" 
               PatchVer="1.0" 
               AppVer="01.09" 
@@ -115,7 +115,7 @@
     </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Model LOD 1 (Lower)" 
-              Note="Slightly lower model detail, performance increase. Affects visuals, lower Model LOD." 
+              Note="Slightly lower model detail, ce increase. Affects visuals, lower Model LOD." 
               Author="Kyo, auser1337" 
               PatchVer="1.0" 
               AppVer="01.09" 
@@ -126,7 +126,7 @@
     </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Model LOD -2 (Highest)" 
-              Note="Highest model detail, performance increase. Affects visuals, Higher model LOD." 
+              Note="Highest model detail, ce increase. Affects visuals, Higher model LOD." 
               Author="Kyo, auser1337" 
               PatchVer="1.0" 
               AppVer="01.09" 
@@ -959,7 +959,6 @@
             <Line Type="bytes" Address="0x026b2f58" Value="60000000"/>
             <Line Type="bytes" Address="0x0270f140" Value="60000000"/>
             <Line Type="bytes" Address="0x0271d230" Value="60000000"/>
-            <Line Type="bytes" Address="0x04DCF670" Value="4B0079006F0073006B00690000000000"/>
             <Line Type="bytes" Address="0x05522750" Value="01"/>
             <Line Type="bytes" Address="0x0553B310" Value="00"/>
             <Line Type="bytes" Address="0x0553AC90" Value="01"/>
@@ -1012,8 +1011,8 @@
             <Line Type="bytes" Address="0x04B35030" Value="1E000000"/>
             <Line Type="bytes" Address="0x01D13E0F" Value="48B90A00000014000000"/>
             <Line Type="bytes" Address="0x01D13E1D" Value="C7402C0000A041"/>
-            <Line Type="bytes" Address="0x026C107A" Value="C7435C000000FF"/>
-            <Line Type="bytes" Address="0x026C5369" Value="C7405C000000FF"/>
+			<Line Type="bytes" Address="0x026C107A" Value="C7435C00050AFF"/>
+			<Line Type="bytes" Address="0x026C5369" Value="C7405C00050AFF"/>
             <Line Type="bytes" Address="0x023E4D96" Value="9090909090"/>
             <Line Type="bytes" Address="0x024EE2A9" Value="E80A2BAD00"/>
             <Line Type="bytes" Address="0x026C2538" Value="00"/>
