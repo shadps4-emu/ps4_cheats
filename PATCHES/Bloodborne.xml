@@ -66,7 +66,7 @@
     </Metadata>
 	<Metadata Title="Bloodborne"
 			  Name="Enable Screen Space Reflections (READ NOTE)"
-			  Note="This will DECREASE ce, BUT it enables SSR, very nice reflections on reflective surfaces, was never in the base game but can be enabled through debug functions."
+			  Note="This will DECREASE performance, BUT it enables SSR, very nice reflections on reflective surfaces, was never in the base game but can be enabled through debug functions."
 			  Author="Kyo"
 			  PatchVer="1.0"
 			  AppVer="01.09"
