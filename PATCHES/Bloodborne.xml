@@ -1828,13 +1828,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 2560x1440 (16:9)"
-              Note="2560x1440 resolution with proper lock-on/enemy/ally hp bar coordinates."
+              Note="2560x1440 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin"
               isEnabled="false">
         <PatchList>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
             <Line Type="bytes" Address="0x0183A35D" Value="398EE33F"/>
@@ -1905,15 +1907,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 3840x2160 (16:9)"
-              Note="3840x2160 resolution with proper lock-on/enemy/ally hp bar coordinates."
+              Note="3840x2160 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin"
               isEnabled="false">
         <PatchList>
-            <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
-            <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
             <Line Type="bytes" Address="0x0183A35D" Value="398EE33F"/>
@@ -2169,13 +2171,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 2560x1600 (16:10)"
-              Note="2560x1600 resolution with proper lock-on/enemy/ally hp bar coordinates."
+              Note="2560x1600 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin"
               isEnabled="false">
         <PatchList>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
             <Line Type="bytes" Address="0x0183A35D" Value="CDCCCC3F"/>
@@ -2261,13 +2265,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 2560x1080 (21:9)"
-              Note="2560x1080 resolution with proper lock-on/enemy/ally hp bar coordinates."
+              Note="2560x1080 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin"
               isEnabled="false">
         <PatchList>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
             <Line Type="bytes" Address="0x0183A35D" Value="26B41740"/>
@@ -2350,13 +2356,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 3440x1440 (21:9)"
-              Note="3440x1440 resolution with proper lock-on/enemy/ally hp bar coordinates."
+              Note="3440x1440 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin"
               isEnabled="false">
         <PatchList>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
             <Line Type="bytes" Address="0x0183A35D" Value="8EE31840"/>
@@ -2440,13 +2448,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 5120x2160 (21:9)"
-              Note="5120x2160 resolution with proper lock-on/enemy/ally hp bar coordinates."
+              Note="5120x2160 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin"
               isEnabled="false">
         <PatchList>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
             <Line Type="bytes" Address="0x0183A35D" Value="26B41740"/>
@@ -2529,13 +2539,15 @@
     </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 3840x1080 (32:9)"
-              Note="3840x1080 resolution with proper lock-on/enemy/ally hp bar coordinates."
+              Note="3840x1080 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin"
               isEnabled="false">
         <PatchList>
+			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
+            <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
             <Line Type="bytes" Address="0x0183A35D" Value="398E6340"/>
