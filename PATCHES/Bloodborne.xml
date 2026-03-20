@@ -1104,7 +1104,7 @@
 			<Line Type="bytes32" Address="0x05527B10" Value="0x00000000"/>
 			<Line Type="bytes32" Address="0x05527B14" Value="0x00000000"/>
 			<Line Type="bytes32" Address="0x05527B0C" Value="0x00000000"/>
-			<Line Type="bytes32" Address="0x05527B18" Value="0x4000"/>
+			<Line Type="bytes32" Address="0x05527B18" Value="0x41200000"/>
 			<Line Type="bytes" Address="0x05952D74" Value="01"/>
 			<Line Type="bytes" Address="0x05952D75" Value="01"/>
         </PatchList>
