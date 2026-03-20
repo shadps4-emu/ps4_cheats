@@ -1376,6 +1376,68 @@
             <Line Type="bytes32" Address="0x0235855D" Value="0x000438B9"/>
             <Line Type="bytes32" Address="0x02358561" Value="0x401F0F00"/>
             <Line Type="bytes8" Address="0x02358565" Value="0x00"/>
+            <Line Type="bytes32" Address="0x019E83AF" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x019E83B3" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x019E83B7" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01FFD491" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x01FFD495" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01FFD499" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01FFD4D1" Value="0x000438B8"/>
+            <Line Type="bytes32" Address="0x01FFD4D5" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01FFD4D9" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01A44357" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x01A4435B" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01A4435F" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01A44C55" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x01A44C59" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01A44C5D" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01A452C7" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x01A452CB" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01A452CF" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01A44365" Value="0x000438B8"/>
+            <Line Type="bytes32" Address="0x01A44369" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01A4436D" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01A44C63" Value="0x000438B8"/>
+            <Line Type="bytes32" Address="0x01A44C67" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01A44C6B" Value="0x00"/>
+            <Line Type="bytes32" Address="0x01A452D5" Value="0x000438B8"/>
+            <Line Type="bytes32" Address="0x01A452D9" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x01A452DD" Value="0x00"/>
+            <Line Type="bytes32" Address="0x0212C674" Value="0x000780BE"/>
+            <Line Type="bytes32" Address="0x0212C678" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x0212C67C" Value="0x00"/>
+            <Line Type="bytes32" Address="0x0241848F" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x02418493" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x02418497" Value="0x00"/>
+            <Line Type="bytes32" Address="0x02438BB9" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x02438BBD" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x02438BC1" Value="0x00"/>
+            <Line Type="bytes32" Address="0x02438F59" Value="0x000780B8"/>
+            <Line Type="bytes32" Address="0x02438F5D" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x02438F61" Value="0x00"/>
+            <Line Type="bytes32" Address="0x0212C6A4" Value="0x000438BE"/>
+            <Line Type="bytes32" Address="0x0212C6A8" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x0212C6AC" Value="0x00"/>
+            <Line Type="bytes32" Address="0x02418498" Value="0x000438B9"/>
+            <Line Type="bytes32" Address="0x0241849C" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x024184A0" Value="0x00"/>
+            <Line Type="bytes32" Address="0x02438BC7" Value="0x000438B8"/>
+            <Line Type="bytes32" Address="0x02438BCB" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x02438BCF" Value="0x00"/>
+            <Line Type="bytes32" Address="0x02438F67" Value="0x000438B8"/>
+            <Line Type="bytes32" Address="0x02438F6B" Value="0x401F0F00"/>
+            <Line Type="bytes8" Address="0x02438F6F" Value="0x00"/>
+            <Line Type="bytes32" Address="0x04D26EA4" Value="0x44F00000"/>
+            <Line Type="bytes32" Address="0x04D26EA8" Value="0x44870000"/>
+            <Line Type="bytes32" Address="0x04CF9A00" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9A10" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9A14" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9A60" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9A70" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9A74" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9AD0" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9AE0" Value="0x3F000000"/>
+            <Line Type="bytes32" Address="0x04CF9AE4" Value="0x3F000000"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
