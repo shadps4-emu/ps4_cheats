@@ -23,7 +23,7 @@
     </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Performance Patch [READ NOTE]" 
-              Note="Modifies some of the games debug menu parameters, automatically applying them for better performance. Some of them do not trigger until the debug menu render GUI initialization. Meaning you need the debug menu patch active, and you need to open the Rendering System GUIWidget under [Graphics > GFX > Rendering SystemGUIWidget]" 
+              Note="Modifies some of the games debug menu parameters, automatically applying them for better performance." 
               Author="Kyo" 
               PatchVer="1.0" 
               AppVer="01.09" 
