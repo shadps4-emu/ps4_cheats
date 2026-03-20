@@ -204,7 +204,7 @@
 	</Metadata>
 	<Metadata Title="Bloodborne"
 			  Name="FMOD Crash Fix"
-			  Note="May unntionally prevent some sound playback?"
+			  Note="May unintionally prevent some sound playback?"
 			  Author="Dasaav"
 			  PatchVer="1.0"
 			  AppVer="01.09"
