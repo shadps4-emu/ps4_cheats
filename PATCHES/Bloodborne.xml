@@ -114,6 +114,7 @@
             <Line Type="bytes" Address="0x026A283F" Value="9090909090"/>
             <Line Type="bytes" Address="0x026AB335" Value="9090909090"/>
             <Line Type="bytes" Address="0x026AB381" Value="9090909090"/>
+			<Line Type="bytes" Address="0x025843e5" Value="909090909090"/>
             <Line Type="bytes" Address="0x01264606" Value="E9D00B000090"/>
             <Line Type="bytes" Address="0x026AB34E" Value="EB"/>
             <Line Type="bytes" Address="0x0126445C" Value="EB78"/>
@@ -203,7 +204,7 @@
 	</Metadata>
 	<Metadata Title="Bloodborne"
 			  Name="FMOD Crash Fix"
-			  Note="May unintentionally prevent some sound playback?"
+			  Note="May unntionally prevent some sound playback?"
 			  Author="Dasaav"
 			  PatchVer="1.0"
 			  AppVer="01.09"
@@ -272,7 +273,7 @@
               AppVer="01.09" 
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x026AB381" Value="9090909090"/>
+			<Line Type="bytes" Address="0x025843e5" Value="909090909090"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
