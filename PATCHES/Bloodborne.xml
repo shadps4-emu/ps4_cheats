@@ -22,8 +22,8 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
-              Name="Performance Patch [READ NOTE]" 
-              Note="Modifies some of the games debug parameters for better performance." 
+              Name="Performance Patch (perf increase)" 
+              Note="Modifies some of the games debug parameters for better performance, will probably affect some visuals." 
               Author="Kyo" 
               PatchVer="1.0" 
               AppVer="01.09" 
