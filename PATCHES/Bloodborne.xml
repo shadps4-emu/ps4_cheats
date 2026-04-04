@@ -1384,8 +1384,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
@@ -1471,8 +1470,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
@@ -1548,8 +1546,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
@@ -1625,8 +1622,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
@@ -1702,8 +1698,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
@@ -1779,8 +1774,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
@@ -1856,8 +1850,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -1935,8 +1928,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2014,8 +2006,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
@@ -2107,8 +2098,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
 			<Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2211,8 +2201,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2305,8 +2294,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2396,8 +2384,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2487,8 +2474,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2578,8 +2564,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
             <Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2670,8 +2655,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
 			<Line Type="bytes" Address="0x04b36dda" Value="00f7"/>
 			<Line Type="bytes" Address="0x04b36de2" Value="00a0"/>
@@ -2762,8 +2746,7 @@
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
-              AppElf="eboot.bin"
-              isEnabled="false">
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
             <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
