@@ -2663,6 +2663,96 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+              Name="Resolution Patch 3840x1080 (32:9)"
+              Note="3840x1080 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem in game-specific settings."
+              Author="Kyo"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin"
+              isEnabled="false">
+        <PatchList>
+        <Line Type="bytes32" Address="0x055289f8" Value="0x00000280"/>
+        <Line Type="bytes32" Address="0x055289fc" Value="0x00000168"/>
+        <Line Type="bytes" Address="0x0183A35D" Value="398E6340"/>
+        <Line Type="bytes32" Address="0x02196A6B" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x02196A6F" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02196A73" Value="00"/>
+        <Line Type="bytes32" Address="0x02358554" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x02358558" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x0235855C" Value="00"/>
+        <Line Type="bytes32" Address="0x02196A7A" Value="0x0005A0B8"/>
+        <Line Type="bytes32" Address="0x02196A7E" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02196A82" Value="00"/>
+        <Line Type="bytes32" Address="0x0235855D" Value="0x0005A0B9"/>
+        <Line Type="bytes32" Address="0x02358561" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02358565" Value="00"/>
+        <Line Type="bytes32" Address="0x019E83AF" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x019E83B3" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x019E83B7" Value="00"/>
+        <Line Type="bytes32" Address="0x01FFD491" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x01FFD495" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01FFD499" Value="00"/>
+        <Line Type="bytes32" Address="0x01FFD4D1" Value="0x0005A0B8"/>
+        <Line Type="bytes32" Address="0x01FFD4D5" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01FFD4D9" Value="00"/>
+        <Line Type="bytes32" Address="0x01A44357" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x01A4435B" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01A4435F" Value="00"/>
+        <Line Type="bytes32" Address="0x01A44C55" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x01A44C59" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01A44C5D" Value="00"/>
+        <Line Type="bytes32" Address="0x01A452C7" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x01A452CB" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01A452CF" Value="00"/>
+        <Line Type="bytes32" Address="0x01A44365" Value="0x0005A0B8"/>
+        <Line Type="bytes32" Address="0x01A44369" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01A4436D" Value="00"/>
+        <Line Type="bytes32" Address="0x01A44C63" Value="0x0005A0B8"/>
+        <Line Type="bytes32" Address="0x01A44C67" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01A44C6B" Value="00"/>
+        <Line Type="bytes32" Address="0x01A452D5" Value="0x0005A0B8"/>
+        <Line Type="bytes32" Address="0x01A452D9" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x01A452DD" Value="00"/>
+        <Line Type="bytes16" Address="0x01FFD473" Value="0x9066"/>
+        <Line Type="bytes16" Address="0x01FFD4CF" Value="0x9066"/>
+        <Line Type="bytes16" Address="0x01A54DD9" Value="0x9066"/>
+        <Line Type="bytes16" Address="0x01A54E1A" Value="0x9066"/>
+        <Line Type="bytes32" Address="0x01A4140A" Value="0x00401F0F"/>
+        <Line Type="bytes32" Address="0x0212C674" Value="0x001400BE"/>
+        <Line Type="bytes32" Address="0x0212C678" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x0212C67C" Value="00"/>
+        <Line Type="bytes32" Address="0x0241848F" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x02418493" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02418497" Value="00"/>
+        <Line Type="bytes32" Address="0x02438BB9" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x02438BBD" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02438BC1" Value="00"/>
+        <Line Type="bytes32" Address="0x02438F59" Value="0x001400B8"/>
+        <Line Type="bytes32" Address="0x02438F5D" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02438F61" Value="00"/>
+        <Line Type="bytes32" Address="0x0212C6A4" Value="0x0005A0BE"/>
+        <Line Type="bytes32" Address="0x0212C6A8" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x0212C6AC" Value="00"/>
+        <Line Type="bytes32" Address="0x02418498" Value="0x0005A0B9"/>
+        <Line Type="bytes32" Address="0x0241849C" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x024184A0" Value="00"/>
+        <Line Type="bytes32" Address="0x02438BC7" Value="0x0005A0B8"/>
+        <Line Type="bytes32" Address="0x02438BCB" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02438BCF" Value="00"/>
+        <Line Type="bytes32" Address="0x02438F67" Value="0x0005A0B8"/>
+        <Line Type="bytes32" Address="0x02438F6B" Value="0x401F0F00"/>
+        <Line Type="bytes" Address="0x02438F6F" Value="00"/>
+        <Line Type="bytes32" Address="0x04D26EA4" Value="0x45A00000"/>
+        <Line Type="bytes32" Address="0x04D26EA8" Value="0x44B40000"/>
+        <Line Type="bytes32" Address="0x04CF9A00" Value="0x3F000000"/>
+        <Line Type="bytes32" Address="0x04CF9A10" Value="0x3E800000"/>
+        <Line Type="bytes32" Address="0x04CF9A60" Value="0x3F000000"/>
+        <Line Type="bytes32" Address="0x04CF9A70" Value="0x3E800000"/>
+        <Line Type="bytes32" Address="0x04CF9AD0" Value="0x3F000000"/>
+        <Line Type="bytes32" Address="0x04CF9AE0" Value="0x3E800000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
               Name="Resolution Patch 1280x960 (4:3)"
               Note="1280x960 resolution with proper lock-on/enemy/ally hp bar coordinates."
               Author="Kyo"
