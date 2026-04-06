@@ -514,6 +514,11 @@
             <Line Type="bytes" Address="0x04d2728c" Value="8988083D"/>
             <Line Type="bytes" Address="0x04D25E94" Value="8988083C"/>
             <Line Type="bytes" Address="0x04D25E68" Value="CDCCCC3C"/>
+            <Line Type="bytes" Address="0x02434FA8" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FAC" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB0" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB4" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB8" Value="89F8FFFF"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
@@ -613,6 +618,11 @@
             <Line Type="bytes" Address="0x04d2728c" Value="8988083D"/>
             <Line Type="bytes" Address="0x04D25E94" Value="8988083C"/>
             <Line Type="bytes" Address="0x04D25E68" Value="CDCCCC3C"/>
+            <Line Type="bytes" Address="0x02434FA8" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FAC" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB0" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB4" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB8" Value="89F8FFFF"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
@@ -712,6 +722,11 @@
             <Line Type="bytes" Address="0x04d2728c" Value="8988083D"/>
             <Line Type="bytes" Address="0x04D25E94" Value="8988083C"/>
             <Line Type="bytes" Address="0x04D25E68" Value="CDCCCC3C"/>
+            <Line Type="bytes" Address="0x02434FA8" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FAC" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB0" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB4" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB8" Value="89F8FFFF"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -811,6 +826,11 @@
             <Line Type="bytes" Address="0x04d2728c" Value="8988083D"/>
             <Line Type="bytes" Address="0x04D25E94" Value="8988083C"/>
             <Line Type="bytes" Address="0x04D25E68" Value="CDCCCC3C"/>
+            <Line Type="bytes" Address="0x02434FA8" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FAC" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB0" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB4" Value="89F8FFFF"/>
+            <Line Type="bytes" Address="0x02434FB8" Value="89F8FFFF"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
