@@ -575,7 +575,7 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
-              Name="60 FPS++ (no deltatime)" 
+              Name="60FPS (no deltatime)" 
               Note="Just timesteps, no deltatime. Cloth, corpses, etc, won't 'jump' if you lag or stutter, but game speed might slow if you drop below 60 fps."
               Author="Kyo" 
               PatchVer="1.0" 
