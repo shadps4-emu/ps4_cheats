@@ -1452,6 +1452,17 @@
 			<Line Type="bytes" Address="0x05952D75" Value="01"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Disable Rally (HP Regain)"
+              Note="Disables Rally"
+              Author="Kyo"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x01966AEC" Value="41B601"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="Bloodborne" 
               Name="Player No Dead (Read note)" 
               Note="Can take damage but never drop below 1hp. (baby mode)" 
@@ -1494,17 +1505,6 @@
               AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0X04D27714" Value="9A99993F"/>
-        </PatchList>
-    </Metadata>
-    <Metadata Title="Bloodborne"
-              Name="Disable Rally (HP Regain)"
-              Note="Disables Rally"
-              Author="Kyo"
-              PatchVer="1.0"
-              AppVer="01.09"
-              AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes" Address="0x01966AEC" Value="41B601"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
