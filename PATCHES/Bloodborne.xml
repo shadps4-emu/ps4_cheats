@@ -1497,6 +1497,17 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+              Name="Disable Rally (HP Regain)"
+              Note="Disables Rally"
+              Author="Kyo"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x01966AEC" Value="41B601"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
               Name="Unlock Game Region"
               Note="Unlocks the game region to support additional language options, Doesn't switch the X and Circle buttons"
               Author="Lance McDonald (manfightdragon), Kyo"
