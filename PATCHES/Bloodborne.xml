@@ -2990,8 +2990,8 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
-              Name="Resolution Patch 5180x1440 (32:9)"
-              Note="5180x1440 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem +8000mb or so in game-specific settings."
+              Name="Resolution Patch 5120x1440 (32:9)"
+              Note="5120x1440 resolution with proper lock-on/enemy/ally hp bar coordinates. Remember to increase dmem +8000mb or so in game-specific settings."
               Author="Kyo"
               PatchVer="1.0"
               AppVer="01.09"
