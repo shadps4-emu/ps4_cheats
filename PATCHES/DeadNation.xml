@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA00176</ID>
+    </TitleID>
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="60 FPS" Note="Unlocks 60 FPS and keeps game speed in sync." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x01088296" Value="be00000000"/>
+            <Line Type="bytes" Address="0x010a78ac" Value="c745bc03000000"/>
+            <Line Type="bytes" Address="0x010b00f9" Value="f605d87df30001909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Balanced Lighting" Note="Trims a few lighting passes with little visual impact." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x0085a932" Value="4183ff04"/>
+            <Line Type="bytes" Address="0x0085a93c" Value="4183fc03"/>
+            <Line Type="bytes" Address="0x0085ad56" Value="4183fc04"/>
+            <Line Type="bytes" Address="0x0085af42" Value="4183fc03"/>
+            <Line Type="bytes" Address="0x0085afb3" Value="4183fc03"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Reduced Auxiliary Rendering" Note="Skips an auxiliary render pass for a small performance gain." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x00851925" Value="9090909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
