@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01715</ID>
+    </TitleID>
+
+    <Metadata Title="God of War III Remastered" Name="Skip Intro" Note="Skips the initial logos. Thanks to illusion0001 aka illusionyy for the PS3 patch which made this very easy." Author="cuesta4" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00584940" Value="eb34"/>
+            <Line Type="bytes" Address="0x004c8430" Value="c7051e0e9b0101000000b801000000c3"/>
+            <Line Type="bytes" Address="0x0041b36a" Value="e8216f1f00"/>
+            <Line Type="bytes" Address="0x00612290" Value="c705be6f860101000000e9e129eaff"/>
+        </PatchList>
+    </Metadata>
+
+    <Metadata Title="God of War III Remastered" Name="Skip Any Video With X Button" Note="Allows manual skipping of cinematics any cinematic with the X button. Thanks to illusion0001 aka illusionyy for the PS3 patch which made this very easy." Author="cuesta4" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x0041b2a3" Value="7542"/>
+            <Line Type="bytes" Address="0x0041b2e7" Value="b901000000909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
