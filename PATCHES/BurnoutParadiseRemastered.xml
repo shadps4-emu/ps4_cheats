@@ -10,7 +10,7 @@
               Author="DanielSvoboda" 
               PatchVer="1.0" 
               AppVer="01.03" 
-              AppElf="eboot.bin"
+              AppElf="eboot.bin">
         <PatchList>
             <Line Type="bytes" Address="0x815DCA" Value="909090909090"/>	<!-- EAFRANCHISE, CRITERION -->
             <Line Type="bytes" Address="0x868310" Value="9090909090"/>		<!-- INTRO -->
