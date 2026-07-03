@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA03365</ID>
+        <ID>CUSA03388</ID>
+    </TitleID>
+    <Metadata Title="Dark Souls III"
+              Name="Resolution 640×360"
+              Author="DanielSvoboda"
+              PatchVer="1.0"
+              AppVer="01.15"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x4E1EFB0" Value="8002000068010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dark Souls III"
+              Name="Resolution 1280×720"
+              Author="DanielSvoboda"
+              PatchVer="1.0"
+              AppVer="01.15"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x4E1EFB0" Value="00050000d0020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dark Souls III"
+              Name="Resolution 1600×900"
+              Author="DanielSvoboda"
+              PatchVer="1.0"
+              AppVer="01.15"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x4E1EFB0" Value="4006000084030000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dark Souls III"
+              Name="Resolution 3840x2160"
+              Author="DanielSvoboda"
+              PatchVer="1.0"
+              AppVer="01.15"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x4E1EFB0" Value="000F000070080000"/>
+        </PatchList>
+    </Metadata>
+</Patch>
