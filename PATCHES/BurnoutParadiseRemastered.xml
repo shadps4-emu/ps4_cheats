@@ -13,10 +13,10 @@
               AppElf="eboot.bin">
         <PatchList>
             <!-- EAFRANCHISE, CRITERION -->
-            <Line Type="bytes" Address="0x815DCA" Value="909090909090"/>	
+            <Line Type="bytes" Address="0x815ECA" Value="909090909090"/>	
             <!-- INTRO -->
-            <Line Type="bytes" Address="0x868310" Value="9090909090"/>
-            <Line Type="bytes" Address="0x868411" Value="41C744245002000000"/>
+            <Line Type="bytes" Address="0x868420" Value="9090909090"/>
+            <Line Type="bytes" Address="0x868521" Value="41C744245002000000"/>
         </PatchList>
     </Metadata>
 </Patch>
