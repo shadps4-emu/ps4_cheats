@@ -3,7 +3,7 @@
     <TitleID>
         <ID>CUSA03365</ID>
         <ID>CUSA03388</ID>
-        <ID>CUSA07339</ID>        
+        <ID>CUSA07339</ID>
     </TitleID>
     <Metadata Title="Dark Souls III"
               Name="Resolution 640×360"
@@ -36,13 +36,24 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Dark Souls III"
-              Name="Resolution 3840x2160"
-              Author="DanielSvoboda"
+    		  Name="Resolution 2560×1440"
+    		  Author="DanielSvoboda"
+    		  PatchVer="1.0"
+    		  AppVer="01.15"
+    		  AppElf="eboot.bin">
+    	<PatchList>
+    		<Line Type="bytes" Address="0x4E1EFB0" Value="000A0000A0050000"/>
+    	</PatchList>
+    </Metadata>
+    <Metadata Title="Dark Souls III"
+              Name="Top Menu Debug"
+              Note="Hidden Pause Menu, on the right side"
+              Author="Whitehawkx, DanielSvoboda"
               PatchVer="1.0"
               AppVer="01.15"
               AppElf="eboot.bin">
         <PatchList>
-            <Line Type="bytes" Address="0x4E1EFB0" Value="000F000070080000"/>
+            <Line Type="bytes" Address="0x1392943" Value="b201"/>
         </PatchList>
     </Metadata>
 </Patch>
