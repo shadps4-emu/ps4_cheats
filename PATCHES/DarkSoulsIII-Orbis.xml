@@ -56,4 +56,15 @@
             <Line Type="bytes" Address="0x1392943" Value="b201"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Dark Souls III"
+              Name="Developer Debug Menu"
+              Note="Left touchpad to open"
+              Author="Whitehawkx, DanielSvoboda"
+              PatchVer="1.0"
+              AppVer="01.15"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x1C01BD7" Value="01"/>
+        </PatchList>
+    </Metadata>
 </Patch>
