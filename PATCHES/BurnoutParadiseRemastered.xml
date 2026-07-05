@@ -5,8 +5,7 @@
         <ID>CUSA10866</ID>		
     </TitleID>
     <Metadata Title="Burnout Paradise Remastered" 
-              Name="Skip Logo Videos and Intro" 
-              Note="The intro videos freeze at the end in ShadPs4, so this patch skips them." 
+              Name="Skip Logo Videos" 
               Author="DanielSvoboda" 
               PatchVer="1.0" 
               AppVer="01.03" 
@@ -14,6 +13,16 @@
         <PatchList>
             <!-- EAFRANCHISE, CRITERION -->
             <Line Type="bytes" Address="0x815ECA" Value="909090909090"/>	
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Burnout Paradise Remastered" 
+              Name="Skip Intro" 
+              Note="Logo and intro videos freeze at the end in ShadPs4 versions prior to 0.17.0, so this patch skips them." 
+              Author="DanielSvoboda" 
+              PatchVer="1.0" 
+              AppVer="01.03" 
+              AppElf="eboot.bin">
+        <PatchList>
             <!-- INTRO -->
             <Line Type="bytes" Address="0x868420" Value="9090909090"/>
             <Line Type="bytes" Address="0x868521" Value="41C744245002000000"/>
