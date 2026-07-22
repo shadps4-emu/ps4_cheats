@@ -3116,6 +3116,8 @@
             <Line Type="bytes32" Address="0x04CF9AD0" Value="0x3F000000"/>
             <Line Type="bytes32" Address="0x04CF9AE0" Value="0x3F000000"/>
             <Line Type="bytes32" Address="0x04CF9AE4" Value="0x3EC00000"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="Bloodborne"
               Name="Resolution Patch 1440x1080 (4:3)"
               Note="1440x1080 resolution with proper lock-on/enemy/ally hp bar coordinates."
