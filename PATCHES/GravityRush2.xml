@@ -12,13 +12,6 @@
             <Line Type="bytes" Address="0x14cc590" Value="c705be41a50000000000"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Gravity Rush 2" Name="Fix corrupted video borders (right + bottom)" Note="Removes the green/garbage borders on in-game movies. The vdec2 gate changes the requested decoder type from Software2 (3) to Software (2)." Author="junminlee2004" PatchVer="2.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
-        <PatchList>
-            <Line Type="bytes" Address="0x1519823" Value="83e1c090"/>
-            <Line Type="bytes" Address="0x1519ab2" Value="4183e7c0"/>
-            <Line Type="bytes" Address="0x1518886" Value="02"/>
-        </PatchList>
-    </Metadata>
     <Metadata Title="Gravity Rush 2" Name="gnf readiness check (random crash fix)" Note="Fixes a random crash in the GNF texture-descriptor validator. When that function is handed a descriptor that is null or whose first dword is not the 'GNF ' magic, it falls through to an int 0x41 trap and the game crashes. This redirects the validator's two call sites through a small guard stub placed in code-segment padding at 0x1828b00: the stub returns to the caller early when the descriptor is null or lacks the 'GNF ' magic." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x1828b00" Value="4885f6740d813e474e46207505e98e01dfffc3"/>
