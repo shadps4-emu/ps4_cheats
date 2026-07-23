@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA00694</ID>
+    </TitleID>
+    <Metadata Title="Journey" Name="Resolution 640×360" Author="Toccata" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1669254" Value="8002000068010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Journey" Name="Resolution 1280×720" Author="Toccata" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1669254" Value="00050000d0020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Journey" Name="Resolution 1600×900" Author="Toccata" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1669254" Value="4006000084030000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Journey" Name="Resolution 2560×1440" Author="Toccata" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1669254" Value="000a0000a0050000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Journey" Name="Resolution 3840x2160" Author="Toccata" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1669254" Value="000f000070080000"/>
+        </PatchList>
+    </Metadata>
+</Patch>
