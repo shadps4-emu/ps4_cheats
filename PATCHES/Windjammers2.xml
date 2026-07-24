@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA15640</ID>
+    </TitleID>
+    <Metadata Title="Windjammers 2" Name="Resolution 640×360" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x407b79" Value="8002000068010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Windjammers 2" Name="Resolution 1280x720" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x407b79" Value="00050000d0020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Windjammers 2" Name="Resolution 2560x1440" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x407b79" Value="000a0000a0050000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Windjammers 2" Name="Resolution 3840x2160" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x407b79" Value="000f000070080000"/>
+        </PatchList>
+    </Metadata>
+</Patch>
