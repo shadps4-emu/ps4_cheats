@@ -19,4 +19,70 @@
             <Line Type="bytes" Address="0x13e37c3" Value="e838534400"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: half pedestrian density" Note="Halves the ambient overworld crowd - pedestrians, birds and patrol robots - to about 59% of stock density; enable only one density toggle." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1828c00" Value="ffc7d1efffc6d1ee4889bc24a8000000e963f289ff"/>
+            <Line Type="bytes" Address="0x10c7e70" Value="e98b0d7600909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: quarter pedestrian density" Note="Cuts the ambient overworld crowd to about 35% of stock density; enable only one density toggle." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1828c40" Value="83c703c1ef0283c603c1ee024889bc24a8000000e91ff289ff"/>
+            <Line Type="bytes" Address="0x10c7e70" Value="e9cb0d7600909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: minimum pedestrian density (one per spawn point)" Note="Leaves exactly one actor at each spawn point, about 29.5% of stock, without emptying any spawn point; enable only one density toggle." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1828c80" Value="b80100000083ff010f4ff883fe010f4ff04889bc24a8000000e9daf189ff"/>
+            <Line Type="bytes" Address="0x10c7e70" Value="e90b0e7600909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: sparse pedestrians (crowd points only)" Note="Keeps only the busier spawn points, at one actor each (about 12% of stock), which can remove NPCs a side mission expects - free roam only; enable only one density toggle." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1828cc0" Value="83ff047c17bf01000000be010000004889bc24a8000000e99cf189ffe91ff789ff"/>
+            <Line Type="bytes" Address="0x10c7e70" Value="e94b0e7600909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: no ambient crowds at all" Note="Removes every ambient pedestrian, bird and patrol robot, including ones missions rely on - benchmarking and free roam only; enable only one density toggle." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x10c7e70" Value="e98b050000909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: disable dynamic shadows" Note="Stops real-time casters being drawn into the shadow cascades, removing most shadow rendering cost while leaving static and baked shadows intact." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x13f8ca0" Value="eb32"/>
+            <Line Type="bytes" Address="0x17b911b" Value="eb29"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: half particle density (smoke, dust, debris)" Note="Halves the live particle count of every effect in the game, mainly thinning combat smoke and dust; enable only one particle-density toggle." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x0759e6a" Value="0fb6c88b4730d1e880f9ff7402ffc089473090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: quarter particle density" Note="Leaves every effect a quarter of its particles; enable only one particle-density toggle." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x0759e6a" Value="0fb6c88b4730c1e80280f9ff7402ffc0894730"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: halve FX capacity budget" Note="Halves the effect system's global pools, which also shrinks the per-frame GPU work that is sized from capacity rather than from how much is actually on screen." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x14ba606" Value="48b80040010000c00000"/>
+            <Line Type="bytes" Address="0x14ba69e" Value="c78580feffff00030000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: disable transparent particles (smoke, dust)" Note="Skips the transparent particle layer - smoke, dust and sparks - saving both draw calls and a lot of overdraw." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x143caea" Value="e92503000090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: disable heat-haze distortion" Note="Skips the refraction shimmer on fire, explosions and gravity rifts." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x143b99e" Value="e91301000090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Gravity Rush 2" Name="Performance: disable background water surfaces" Note="Skips the background water pass for a fill-rate gain; fountain and prop water still draws." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x143bbe7" Value="e96d03000090"/>
+        </PatchList>
+    </Metadata>
 </Patch>
