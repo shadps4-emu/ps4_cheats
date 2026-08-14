@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA00552</ID>
+        <ID>CUSA00556</ID>
+        <ID>CUSA00557</ID>
+        <ID>CUSA00559</ID>
+    </TitleID>
+    <Metadata Title="The Last of Us Remastered" Name="Remove 2-second frame time assert" Note="WaitOnContextDone (ndgi-orbis-device.cpp:2209) halts the game via int 0x41 if a frame takes over 2.00 seconds. NOPs the ja into the halt block so the wait loop keeps spinning until the frame completes; its normal completion exit is unchanged." Author="junminlee2004" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0xd92862" Value="9090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="Remove 2-second frame time assert" Note="WaitOnContextDone (ndgi-orbis-device.cpp:2209) halts the game via int 0x41 if a frame takes over 2.00 seconds. NOPs the ja into the halt block so the wait loop keeps spinning until the frame completes; its normal completion exit is unchanged." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0xf3d88f" Value="9090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
