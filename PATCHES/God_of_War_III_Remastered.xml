@@ -2,6 +2,7 @@
 <Patch>
     <TitleID>
         <ID>CUSA01715</ID>
+        <ID>CUSA01623</ID>
     </TitleID>
 
     <Metadata Title="God of War III Remastered" Name="Skip Intro" Note="Skips the initial logos. Thanks to illusion0001 aka illusionyy for the PS3 patch which made this very easy." Author="cuesta4" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
