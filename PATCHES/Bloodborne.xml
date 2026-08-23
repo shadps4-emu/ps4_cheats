@@ -3210,4 +3210,16 @@
             <Line Type="bytes32" Address="0x04CF9AE4" Value="0x3EC00000"/>
         </PatchList>
     </Metadata>
+	<Metadata Title="Bloodborne"
+			  Name="Auto-Refill From Storage on Any Area Refresh/Reload"
+		      Note="Automatically replenishes eligible consumables from your storage whenever any area is refreshed/reloaded. Lowers your storage inventory the same as the vanilla game, without requiring you to die or return to the Hunter's Dream every time. Uses Bloodborne's native auto-refill-from-storage system. NO free items--just a QoL patch."
+		      Author="johnnycoax"
+		      PatchVer="1.0"
+		      AppVer="01.09"
+		      AppElf="eboot.bin"
+		      isEnabled="true">
+        <PatchList>
+            <Line Type="bytes" Address="0x01d398b1" Value="eb26909090909090"/>
+        </PatchList>
+    </Metadata>
 </Patch>
