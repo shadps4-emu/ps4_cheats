@@ -3217,7 +3217,7 @@
 		      PatchVer="1.0"
 		      AppVer="01.09"
 		      AppElf="eboot.bin"
-		      isEnabled="true">
+		      isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x01d398b1" Value="eb26909090909090"/>
         </PatchList>
