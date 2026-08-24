@@ -5,7 +5,7 @@
         <ID>CUSA01715</ID>
     </TitleID>
 
-    <Metadata Title="God of War III Remastered" Name="Resolution Patch (2560x1440)" Note="Forces the base PS4 internal render-target hierarchy and output resolution to 2560x1440 without enabling PS4 Pro/Neo mode. Expands the fixed video arena by 512 MiB. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="God of War III Remastered" Name="Resolution Patch (2560x1440)" Note="Forces the base PS4 internal render target hierarchy and output resolution to 2560x1440 without enabling PS4 Pro/Neo mode. Expands the fixed video arena by 512 MiB. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x005f0c5b" Value="000a0000"/>
             <Line Type="bytes" Address="0x005f0c63" Value="a0050000"/>
@@ -19,7 +19,7 @@
         </PatchList>
     </Metadata>
 
-    <Metadata Title="God of War III Remastered" Name="120 FPS (Correct Delta Time)" Note="Raises the engine maximum framerate from 59.94 to 120 FPS so the frametime clamp produces a 1/120-second gameplay delta. Requires the title-specific shadPS4 VBlank frequency to be set to 120. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="God of War III Remastered" Name="120 FPS (Correct Delta Time)" Note="Raises the engine maximum framerate from 59.94 to 120 FPS so the frametime clamp produces a 1/120 second gameplay delta. Requires the title specific shadPS4 VBlank frequency to be set to 120. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x0075dd04" Value="0000f042"/>
         </PatchList>
