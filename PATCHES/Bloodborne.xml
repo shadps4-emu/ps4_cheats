@@ -1453,6 +1453,17 @@
             <Line Type="bytes" Address="0X04D27714" Value="9A99993F"/>
         </PatchList>
     </Metadata>
+	<Metadata Title="Bloodborne"
+			  Name="Auto-Refill From Storage on Any Area Refresh/Reload"
+		      Note="Automatically replenishes eligible consumables from your storage whenever any area is refreshed/reloaded. Lowers your storage inventory the same as the vanilla game, without requiring you to die or return to the Hunter's Dream every time. Uses Bloodborne's native auto-refill-from-storage system. NO free items--just a QoL patch."
+		      Author="johnnycoax"
+		      PatchVer="1.0"
+		      AppVer="01.09"
+		      AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x01d398b1" Value="eb26909090909090"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="Bloodborne"
               Name="Unlock Game Region"
               Note="Unlocks the game region to support additional language options, Doesn't switch the X and Circle buttons"
