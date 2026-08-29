@@ -53,4 +53,60 @@
             <Line Type="bytes" Address="0x02cec8ef" Value="909090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect English language" Note="Skips the language selection screen the game shows on every boot and forces English language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 8." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be080000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Swedish language" Note="Skips the language selection screen the game shows on every boot and forces Swedish language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 26." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be1a0000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Finnish language" Note="Skips the language selection screen the game shows on every boot and forces Finnish language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 9." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be090000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect German language" Note="Skips the language selection screen the game shows on every boot and forces German language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 11." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be0b0000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect French language" Note="Skips the language selection screen the game shows on every boot and forces French language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 10." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be0a0000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Czech language" Note="Skips the language selection screen the game shows on every boot and forces Czech language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 4." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be040000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Russian language" Note="Skips the language selection screen the game shows on every boot and forces Russian language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 23." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be170000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
 </Patch>
