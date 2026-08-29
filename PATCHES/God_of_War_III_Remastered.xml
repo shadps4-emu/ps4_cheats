@@ -33,8 +33,9 @@
         </PatchList>
     </Metadata>
 
-    <Metadata Title="God of War III Remastered" Name="120 FPS (Correct Delta Time)" Note="Raises the engine maximum framerate from 59.94 to 120 FPS so the frametime clamp produces a 1/120 second gameplay delta. Requires the title specific shadPS4 VBlank frequency to be set to 120. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="God of War III Remastered" Name="120 FPS (Correct Delta Time)" Note="Raises the engine maximum framerate from 59.94 to 120 FPS so the frametime clamp produces a 1/120 second gameplay delta. Correct swing energy calculations matching the original 60 Hz simulation. Requires the title specific shadPS4 VBlank frequency to be set to 120. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.1" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
+            <Line Type="bytes" Address="0x0048ff0a" Value="488d05e7c22600"/>
             <Line Type="bytes" Address="0x0075dd04" Value="0000f042"/>
         </PatchList>
     </Metadata>
