@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA02168</ID>
+    </TitleID>
+    <Metadata Title="Gran Turismo SPORT" Name="Fix 1.69 update boot crash" Note="Fixes the boot-time ADHOC nil error by delaying boot init 5s so BootSequenceDone fires after ProductBootScreen is ready." Author="Kravickas" PatchVer="1.0" AppVer="01.69" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x0211ab30" Value="e92ba3490090"/>
+            <Line Type="bytes" Address="0x025b4e60" Value="505756525141504151bf404b4c00ff15845e7b0041594158595a5e5f58ff25256f7b00"/>
+        </PatchList>
+    </Metadata>
+</Patch>
