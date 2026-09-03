@@ -30,6 +30,10 @@
               AppVer="01.09" 
               AppElf="eboot.bin">
         <PatchList>
+			<Line Type="bytes" Address="0x02595F89" Value="08000000"/>
+			<Line Type="bytes" Address="0x02595F8E" Value="08000000"/>
+            <Line Type="bytes" Address="0x02196C3A" Value="08000000"/>
+            <Line Type="bytes" Address="0x0259B458" Value="41B80800000090"/>
             <Line Type="bytes" Address="0x0547AED0" Value="09"/>
             <Line Type="bytes" Address="0x0547AEF4" Value="09"/>
             <Line Type="bytes" Address="0x01bfa58e" Value="02"/>
