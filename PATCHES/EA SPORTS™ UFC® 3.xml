@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA06534</ID>
+        <ID>CUSA06536</ID>
+    </TitleID>
+    <Metadata Title="UFC 3" Name="60+ FPS" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 84 24 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b80300000090909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="60+ FPS" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 84 24 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b80300000090909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Fixing the floor in the octagon" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E 63 01 00 00 31" Value="e9640100009031"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Fixing the floor in the octagon" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E 63 01 00 00 31" Value="e9640100009031"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 960x540" Author="Antigravity" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bfc0030000ba1c020000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 1280x720" Author="Antigravity" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf00050000bad0020000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 800x450 (Ultra Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf20030000bac2010000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 640x360 (Extreme Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf80020000ba68010000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 480x270 (Potato Mode)" Author="Antigravity" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bfe0010000ba0e010000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 2560x1440" Author="Antigravity" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf000a0000baa0050000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 960x540" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bfc0030000ba1c020000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 1280x720" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf00050000bad0020000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 800x450 (Ultra Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf20030000bac2010000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 640x360 (Extreme Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf80020000ba68010000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 480x270 (Potato Mode)" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bfe0010000ba0e010000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Resolution 2560x1440" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="B9 80 07 00 00 BF 40 06 00 00 BA 84 03 00 00 0F 45 F9 B9 38 04 00 00 0F 45 D1 89 38" Value="b980070000bf000a0000baa0050000909090b9380400009090908938"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Extreme boost fps (no octagon) BUGS" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" Note="Fighters can fall through the octagon" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="75 47 48 83 EC" Value="eb474883ec"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="No Floor (octagon)" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" Note="Fighters can fall through the octagon" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="80 BD E6 FE FF FF 00 75 54" Value="83bdb0feffff027454"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Extreme boost fps (no octagon) BUGS" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="Fighters can fall through the octagon" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="75 47 48 83 EC" Value="eb474883ec"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="No Floor (octagon)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="Fighters can fall through the octagon" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="80 BD E6 FE FF FF 00 75 54" Value="83bdb0feffff027454"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Disable Crowd (Plus 5-10 fps)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="E8 F3 0F 00 00 48 8B BC" Value="9090909090488bbc"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Disable Crowd (Plus 5-10 fps)" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="E8 F3 0F 00 00 48 8B BC" Value="9090909090488bbc"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Skinning Method 0 (Force CPU)" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 84 24 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b80000000090909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Skinning Method 2 (Force GPU Compute)" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces GPU Compute Skinning. Offloads character mesh processing to compute shaders" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 84 24 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b80200000090909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Skinning Method 0 (Force CPU)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 84 24 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b80000000090909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Skinning Method 2 (Force GPU Compute)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces GPU Compute Skinning. Offloads character mesh processing to compute shaders" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 84 24 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b80200000090909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Disable Motion Blur" Author="Lepexa" PatchVer="1.0" AppVer="01.14" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="48 8D 35 7E B1 A8 01 BA 01 00 00 00 31 C9 E8 43 EC C7 FF" Value="488d357eb1a801ba0100000031c99090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 3" Name="Disable Motion Blur" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="48 8D 35 7E B1 A8 01 BA 01 00 00 00 31 C9 E8 43 EC C7 FF" Value="488d357eb1a801ba0100000031c99090909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
