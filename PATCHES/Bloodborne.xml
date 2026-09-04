@@ -3923,22 +3923,21 @@
             <Line Type="bytes" Address="0x00FF2975" Value="9090909090"/>
             <Line Type="bytes" Address="0x02594AA6" Value="418D4DFF83F97F7718C78424A0000000A0050000C78424A400000038040000EB1E418B8CC480010000898C24A0000000418B8CC484010000898C24A40000004D8DB4C484010000C68424B000000057C78424A80000003C000000C68424AC00000001498B8CC48801000048898C24BC000000C68424C400000003C68424C80000000390"/>
         </PatchList>
-    <Metadata Title="Bloodborne"
-		Name="lower specific renders (Perf Increase)"
-		Note="lowers res of certain renders (Velomap, Glow, ScaledDepth). Gives a perf increase, no visual differences/conflicts unless you enable SSR patch."
-		Author="Kyo"
-		PatchVer="1.0"
-		AppVer="01.09"
-		AppElf="eboot.bin">
-        <PatchList>
-            <Line Type="bytes" Address="0x0125B1A3" Value="C7042450000000"/>
-            <Line Type="bytes" Address="0x0125B1AA" Value="C74424042D00000090"/>
-            <Line Type="bytes" Address="0x0125B1D6" Value="C704245000000090"/>
-            <Line Type="bytes" Address="0x0125B1DE" Value="C74424042D0000009090"/>
-            <Line Type="bytes" Address="0x026C3DE4" Value="B850000000"/>
-            <Line Type="bytes" Address="0x026C3DF0" Value="B82D00000090"/>
-            <Line Type="bytes" Address="0x026C45BA" Value="48B8500000002D0000004889842400020000909090"/>
-        </PatchList>
-    </Metadata>
-    </Metadata>
+	<Metadata Title="Bloodborne"
+			  Name="lower specific renders (Perf Increase)"
+			  Note="lowers res of certain renders (Velomap, Glow, ScaledDepth). Gives a perf increase, no visual differences/conflicts unless you enable SSR patch."
+			  Author="Kyo"
+			  PatchVer="1.0"
+			  AppVer="01.09"
+			  AppElf="eboot.bin">
+		<PatchList>
+			<Line Type="bytes" Address="0x0125B1A3" Value="C7042450000000"/>
+			<Line Type="bytes" Address="0x0125B1AA" Value="C74424042D00000090"/>
+			<Line Type="bytes" Address="0x0125B1D6" Value="C704245000000090"/>
+			<Line Type="bytes" Address="0x0125B1DE" Value="C74424042D0000009090"/>
+			<Line Type="bytes" Address="0x026C3DE4" Value="B850000000"/>
+			<Line Type="bytes" Address="0x026C3DF0" Value="B82D00000090"/>
+			<Line Type="bytes" Address="0x026C45BA" Value="48B8500000002D0000004889842400020000909090"/>
+		</PatchList>
+	</Metadata>
 </Patch>
