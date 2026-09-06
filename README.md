@@ -1,6 +1,6 @@
 # PS4 Cheats and Patches Repository
 
-Official Cheat and Patches used for shadPS4 emulator
+Official Cheats and Patches used for shadPS4 emulator
 
 ## Repository Structure
 
