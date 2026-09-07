@@ -1,9 +1,45 @@
 <?xml version="1.0"?>
 <Patch>
     <TitleID>
+        <ID>CUSA01623</ID>
         <ID>CUSA01715</ID>
         <ID>CUSA01623</ID>
     </TitleID>
+
+    <Metadata Title="God of War III Remastered" Name="Resolution Patch (2560x1440)" Note="Forces the base PS4 internal render target hierarchy and output resolution to 2560x1440 without enabling PS4 Pro/Neo mode. Expands the fixed video arena by 512 MiB. Set Additional DMem Allocation to at least 2000, lower values have not been tested. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x005f0c5b" Value="000a0000"/>
+            <Line Type="bytes" Address="0x005f0c63" Value="a0050000"/>
+            <Line Type="bytes" Address="0x005f0c6c" Value="000a"/>
+            <Line Type="bytes" Address="0x005f0c73" Value="a005"/>
+            <Line Type="bytes" Address="0x005643e3" Value="a0050000"/>
+            <Line Type="bytes" Address="0x005643f0" Value="000a0000"/>
+            <Line Type="bytes" Address="0x005ff889" Value="000a0000"/>
+            <Line Type="bytes" Address="0x005ff88f" Value="a0050000"/>
+            <Line Type="bytes" Address="0x007cd918" Value="00000070"/>
+        </PatchList>
+    </Metadata>
+
+    <Metadata Title="God of War III Remastered" Name="Resolution Patch (3840x2160)" Note="Forces the base PS4 internal render target hierarchy and output resolution to 3840x2160 without enabling PS4 Pro/Neo mode. Expands the fixed video arena to 3.25 GiB. Set Additional DMem Allocation to at least 4000, lower values have not been tested. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x005f0c5b" Value="000f0000"/>
+            <Line Type="bytes" Address="0x005f0c63" Value="70080000"/>
+            <Line Type="bytes" Address="0x005f0c6c" Value="000f"/>
+            <Line Type="bytes" Address="0x005f0c73" Value="7008"/>
+            <Line Type="bytes" Address="0x005643e3" Value="70080000"/>
+            <Line Type="bytes" Address="0x005643f0" Value="000f0000"/>
+            <Line Type="bytes" Address="0x005ff889" Value="000f0000"/>
+            <Line Type="bytes" Address="0x005ff88f" Value="70080000"/>
+            <Line Type="bytes" Address="0x007cd918" Value="000000d0"/>
+        </PatchList>
+    </Metadata>
+
+    <Metadata Title="God of War III Remastered" Name="120 FPS (Correct Delta Time)" Note="Raises the engine maximum framerate from 59.94 to 120 FPS so the frametime clamp produces a 1/120 second gameplay delta. Correct swing energy calculations matching the original 60 Hz simulation. Requires the title specific shadPS4 VBlank frequency to be set to 120. Verified on CUSA01623 v01.02." Author="kvicken" PatchVer="1.1" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x0048ff0a" Value="488d05e7c22600"/>
+            <Line Type="bytes" Address="0x0075dd04" Value="0000f042"/>
+        </PatchList>
+    </Metadata>
 
     <Metadata Title="God of War III Remastered" Name="Skip Intro" Note="Skips the initial logos. Thanks to illusion0001 aka illusionyy for the PS3 patch which made this very easy." Author="cuesta4" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
