@@ -30,8 +30,8 @@
               AppVer="01.09" 
               AppElf="eboot.bin">
         <PatchList>
-			<Line Type="bytes" Address="0x02595F89" Value="08000000"/>
-			<Line Type="bytes" Address="0x02595F8E" Value="08000000"/>
+            <Line Type="bytes" Address="0x02595F89" Value="08000000"/>
+            <Line Type="bytes" Address="0x02595F8E" Value="08000000"/>
             <Line Type="bytes" Address="0x02196C3A" Value="08000000"/>
             <Line Type="bytes" Address="0x0259B458" Value="41B80800000090"/>
             <Line Type="bytes" Address="0x0547AED0" Value="09"/>
@@ -98,6 +98,7 @@
             <Line Type="bytes" Address="0x026C4C6F" Value="00"/>
             <Line Type="bytes" Address="0x026C4FD7" Value="00"/>
             <Line Type="bytes" Address="0x026C4660" Value="00"/>
+            <Line Type="bytes" Address="0x022DD2C6" Value="C7405C000000FF"/>
             <Line Type="bytes" Address="0x026C4649" Value="31C00F1F00"/>
             <Line Type="bytes" Address="0x026C3E43" Value="31C00F1F00"/>
             <Line Type="bytes" Address="0x026C43CA" Value="31C00F1F00"/>
@@ -160,8 +161,8 @@
             <Line Type="bytes" Address="0x00FF37C9" Value="9090909090"/>
             <Line Type="bytes" Address="0x00FF2952" Value="9090909090"/>
             <Line Type="bytes" Address="0x00FF2975" Value="9090909090"/>
-            <Line Type="bytes" Address="0x02594AA6" Value="418D4DFF83F97F7718C78424A000000080020000C78424A400000068010000EB1E418B8CC480010000898C24A0000000418B8CC484010000898C24A40000004D8DB4C484010000C68424B000000057C78424A80000003C000000C68424AC00000001498B8CC48801000048898C24BC000000C68424C400000003C68424C80000000390"/>
-            <Line Type="bytes" Address="0x02594EB0" Value="8B43488D48FF83F97F7712B880020000894328B968010000894B2CEB1A488D0C40418B84CC80010000894328418B8CCC84010000894B2C"/>
+            <Line Type="bytes" Address="0x02594AA6" Value="418D4DFF83F97F7718C78424A000000050000000C78424A40000002D000000EB1E418B8CC480010000898C24A0000000418B8CC484010000898C24A40000004D8DB4C484010000C68424B000000057C78424A80000003C000000C68424AC00000001498B8CC48801000048898C24BC000000C68424C400000003C68424C80000000390"/>
+            <Line Type="bytes" Address="0x02594EB0" Value="8B43488D48FF83F97F7712B850000000894328B92D000000894B2CEB1A488D0C40418B84CC80010000894328418B8CCC84010000894B2C"/>
             <Line Type="bytes" Address="0x02434BD2" Value="9090909090"/>
             <Line Type="bytes" Address="0x0248BAC0" Value="E97B77FDFD9090909090"/>
             <Line Type="bytes" Address="0x00463240" Value="85FF7E1281FF401F00007E05BF401F0000E912CCB502C3"/>
@@ -241,17 +242,17 @@
             <Line Type="bytes" Address="0x02616FFA" Value="EB"/>
             <Line Type="bytes" Address="0x026170C0" Value="EB"/>
             <Line Type="bytes" Address="0x01C31160" Value="BF90D00300"/>
-            <Line Type="bytes" Address="0x023CE1ED" Value="BF00000000"/>
-            <Line Type="bytes" Address="0x025629F0" Value="BF00000000"/>
-            <Line Type="bytes" Address="0x025B69A7" Value="BF00000000"/>
-            <Line Type="bytes" Address="0x023CE3F5" Value="BF00000000"/>
+            <Line Type="bytes" Address="0x023CE1ED" Value="BFD0070000"/>
+            <Line Type="bytes" Address="0x025629F0" Value="BFE8800000"/>
+            <Line Type="bytes" Address="0x025B69A7" Value="BFD0070000"/>
+            <Line Type="bytes" Address="0x023CE3F5" Value="BFD0070000"/>
             <Line Type="bytes" Address="0x0224A709" Value="BF4D010000"/>
-            <Line Type="bytes" Address="0x024BD1C0" Value="BFF4010000"/>
-            <Line Type="bytes" Address="0x024BDD50" Value="BFF4010000"/>
-            <Line Type="bytes" Address="0x024CFB32" Value="BFF4010000"/>
-            <Line Type="bytes" Address="0x024D2D90" Value="BF00000000"/>
-            <Line Type="bytes" Address="0x024D4859" Value="BF00000000"/>
-            <Line Type="bytes" Address="0x023868F0" Value="BFF4010000"/>
+            <Line Type="bytes" Address="0x024BD1C0" Value="BF64000000"/>
+            <Line Type="bytes" Address="0x024BDD50" Value="BF64000000"/>
+            <Line Type="bytes" Address="0x024CFB32" Value="BFC8000000"/>
+            <Line Type="bytes" Address="0x024D2D90" Value="BF64000000"/>
+            <Line Type="bytes" Address="0x024D4859" Value="BF64000000"/>
+            <Line Type="bytes" Address="0x023868F0" Value="BFC8000000"/>
             <Line Type="bytes" Address="0x02F98D55" Value="BF007D0000"/>
             <Line Type="bytes" Address="0x02F98D87" Value="BF007D0000"/>
             <Line Type="bytes" Address="0x014588FC" Value="02000000"/>
@@ -262,6 +263,16 @@
             <Line Type="bytes" Address="0x026C3E43" Value="31C00F1F00"/>
             <Line Type="bytes" Address="0x026C43CA" Value="31C00F1F00"/>
             <Line Type="bytes" Address="0x026C4740" Value="31C00F1F00"/>
+            <Line Type="bytes" Address="0x02451035" Value="00"/>
+            <Line Type="bytes" Address="0x026C1084" Value="01"/>
+            <Line Type="bytes" Address="0x026C4AC6" Value="909090909090"/>
+            <Line Type="bytes" Address="0x026C4984" Value="1A"/>
+            <Line Type="bytes" Address="0x026C4074" Value="1A"/>
+            <Line Type="bytes" Address="0x026C4B6F" Value="1A"/>
+            <Line Type="bytes" Address="0x026C4BF8" Value="1A"/>
+            <Line Type="bytes" Address="0x026C46CD" Value="1A"/>
+            <Line Type="bytes" Address="0x026C45D6" Value="56"/>
+            <Line Type="bytes" Address="0x026C49BA" Value="56"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
@@ -274,6 +285,11 @@
         <PatchList>
             <Line Type="bytes" Address="0x026C1084" Value="01"/>
             <Line Type="bytes" Address="0x026C4AC6" Value="909090909090"/>
+            <Line Type="bytes" Address="0x026C4074" Value="1C"/>
+            <Line Type="bytes" Address="0x026C4B6F" Value="1C"/>
+            <Line Type="bytes" Address="0x026C4BF8" Value="1C"/>
+            <Line Type="bytes" Address="0x026C46CD" Value="1C"/>
+            <Line Type="bytes" Address="0x026C4984" Value="1C"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
