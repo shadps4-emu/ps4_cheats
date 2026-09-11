@@ -273,7 +273,6 @@
             <Line Type="bytes" Address="0x026C46CD" Value="1A"/>
             <Line Type="bytes" Address="0x026C45D6" Value="56"/>
             <Line Type="bytes" Address="0x026C49BA" Value="56"/>
-            <Line Type="bytes" Address="0x026C44F6" Value="55"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
