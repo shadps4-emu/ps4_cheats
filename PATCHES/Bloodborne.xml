@@ -273,6 +273,16 @@
             <Line Type="bytes" Address="0x026C46CD" Value="1A"/>
             <Line Type="bytes" Address="0x026C45D6" Value="56"/>
             <Line Type="bytes" Address="0x026C49BA" Value="56"/>
+            <Line Type="bytes" Address="0x01477470" Value="C3"/>
+            <Line Type="bytes" Address="0x014774F0" Value="C3"/>
+            <Line Type="bytes" Address="0x01477FE0" Value="C3"/>
+            <Line Type="bytes" Address="0x01478060" Value="C3"/>
+            <Line Type="bytes" Address="0x014780E0" Value="C3"/>
+            <Line Type="bytes" Address="0x0148AE10" Value="C3"/>
+            <Line Type="bytes" Address="0x0148AE90" Value="C3"/>
+            <Line Type="bytes" Address="0x0148B6A0" Value="C3"/>
+            <Line Type="bytes" Address="0x0148B720" Value="C3"/>
+            <Line Type="bytes" Address="0x0148B7A0" Value="C3"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
