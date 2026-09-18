@@ -13,7 +13,7 @@
               PatchVer="1.1"
               AppVer="01.07"
               AppElf="eboot.bin"
-              isEnabled="true">
+              isEnabled="false">
         <PatchList>
             <Line Type="mask" Address="55 48 89 E5 41 57 41 56 53 48 83 EC 18 4C 8B 3D ?? ?? ?? ?? 49 89 FE 49 8B 07 48 89 45 E0 49 8B 46" Offset="0" Value="C3"/>
         </PatchList>
