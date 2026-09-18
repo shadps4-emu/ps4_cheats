@@ -3,7 +3,7 @@
     <TitleID>
         <ID>CUSA47038</ID>
     </TitleID>
-    <Metadata Title="Metaphor: ReFantazio" Name="Skip Intro Videos" Note="Skips boot logos and opening movie" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin">
+    <Metadata Title="Metaphor: ReFantazio" Name="Skip Intro Videos" Note="Skips boot logos and opening movie" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x018f7f00" Value="762b29ff"/>
             <Line Type="bytes" Address="0x018f7f04" Value="762b29ff"/>
@@ -14,23 +14,23 @@
             <Line Type="bytes" Address="0x00b87aed" Value="c7430843000000"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Metaphor: ReFantazio" Name="Unlock Regicide" Note="Unlocks Regicide in difficulty select without clear/NG+" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin">
+    <Metadata Title="Metaphor: ReFantazio" Name="Unlock Regicide" Note="Unlocks Regicide in difficulty select without clear/NG+" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x00831f40" Value="b801000000c3"/>
             <Line Type="bytes" Address="0x0093c1dc" Value="909090909090"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Metaphor: ReFantazio" Name="Always Bad Weather" Note="Forces bad weather in battles. Do not combine with Always Clear Weather" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin">
+    <Metadata Title="Metaphor: ReFantazio" Name="Always Bad Weather" Note="Forces bad weather in battles. Do not combine with Always Clear Weather" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x00b7fcd0" Value="b801000000c3"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Metaphor: ReFantazio" Name="Always Clear Weather" Note="Forces clear weather combat rules. Do not combine with Always Bad Weather" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin">
+    <Metadata Title="Metaphor: ReFantazio" Name="Always Clear Weather" Note="Forces clear weather combat rules. Do not combine with Always Bad Weather" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x00b7fcd0" Value="b800000000c3"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Metaphor: ReFantazio" Name="Force 1440p(2k) Render Resolution" Note="Forces 1440p (2K) render resolution. Set Additional DMem Allocation to 2000. Disable if crash post-cutscene" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin">
+    <Metadata Title="Metaphor: ReFantazio" Name="Force 1440p(2k) Render Resolution" Note="Forces 1440p (2K) render resolution. Set Additional DMem Allocation to 2000. Disable if crash post-cutscene" Author="pixelinterest" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x0149c8b5" Value="488dbc24380100004c89742408c7842408010000000a0000c784240c010000a0050000909090909090"/>
             <Line Type="bytes" Address="0x0149cbe9" Value="eb0a000a0000a00500009090488b1defffffff448bbc2434010000"/>
