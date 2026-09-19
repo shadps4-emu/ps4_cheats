@@ -2127,6 +2127,22 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne"
+              Name="anti-Havok"
+              Note="me and my homies HATE havok"
+              Author="Kyo"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x04D00894" Value="CDCC1C41"/>
+            <Line Type="bytes" Address="0x01E4ACAE" Value="E9ED0FEF02909090"/>
+            <Line Type="bytes" Address="0x04D3BCA0" Value="C5F85980B0050000C5F8590540000000E901F010FD"/>
+            <Line Type="bytes" Address="0x04D3BCF0" Value="000080BF000080BF000080BF000080BF"/>
+            <Line Type="bytes" Address="0x01E4B388" Value="E94309EF02909090"/>
+            <Line Type="bytes" Address="0x04D3BCD0" Value="C5F82880B0050000C5F8590510000000E9ABF610FD"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Bloodborne"
               Name="Bookmark and Capture outputs"
               Author="Foxy Hooligans"
               PatchVer="1.0"
