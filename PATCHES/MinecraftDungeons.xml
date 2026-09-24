@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA18797</ID>
+        <ID>CUSA18798</ID>
+        <ID>CUSA18799</ID>
+        <ID>CUSA20141</ID>
+        <ID>CUSA20142</ID>
+    </TitleID>
+    <Metadata Title="Minecraft Dungeons" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.29" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x20426b4" Value="0xb0"/>
+            <Line Type="byte" Address="0x204279b" Value="0x80"/>
+            <Line Type="byte" Address="0x20427cf" Value="0x90"/>
+            <Line Type="byte" Address="0x2042802" Value="0xa0"/>
+            <Line Type="byte" Address="0x6195254" Value="0x80"/>
+            <Line Type="byte" Address="0x6195264" Value="0x90"/>
+            <Line Type="byte" Address="0x6195274" Value="0xa0"/>
+            <Line Type="byte" Address="0x6195284" Value="0xb0"/>
+            <Line Type="byte" Address="0x2036872" Value="0x80"/>
+            <Line Type="byte" Address="0x203688a" Value="0x90"/>
+            <Line Type="byte" Address="0x20368ac" Value="0x80"/>
+            <Line Type="byte" Address="0x20368ad" Value="0x02"/>
+            <Line Type="byte" Address="0x20368be" Value="0x16"/>
+            <Line Type="byte" Address="0x203744b" Value="0x80"/>
+            <Line Type="byte" Address="0x203745a" Value="0x90"/>
+            <Line Type="byte" Address="0x203747c" Value="0x80"/>
+            <Line Type="byte" Address="0x203747d" Value="0x02"/>
+            <Line Type="byte" Address="0x203748e" Value="0x16"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Minecraft Dungeons" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x16110b6" Value="0xb0"/>
+            <Line Type="byte" Address="0x161119b" Value="0x80"/>
+            <Line Type="byte" Address="0x16111c8" Value="0x90"/>
+            <Line Type="byte" Address="0x16111f4" Value="0xa0"/>
+            <Line Type="byte" Address="0x4b2d904" Value="0x80"/>
+            <Line Type="byte" Address="0x4b2d914" Value="0x90"/>
+            <Line Type="byte" Address="0x4b2d924" Value="0xa0"/>
+            <Line Type="byte" Address="0x4b2d934" Value="0xb0"/>
+            <Line Type="byte" Address="0x1604578" Value="0x80"/>
+            <Line Type="byte" Address="0x160459d" Value="0x90"/>
+            <Line Type="byte" Address="0x16045bf" Value="0x80"/>
+            <Line Type="byte" Address="0x16045c0" Value="0x02"/>
+            <Line Type="byte" Address="0x16045d1" Value="0x16"/>
+            <Line Type="byte" Address="0x16052de" Value="0x80"/>
+            <Line Type="byte" Address="0x16052ed" Value="0x90"/>
+            <Line Type="byte" Address="0x160530f" Value="0x80"/>
+            <Line Type="byte" Address="0x1605310" Value="0x02"/>
+            <Line Type="byte" Address="0x1605321" Value="0x16"/>
+        </PatchList>
+    </Metadata>
+</Patch>
