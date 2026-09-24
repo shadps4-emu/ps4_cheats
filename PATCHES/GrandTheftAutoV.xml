@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA00411</ID>
+        <ID>CUSA00419</ID>
+        <ID>CUSA00880</ID>
+    </TitleID>
+    <Metadata Title="Grand Theft Auto V" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.57" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x1d5f602" Value="0x80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Grand Theft Auto V" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x1a689c2" Value="0x80"/>
+        </PatchList>
+    </Metadata>
+</Patch>
