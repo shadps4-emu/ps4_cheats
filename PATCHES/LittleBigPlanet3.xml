@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA00693</ID>
+        <ID>CUSA00762</ID>
+        <ID>CUSA00473</ID>
+        <ID>CUSA00063</ID>
+        <ID>CUSA00810</ID>
+    </TitleID>
+	    <Metadata Title="Little Big Planet 3"
+              Name="Disable DOF"
+              Author="DanielSvoboda"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin"
+              isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1462928" Value="00"/>		
+        </PatchList>
+    </Metadata>	
+</Patch>
