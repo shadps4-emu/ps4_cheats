@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA31345</ID>
+        <ID>CUSA31820</ID>
+    </TitleID>
+    <Metadata Title="The Quarry" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.07" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- 256MB direct map (0x4000000000 -> 0xb000000000) -->
+            <Line Type="byte" Address="0x3163ada" Value="0xb0"/>
+            <Line Type="byte" Address="0x31a7806" Value="0xb0"/>
+            <Line Type="byte" Address="0x31a9106" Value="0xb0"/>
+            <Line Type="byte" Address="0x31a91a4" Value="0xb0"/>
+            <!-- 8GB Pool 1 reserve (0x1000000000 -> 0x8000000000) -->
+            <Line Type="byte" Address="0x3163bff" Value="0x80"/>
+            <Line Type="byte" Address="0x31658a6" Value="0x80"/>
+            <Line Type="byte" Address="0x3182686" Value="0x80"/>
+            <Line Type="byte" Address="0x31a2d35" Value="0x80"/>
+            <Line Type="byte" Address="0x31a5ba0" Value="0x80"/>
+            <Line Type="byte" Address="0x31a76c3" Value="0x80"/>
+            <Line Type="byte" Address="0x31a77a2" Value="0x80"/>
+            <Line Type="byte" Address="0x31a8fd7" Value="0x80"/>
+            <Line Type="byte" Address="0x31a90ae" Value="0x80"/>
+            <Line Type="byte" Address="0x31ab8a6" Value="0x80"/>
+            <!-- 8GB Pool 2 reserve (0x2000000000 -> 0x9000000000) -->
+            <Line Type="byte" Address="0x3163c32" Value="0x90"/>
+            <Line Type="byte" Address="0x31658bc" Value="0x90"/>
+            <Line Type="byte" Address="0x31a2d47" Value="0x90"/>
+            <Line Type="byte" Address="0x31a5bb5" Value="0x90"/>
+            <Line Type="byte" Address="0x31a76d9" Value="0x90"/>
+            <Line Type="byte" Address="0x31a77b1" Value="0x90"/>
+            <Line Type="byte" Address="0x31a8fea" Value="0x90"/>
+            <Line Type="byte" Address="0x31a90bd" Value="0x90"/>
+            <Line Type="byte" Address="0x31ab8b5" Value="0x90"/>
+            <!-- 1GB Pool 3 reserve (0x3000000000 -> 0xa000000000) -->
+            <Line Type="byte" Address="0x3163c68" Value="0xa0"/>
+            <Line Type="byte" Address="0x31a77e9" Value="0xa0"/>
+            <Line Type="byte" Address="0x31a90e9" Value="0xa0"/>
+            <Line Type="byte" Address="0x31a9183" Value="0xa0"/>
+            <!-- Pool table base addresses -->
+            <Line Type="byte" Address="0x66d6204" Value="0x80"/>
+            <Line Type="byte" Address="0x66d6214" Value="0x90"/>
+            <Line Type="byte" Address="0x66d6224" Value="0xa0"/>
+            <Line Type="byte" Address="0x66d6234" Value="0xb0"/>
+            <Line Type="byte" Address="0x66d6244" Value="0xc0"/>
+            <Line Type="byte" Address="0x66d6254" Value="0xd0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Quarry" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- 256MB direct map (0x4000000000 -> 0xb000000000) -->
+            <Line Type="byte" Address="0x3b8064a" Value="0xb0"/>
+            <Line Type="byte" Address="0x3b9c7e1" Value="0xb0"/>
+            <!-- 8GB Pool 1 reserve (0x1000000000 -> 0x8000000000) -->
+            <Line Type="byte" Address="0x3b2f662" Value="0x80"/>
+            <Line Type="byte" Address="0x3b5a9bc" Value="0x80"/>
+            <Line Type="byte" Address="0x3b80788" Value="0x80"/>
+            <Line Type="byte" Address="0x3b9c8e1" Value="0x80"/>
+            <Line Type="byte" Address="0x3b9d055" Value="0x80"/>
+            <Line Type="byte" Address="0x3b9e942" Value="0x80"/>
+            <Line Type="byte" Address="0x3c0283e" Value="0x80"/>
+            <Line Type="byte" Address="0x3c02b61" Value="0x80"/>
+            <Line Type="byte" Address="0x3c030c7" Value="0x80"/>
+            <Line Type="byte" Address="0x3c03530" Value="0x80"/>
+            <Line Type="byte" Address="0x3c03ddf" Value="0x80"/>
+            <Line Type="byte" Address="0x3c03ff1" Value="0x80"/>
+            <Line Type="byte" Address="0x3c064fd" Value="0x80"/>
+            <!-- 8GB Pool 2 reserve (0x2000000000 -> 0x9000000000) -->
+            <Line Type="byte" Address="0x3b475a2" Value="0x90"/>
+            <Line Type="byte" Address="0x3b57222" Value="0x90"/>
+            <Line Type="byte" Address="0x3b5815c" Value="0x90"/>
+            <Line Type="byte" Address="0x3b581be" Value="0x90"/>
+            <Line Type="byte" Address="0x3b806e9" Value="0x90"/>
+            <Line Type="byte" Address="0x3b9c909" Value="0x90"/>
+            <Line Type="byte" Address="0x3b9d11d" Value="0x90"/>
+            <Line Type="byte" Address="0x3b9e8ac" Value="0x90"/>
+            <Line Type="byte" Address="0x3c028b8" Value="0x90"/>
+            <Line Type="byte" Address="0x3c02bbc" Value="0x90"/>
+            <Line Type="byte" Address="0x3c0312c" Value="0x90"/>
+            <Line Type="byte" Address="0x3c035ab" Value="0x90"/>
+            <Line Type="byte" Address="0x3c03e58" Value="0x90"/>
+            <Line Type="byte" Address="0x3c04061" Value="0x90"/>
+            <Line Type="byte" Address="0x3c066b1" Value="0x90"/>
+            <!-- 1GB Pool 3 reserve (0x3000000000 -> 0xa000000000) -->
+            <Line Type="byte" Address="0x3b9c93c" Value="0xa0"/>
+            <!-- Pool table base addresses -->
+            <Line Type="byte" Address="0x7c36d84" Value="0x80"/>
+            <Line Type="byte" Address="0x7c36d94" Value="0x90"/>
+            <Line Type="byte" Address="0x7c36da4" Value="0xa0"/>
+            <Line Type="byte" Address="0x7c36db4" Value="0xb0"/>
+            <Line Type="byte" Address="0x7c36dc4" Value="0xc0"/>
+            <Line Type="byte" Address="0x7c36dd4" Value="0xd0"/>
+        </PatchList>
+    </Metadata>
+</Patch>
