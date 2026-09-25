@@ -13,4 +13,24 @@
             <Line Type="bytes" Address="0x00a966ad" Value="bf0200000089389090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="LEGO Dimensions" Name="Resolution Patch (2560x1440)" Note="Sets internal resolution to 2560x1440\n(default is 1920x1080)" Author="connorh315" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x00b148f8" Value="000a"/>
+            <Line Type="bytes" Address="0x00b14902" Value="a005"/>
+            <Line Type="bytes" Address="0x00b14edc" Value="000a"/>
+            <Line Type="bytes" Address="0x00b14ee3" Value="a005"/>
+            <Line Type="bytes" Address="0x00b14f23" Value="000a"/>
+            <Line Type="bytes" Address="0x00b14f28" Value="a005"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="LEGO Dimensions" Name="Resolution Patch (3840x2160)" Note="Sets internal resolution to 3840x2160\n(default is 1920x1080)" Author="connorh315" PatchVer="1.0" AppVer="01.24" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x00b148f8" Value="000f"/>
+            <Line Type="bytes" Address="0x00b14902" Value="7008"/>
+            <Line Type="bytes" Address="0x00b14edc" Value="000f"/>
+            <Line Type="bytes" Address="0x00b14ee3" Value="7008"/>
+            <Line Type="bytes" Address="0x00b14f23" Value="000f"/>
+            <Line Type="bytes" Address="0x00b14f28" Value="7008"/>
+        </PatchList>
+    </Metadata>
 </Patch>
