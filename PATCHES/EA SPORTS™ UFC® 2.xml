@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01968</ID>
+        <ID>CUSA01990</ID>
+        <ID>CUSA01936</ID>
+    </TitleID>
+    <Metadata Title="UFC 2" Name="60+ FPS" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80300000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="60+ FPS" Author="Lepexa" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80300000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="60+ FPS" Author="Lepexa" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80300000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Fixing the floor in the octagon" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E 4A 01 00 00 45" Value="e94b0100009045"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Fixing the floor in the octagon" Author="Lepexa" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E 4A 01 00 00 45" Value="e94b0100009045"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Fixing the floor in the octagon" Author="Lepexa" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E 4A 01 00 00 45" Value="e94b0100009045"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 960x540" Author="Antigravity" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c74628c003000041c7462c1c020000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245cc003000041c74424601c020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 1280x720" Author="Antigravity" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746280005000041c7462cd0020000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c0005000041c7442460d0020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 800x450 (Ultra Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746282003000041c7462cc2010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c2003000041c7442460c2010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 640x360 (Extreme Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746288002000041c7462c68010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c8002000041c744246068010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 480x270 (Potato Mode)" Author="Antigravity" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c74628e001000041c7462c0e010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245ce001000041c74424600e010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 2560x1440" Author="Antigravity" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00 41 C7 46 30 80 07 00 00 41 C7 46 34 38 04 00 00" Value="41c74628000a000041c7462ca005000041c74630000a000041c74634a0050000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00 41 C7 44 24 58 23 00 00 00 41 C7 44 24 78 80 07 00 00 41 C7 44 24 7C 38 04 00 00" Value="41c744245c000a000041c7442460a005000041c74424582300000041c7442478000a000041c744247ca0050000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 100x100 (Square Potato)" Author="Antigravity" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746286400000041c7462c64000000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c6400000041c744246064000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 960x540" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c74628c003000041c7462c1c020000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245cc003000041c74424601c020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 1280x720" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746280005000041c7462cd0020000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c0005000041c7442460d0020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 800x450 (Ultra Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746282003000041c7462cc2010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c2003000041c7442460c2010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 640x360 (Extreme Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746288002000041c7462c68010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c8002000041c744246068010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 480x270 (Potato Mode)" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c74628e001000041c7462c0e010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245ce001000041c74424600e010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 2560x1440" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00 41 C7 46 30 80 07 00 00 41 C7 46 34 38 04 00 00" Value="41c74628000a000041c7462ca005000041c74630000a000041c74634a0050000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00 41 C7 44 24 58 23 00 00 00 41 C7 44 24 78 80 07 00 00 41 C7 44 24 7C 38 04 00 00" Value="41c744245c000a000041c7442460a005000041c74424582300000041c7442478000a000041c744247ca0050000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 100x100 (Square Potato)" Author="Antigravity" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746286400000041c7462c64000000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c6400000041c744246064000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 960x540" Author="Antigravity" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c74628c003000041c7462c1c020000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245cc003000041c74424601c020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 1280x720" Author="Antigravity" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746280005000041c7462cd0020000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c0005000041c7442460d0020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 800x450 (Ultra Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746282003000041c7462cc2010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c2003000041c7442460c2010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 640x360 (Extreme Performance)" Author="Antigravity" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746288002000041c7462c68010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c8002000041c744246068010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 480x270 (Potato Mode)" Author="Antigravity" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c74628e001000041c7462c0e010000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245ce001000041c74424600e010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 2560x1440" Author="Antigravity" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00 41 C7 46 30 80 07 00 00 41 C7 46 34 38 04 00 00" Value="41c74628000a000041c7462ca005000041c74630000a000041c74634a0050000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00 41 C7 44 24 58 23 00 00 00 41 C7 44 24 78 80 07 00 00 41 C7 44 24 7C 38 04 00 00" Value="41c744245c000a000041c7442460a005000041c74424582300000041c7442478000a000041c744247ca0050000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Resolution 100x100 (Square Potato)" Author="Antigravity" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 C7 46 28 40 06 00 00 41 C7 46 2C 84 03 00 00" Value="41c746286400000041c7462c64000000"/>
+            <Line Type="mask" Address="41 C7 44 24 5C 40 06 00 00 41 C7 44 24 60 84 03 00 00" Value="41c744245c6400000041c744246064000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Disable Crowd (Plus 5-10 FPS)" Author="Lepexa" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="74 78 49 8B 5D" Value="eb78498b5d"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Disable Crowd (Plus 5-10 FPS)" Author="Lepexa" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="74 78 49 8B 5D" Value="eb78498b5d"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Disable Crowd (Plus 5-10 FPS)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="74 78 49 8B 5D" Value="eb78498b5d"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Skinning Method 0 (Force CPU)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80000000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Skinning Method 2 (Force GPU Compute)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces GPU Compute Skinning. Offloads character mesh processing to compute shaders" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80200000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Skinning Method 0 (Force CPU)" Author="Lepexa" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80000000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Skinning Method 2 (Force GPU Compute)" Author="Lepexa" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces GPU Compute Skinning. Offloads character mesh processing to compute shaders" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80200000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Skinning Method 0 (Force CPU)" Author="Lepexa" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80000000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 2" Name="Skinning Method 2 (Force GPU Compute)" Author="Lepexa" PatchVer="1.0" AppVer="01.13" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces GPU Compute Skinning. Offloads character mesh processing to compute shaders" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 86 F0 00 00 00 4C 89 B5 A8 FD FF FF 83 F8 01" Value="b80200000090904c89b5a8fdffff83f801"/>
+        </PatchList>
+    </Metadata>
+</Patch>
