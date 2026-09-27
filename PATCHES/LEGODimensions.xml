@@ -2,6 +2,7 @@
 <Patch>
     <TitleID>
         <ID>CUSA01176</ID>
+        <ID>CUSA00935</ID>
     </TitleID>
     <Metadata Title="LEGO Dimensions" Name="60 FPS" Note="Changes the engine target from 30 FPS to 60 FPS" Author="connorh315" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin">
         <PatchList>
