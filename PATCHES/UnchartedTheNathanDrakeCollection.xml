@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01399</ID>
+        <ID>CUSA02320</ID>
+        <ID>CUSA02343</ID>
+        <ID>CUSA02344</ID>
+        <ID>CUSA02826</ID>
+    </TitleID>
+
+    <!-- Uncharted 1 / Launcher (eboot.bin) -->
+    <!-- 01.00 -->
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 1 / Launcher: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0xd8f504" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 1 / Launcher: Bypass Low Frame Rate Assert" Notes="Removes assertion crash when the frame rate is too low." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x7c6f02" Value="eb"/>
+        </PatchList>
+    </Metadata>
+
+    <!-- 01.02 -->
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 1 / Launcher: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0xd55254" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 1 / Launcher: Bypass Low Frame Rate Assert" Notes="Removes assertion crash when the frame rate is too low." Author="squidbus" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x8d277f" Value="eb"/>
+        </PatchList>
+    </Metadata>
+
+    <!-- Uncharted 2 (big2-ps4_Shipping.elf) -->
+    <!-- 01.00 -->
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 2: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="big2-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1265d4c" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 2: Bypass Low Frame Rate Assert" Notes="Removes assertion crash when the frame rate is too low." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="big2-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x90e248" Value="eb"/>
+        </PatchList>
+    </Metadata>
+
+    <!-- 01.02 -->
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 2: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.02" AppElf="big2-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1450644" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 2: Bypass Low Frame Rate Assert" Notes="Removes assertion crash when the frame rate is too low." Author="squidbus" PatchVer="1.0" AppVer="01.02" AppElf="big2-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0xfd440f" Value="eb"/>
+        </PatchList>
+    </Metadata>
+
+    <!-- Uncharted 3 (big3-ps4_Shipping.elf) -->
+    <!-- 01.00 -->
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 3: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="big3-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x17f90c4" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 3: Bypass Low Frame Rate Assert" Notes="Removes assertion crash when the frame rate is too low." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="big3-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x9052e2" Value="eb"/>
+        </PatchList>
+    </Metadata>
+
+    <!-- 01.02 -->
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 3: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.02" AppElf="big3-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x1ae7924" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 3: Bypass Low Frame Rate Assert" Notes="Removes assertion crash when the frame rate is too low." Author="squidbus" PatchVer="1.0" AppVer="01.02" AppElf="big3-ps4_Shipping.elf" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x123b8bf" Value="eb"/>
+        </PatchList>
+    </Metadata>
+</Patch>
