@@ -16,4 +16,14 @@
             <Line Type="bytes" Address="0xf3d88f" Value="9090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x19175a4" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x193d92c" Value="80"/>
+        </PatchList>
+    </Metadata>
 </Patch>
