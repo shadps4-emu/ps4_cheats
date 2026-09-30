@@ -14,7 +14,6 @@
             <!-- 8GB Pool 1 reserve (0x1000000000 -> 0x8000000000) -->
             <Line Type="byte" Address="0x3163bff" Value="0x80"/>
             <Line Type="byte" Address="0x31658a6" Value="0x80"/>
-            <Line Type="byte" Address="0x3182686" Value="0x80"/>
             <Line Type="byte" Address="0x31a2d35" Value="0x80"/>
             <Line Type="byte" Address="0x31a5ba0" Value="0x80"/>
             <Line Type="byte" Address="0x31a76c3" Value="0x80"/>
@@ -37,7 +36,17 @@
             <Line Type="byte" Address="0x31a77e9" Value="0xa0"/>
             <Line Type="byte" Address="0x31a90e9" Value="0xa0"/>
             <Line Type="byte" Address="0x31a9183" Value="0xa0"/>
-            <!-- Pool table base addresses -->
+            <!-- Pool table base addresses and bounds -->
+            <Line Type="bytes16" Address="0x31659f2" Value="0x0280"/>
+            <Line Type="bytes16" Address="0x31a2d69" Value="0x0280"/>
+            <Line Type="bytes16" Address="0x31a5bee" Value="0x0280"/>
+            <Line Type="bytes16" Address="0x31a79f9" Value="0x0280"/>
+            <Line Type="bytes16" Address="0x31ab8ee" Value="0x0280"/>
+            <Line Type="byte" Address="0x3165a04" Value="0x0b"/>
+            <Line Type="byte" Address="0x31a2d7b" Value="0x0b"/>
+            <Line Type="byte" Address="0x31a5c00" Value="0x0b"/>
+            <Line Type="byte" Address="0x31a7a13" Value="0x0b"/>
+            <Line Type="byte" Address="0x31ab900" Value="0x0b"/>
             <Line Type="byte" Address="0x66d6204" Value="0x80"/>
             <Line Type="byte" Address="0x66d6214" Value="0x90"/>
             <Line Type="byte" Address="0x66d6224" Value="0xa0"/>
