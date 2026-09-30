@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA08308</ID>
+    </TitleID>
+    <Metadata Title="Detroit: Become Human" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.08" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x65c93a" Value="0xb0"/>
+            <Line Type="byte" Address="0x7dd029" Value="0xac"/>
+            <Line Type="byte" Address="0x836106" Value="0x80"/>
+            <Line Type="byte" Address="0xd95312" Value="0x9b"/>
+            <Line Type="byte" Address="0xded277" Value="0x9e"/>
+            <Line Type="byte" Address="0x168364d" Value="0xcf"/>
+            <Line Type="byte" Address="0x17b7a8f" Value="0x89"/>
+        </PatchList>
+    </Metadata>
+</Patch>
