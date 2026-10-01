@@ -11,8 +11,8 @@
         <ID>CUSA03173</ID>
     </TitleID>
     <Metadata Title="Bloodborne"
-              Name="Skip Intro"
-              Author="illusion"
+              Name="Skip Intro + warning message"
+              Author="illusion, Kyo"
               PatchVer="1.0"
               AppVer="01.09"
               AppElf="eboot.bin">
@@ -20,6 +20,7 @@
             <Line Type="bytes32" Address="0x04d99138" Value="0x00000000"/>
             <Line Type="bytes32" Address="0x04d99154" Value="0x00000000"/>
             <Line Type="bytes32" Address="0x04d9916e" Value="0x00000000"/>
+            <Line Type="bytes" Address="0x0202EE1C" Value="EB73"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Bloodborne" 
