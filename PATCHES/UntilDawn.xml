@@ -9,6 +9,7 @@
     </TitleID>
     <Metadata Title="Until Dawn" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
+            <!-- 0x1000000000 Primary Engine Pools -> 0x8000000000 -->
             <Line Type="byte" Address="0x85cc42" Value="0x80"/>
             <Line Type="byte" Address="0x85ce8f" Value="0x80"/>
             <Line Type="byte" Address="0x85e0a3" Value="0x80"/>
@@ -17,17 +18,23 @@
             <Line Type="byte" Address="0x85eb2a" Value="0x80"/>
             <Line Type="byte" Address="0x86e6d5" Value="0x80"/>
             <Line Type="byte" Address="0xeceb27" Value="0x80"/>
-            <Line Type="byte" Address="0x1180b51" Value="0x80"/>
+
+            <!-- Lump Table Relocation: 0x1200000000 -> 0x9000000000 (Upper Bound: 0x17A00000000) -->
             <Line Type="byte" Address="0xd4c5db" Value="0x90"/>
             <Line Type="byte" Address="0xd4c613" Value="0x7a"/>
             <Line Type="byte" Address="0xd4c614" Value="0x01"/>
             <Line Type="byte" Address="0xd4c674" Value="0x90"/>
             <Line Type="byte" Address="0xd4c6a2" Value="0x7a"/>
             <Line Type="byte" Address="0xd4c6a3" Value="0x01"/>
+
+            <!-- 128GB Range Allocator Arena: [0x1F00000000, 0x3F00000000] -> [0x8F00000000, 0xAF00000000] -->
+            <Line Type="byte" Address="0xe6ab58" Value="0x8f"/>
+            <Line Type="byte" Address="0xe6ab65" Value="0xaf"/>
         </PatchList>
     </Metadata>
     <Metadata Title="Until Dawn" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
+            <!-- 0x1000000000 Primary Engine Pools -> 0x8000000000 -->
             <Line Type="byte" Address="0x85cc42" Value="0x80"/>
             <Line Type="byte" Address="0x85ce8f" Value="0x80"/>
             <Line Type="byte" Address="0x85e0a3" Value="0x80"/>
@@ -36,13 +43,18 @@
             <Line Type="byte" Address="0x85eb2a" Value="0x80"/>
             <Line Type="byte" Address="0x86e6d5" Value="0x80"/>
             <Line Type="byte" Address="0xeceaa7" Value="0x80"/>
-            <Line Type="byte" Address="0x1180bf1" Value="0x80"/>
+
+            <!-- Lump Table Relocation: 0x1200000000 -> 0x9000000000 (Upper Bound: 0x17A00000000) -->
             <Line Type="byte" Address="0xd4c5db" Value="0x90"/>
             <Line Type="byte" Address="0xd4c613" Value="0x7a"/>
             <Line Type="byte" Address="0xd4c614" Value="0x01"/>
             <Line Type="byte" Address="0xd4c674" Value="0x90"/>
             <Line Type="byte" Address="0xd4c6a2" Value="0x7a"/>
             <Line Type="byte" Address="0xd4c6a3" Value="0x01"/>
+
+            <!-- 128GB Range Allocator Arena: [0x1F00000000, 0x3F00000000] -> [0x8F00000000, 0xAF00000000] -->
+            <Line Type="byte" Address="0xe6aad8" Value="0x8f"/>
+            <Line Type="byte" Address="0xe6aae5" Value="0xaf"/>
         </PatchList>
     </Metadata>
 </Patch>
