@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA49695</ID>
+        <ID>CUSA49696</ID>
+        <ID>CUSA49697</ID>
+        <ID>CUSA49698</ID>
+    </TitleID>
+
+    <Metadata Title="My First Gran Turismo" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x5a8d614" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="My First Gran Turismo" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x5a8d614" Value="80"/>
+        </PatchList>
+    </Metadata>
+</Patch>
