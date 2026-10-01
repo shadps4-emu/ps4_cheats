@@ -1955,6 +1955,21 @@
             <Line Type="bytes" Address="0x022f5548" Value="e953ad1803909090909090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="Bloodborne"
+              Name="Faster loading screens (READ NOTES)"
+              Note="For this to work, enable the 30, 60 or 90 fps++ patch, and set your vblank to 500 or higher in game-specific settings."
+              Author="Kyo"
+              PatchVer="1.0"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x02434ADA" Value="E99B00000090"/>
+            <Line Type="bytes" Address="0x02434B10" Value="4D8DBC2468020000E80E00000084C0740941C744241800000000C3803D39DD520300743E488B057D9D50034885C074326683785000752B488B050AB550034885C0741C488B40084885C07413F6806801000001750D4883B8F8000000007503B001C331C0C3"/>
+            <Line Type="bytes" Address="0x0243493D" Value="E8CE010000909090"/>
+            <Line Type="bytes" Address="0x015E4170" Value="4883EC504183FD01BA0100000083D2004189D5E8A309E50084C074074181CD00010000C7442434000000008B3D575C2D044889E6E83FB49D01837C24340074074181CD00020000C7442440000000004C8D4424404489E825000300003D0002000075034531C0E8470000004489E825000300003D00030000742F418BB6640200008935155C2D048B3DFB5B2D04410FB6D531C9E880C69D0141F7C50001000075084531C0E8090000004883C450E9E2080000488B3DEF5B2D04488DB560FFFFFFBA01000000488D4DB8E9BAB39D01CCCCCCCCCCCCCCCCCC"/>
+            <Line Type="bytes" Address="0x015E4ABF" Value="E9ACF6FFFF"/>
+        </PatchList>
+    </Metadata>
 	<Metadata Title="Bloodborne"
 			  Name="Auto-Refill From Storage on Any Area Refresh/Reload"
 		      Note="Automatically replenishes eligible consumables from your storage whenever any area is refreshed/reloaded. Lowers your storage inventory the same as the vanilla game, without requiring you to die or return to the Hunter's Dream every time. Uses Bloodborne's native auto-refill-from-storage system. NO free items--just a QoL patch."
