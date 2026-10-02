@@ -12,6 +12,7 @@
     <!-- 01.00 -->
     <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 1 / Launcher: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
+            <Line Type="bytes" Address="0x47e172" Value="80"/>
             <Line Type="bytes" Address="0xd8f504" Value="80"/>
         </PatchList>
     </Metadata>
@@ -24,6 +25,7 @@
     <!-- 01.02 -->
     <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 1 / Launcher: macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
+            <Line Type="bytes" Address="0x47e172" Value="80"/>
             <Line Type="bytes" Address="0xd55254" Value="80"/>
         </PatchList>
     </Metadata>
