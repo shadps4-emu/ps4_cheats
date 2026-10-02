@@ -42,7 +42,7 @@
     </Metadata>
     <Metadata Title="Uncharted: The Nathan Drake Collection" Name="Uncharted 2: Bypass Low Frame Rate Assert" Notes="Removes assertion crash when the frame rate is too low." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="big2-ps4_Shipping.elf" isEnabled="false">
         <PatchList>
-            <Line Type="bytes" Address="0x90e248" Value="eb"/>
+            <Line Type="bytes" Address="0x9547a2" Value="eb"/>
         </PatchList>
     </Metadata>
 
