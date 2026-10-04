@@ -1,16 +1,158 @@
 <?xml version="1.0"?>
 <Patch>
     <TitleID>
+        <ID>CUSA00236</ID>
         <ID>CUSA00176</ID>
     </TitleID>
-    <Metadata Title="Dead Nation: Apocalypse Edition" Name="60 FPS" Note="Unlocks 60 FPS and keeps game speed in sync." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="60 FPS - CUSA00236" Note="Enables 60 FPS gameplay. Use only for CUSA00236." Author="cuesta4" PatchVer="2.1" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
-            <Line Type="bytes" Address="0x01088296" Value="be00000000"/>
-            <Line Type="bytes" Address="0x010a78ac" Value="c745bc03000000"/>
-            <Line Type="bytes" Address="0x010b00f9" Value="f605d87df30001909090"/>
+            <Line Type="bytes" Address="0x0084ff61" Value="58020000"/>
+            <Line Type="bytes" Address="0x00893de5" Value="e82611f20090"/>
+            <Line Type="bytes" Address="0x00893e62" Value="e8d910f20090"/>
+            <Line Type="bytes" Address="0x013bd6d0" Value="0000003f0000003f0000003f0000003f"/>
+            <Line Type="bytes" Address="0x013bd73c" Value="59d69f3d"/>
+            <Line Type="bytes" Address="0x013bd740" Value="64127bbe"/>
+            <Line Type="bytes" Address="0x011f02c7" Value="e8a44c5c009090909090"/>
+            <Line Type="bytes" Address="0x01088066" Value="be00000000"/>
+            <Line Type="bytes" Address="0x010a767c" Value="c745bc03000000"/>
+            <Line Type="bytes" Address="0x01088662" Value="e939d07200909090"/>
+            <Line Type="bytes" Address="0x017b56a0" Value="418b763883f8020f82f62f8dffe9b82f8dff"/>
+            <Line Type="bytes" Address="0x013b7d14" Value="00007042"/>
+            <Line Type="bytes" Address="0x008b69ba" Value="8988883c"/>
+            <Line Type="bytes" Address="0x008b69c6" Value="00007042"/>
+            <Line Type="bytes" Address="0x013c5938" Value="2ef9643f"/>
+            <Line Type="bytes" Address="0x008b8821" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013c5958" Value="00007042"/>
+            <Line Type="bytes" Address="0x009f8d1d" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013c5d1c" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013bb188" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013bb18c" Value="8988883c"/>
+            <Line Type="bytes" Address="0x01685494" Value="8988883c"/>
+            <Line Type="bytes" Address="0x017b4a00" Value="0000803f"/>
+            <Line Type="bytes" Address="0x017b4a04" Value="00000000"/>
+            <Line Type="bytes" Address="0x017b4a10" Value="00000080000000800000008000000080"/>
+            <Line Type="bytes" Address="0x017b4a20" Value="e8bb188dff488945d8488b4b184885c9742f488b53084885d27426488b4118482b45d87e1cc4e1fa2ac0c5fa590536348300c5fa104a0cc5f258c9c5f82ec1770d4c89f7e8777f90ffe92cb48ffff390e944b58fff"/>
+            <Line Type="bytes" Address="0x017b4a80" Value="4183bd88040000000f8ecd0000004154415631db498bbcdd801c00004531e4488d05fa3f01004839077529488b4f684885c97420488d05c53e010048390175148b477083f801770c488d04404c8da4c15005000041f6859c1200000174424d85e474190fb7477a66c7477a00004d8b342441090424f7d04121442404488b07498bb550200000c5fa1085ecfdffffc5fa58c0ff50104d85e4742d4d893424eb274d85e47422488b05341e840031c980780900750f418b4c2404f7d141230c24660b4f7a66894f7a48ffc3413b9d880400000f8c3dffffff415e415ce959c50bff"/>
+            <Line Type="bytes" Address="0x00886cd1" Value="48c7407400000000909090"/>
+            <Line Type="bytes" Address="0x00886b5b" Value="48c7477400000000909090"/>
+            <Line Type="bytes" Address="0x017b4f10" Value="c5fa1015e8faffffc4c16a5c5520c5ea5f15defaffffc5ea51d2c5ea5c15cefaffffc5e85715d6faffffc5e8c6d200c3"/>
+            <Line Type="bytes" Address="0x017b4f40" Value="c5fa1015b8faffffc4c16a5c5528c5ea5f15aefaffffc5ea51d2c5ea5c159efaffffc5e85715a6faffffc5e8c6d200c3"/>
+            <Line Type="bytes" Address="0x017b4f70" Value="c4c17a108c24d0030000c5f828d1c5e854158afaffffc5e857d1c5ea5c156efaffffc5e8571576faffffc5ea5f1562faffffc5ea51d2c5ea5c1552faffffc5e857155afaffffc5f0540d52faffffc5f056cac3"/>
+            <Line Type="bytes" Address="0x010afe92" Value="e9894b7000909090"/>
+            <Line Type="bytes" Address="0x0087107f" Value="e9fc39f400909090"/>
+            <Line Type="bytes" Address="0x017b5000" Value="488b05211884004885c0746cc5fa1045b4c5f057c9c5f82ec1765df6809c120000017446c744241800010000c745b40000000083bae0000000007f3c488b42404885c0740983b8a0000000007f2a488b42604885c0740983b800040000007f18b8ffffffffe9da14a1ffc5fa1045b4c5fa58c0c5fa1145b4e82316a1ffe9c214a1ff"/>
+            <Line Type="bytes" Address="0x011c653f" Value="e9bcea5e00"/>
+            <Line Type="bytes" Address="0x017b5090" Value="ffcbd1e83245280f85cf16a1ffc6452a00807d29000f840517a1ff5051525657415041514152415341544155415641574883ec184189f548c78538ffffffffffffff4585ff0f8eb7000000410fbf042483f80d7e05e98b00000083f8010f8c82000000410fbf54240283fa02744583fa01757283f801750d41817c24040000803f7562eb2e83f802750a41837c2404007553eb1f83f804750a41837c2404007544eb1083f806753d41817c24040000803f7532488b45904885c07429488b40284885c07420488b7d80488b7588418b54240c488d0c24ffd0a80174094c89a538ffffffeb27b8100000006641833c24327c05b8200000004901c441ffcfe940ffffff41f6c5017422c6452a014883c418415f415e415d415c415b415a415941585f5e5a5958e9f615a1ff4883c418415f415e415d415c415b415a415941585f5e5a5958e99415a1ff"/>
+            <Line Type="bytes" Address="0x011c6763" Value="e928e95e0090909090"/>
+            <Line Type="bytes" Address="0x017b51e0" Value="0fb64d2ac1e108894c2418e9241ea1ff"/>
+            <Line Type="bytes" Address="0x011c700c" Value="e9cfe15e00909090"/>
+            <Line Type="bytes" Address="0x017b51f0" Value="410fbf0c24807d290074184c3ba538ffffff730f83f90d740f83f90e740a83f9137305e93d18a1ff41b601e9c01ca1ff"/>
+            <Line Type="bytes" Address="0x011c6a50" Value="e99be75e00"/>
+            <Line Type="bytes" Address="0x017b5220" Value="807d290074094c3ba538ffffff720441894510c5fa11459ce9d017a1ff"/>
+            <Line Type="bytes" Address="0x011c6a04" Value="e917e85e0090909090"/>
+            <Line Type="bytes" Address="0x017b5240" Value="488b05e11584004885c0744ec5fa1045b4c5f057c9c5f82ec1763ff6809c120000017428c744241800010000c745b40000000083ba8c000000007f1e837a68007f18b8ffffffffe96ee8a3ffc5fa1045b4c5fa58c0c5fa1145b4e8b1e9a3ffe956e8a3ff"/>
+            <Line Type="bytes" Address="0x011f3af5" Value="e946175c00"/>
+            <Line Type="bytes" Address="0x017b52b0" Value="41ffcdd1e83245280f8566eaa3ffc6452a00807d29000f84a4eaa3ff5051525657415041514152415341544155415641574883ec184189cd48c78538ffffffffffffff4585ff0f8ec8000000410fbf042483f80d7e05e98e00000083f8010f8c85000000410fbf54240283fa02744583fa01757583f801750d41817c24040000803f7565eb2e83f802750a41837c2404007556eb1f83f804750a41837c2404007547eb1083f806754041817c24040000803f7535488b45884885c0742c488b40284885c07423488bbd78ffffff488b7580418b54240c488d0c24ffd0a80174094c89a538ffffffeb35b8200000006641833c24127f13410fbf54240283ea0d83fa057605b8100000004901c441ffcfe92fffffff41f6c5017422c6452a014883c418415f415e415d415c415b415a415941585f5e5a5958e984e9a3ff4883c418415f415e415d415c415b415a415941585f5e5a5958e91ae9a3ff"/>
+            <Line Type="bytes" Address="0x011f3d1a" Value="e991155c009090909090"/>
+            <Line Type="bytes" Address="0x017b5410" Value="0fb64d2ac1e108894c2418e9e7f1a3ff"/>
+            <Line Type="bytes" Address="0x011f45ff" Value="e90c0e5c00909090"/>
+            <Line Type="bytes" Address="0x017b5420" Value="410fbf0c24807d290074184c3ba538ffffff730f83f90d740f83f90e740a83f9137305e9cdeba3ff41b601e980f0a3ff"/>
+            <Line Type="bytes" Address="0x011f4010" Value="e90b145c00"/>
+            <Line Type="bytes" Address="0x017b5450" Value="807d290074094c3ba538ffffff7203894210c5fa11459ce953eba3ff"/>
+            <Line Type="bytes" Address="0x011f3fb7" Value="e994145c00909090"/>
+            <Line Type="bytes" Address="0x017b5470" Value="488b05b11384004885c07457c5fa1045b4c5f057c9c5f82ec17648f6809c120000017431c744241800010000c745b400000000837a18007f2a488b42084885c0740983b818010000007f18b8ffffffffe99d3fa1ffc5fa1045b4c5fa58c0c5fa1145b4e8f840a1ffe9853fa1ff"/>
+            <Line Type="bytes" Address="0x011c945d" Value="e90ec05e00"/>
+            <Line Type="bytes" Address="0x017b54e0" Value="ffc9d1e83245280f85ba41a1ffc6452a00807d29000f84f541a1ff5051525657415041514152415341544155415641574883ec184189f548c78538ffffffffffffff4585ff0f8ebc000000410fbf042483f80d7e05e98c00000083f8010f8c83000000410fbf54240283fa02744583fa01757383f801750d41817c24040000803f7563eb2e83f802750a41837c2404007554eb1f83f804750a41837c2404007545eb1083f806753e41817c24040000803f7533488b4424504885c07429488b40284885c07420488b7d80488b7588418b54240c488d0c24ffd0a80174094c89a538ffffffeb2bb820000000410fbf1424ffca83fa127305b8100000004901c441ffcfe93bffffff41f6c5017422c6452a014883c418415f415e415d415c415b415a415941585f5e5a5958e9e140a1ff4883c418415f415e415d415c415b415a415941585f5e5a5958e97a40a1ff"/>
+            <Line Type="bytes" Address="0x011c969e" Value="e93dbe5e0090909090"/>
+            <Line Type="bytes" Address="0x017b5630" Value="0fb64d2ac1e108894c2418e95849a1ff"/>
+            <Line Type="bytes" Address="0x011c9f90" Value="e99bb65e00909090"/>
+            <Line Type="bytes" Address="0x017b5640" Value="410fbf0c24807d290074184c3ba538ffffff730f83f90d740f83f90e740a83f9137305e92d43a1ff41b601e9d047a1ff"/>
+            <Line Type="bytes" Address="0x011c9990" Value="e9abbc5e00"/>
+            <Line Type="bytes" Address="0x017b5670" Value="807d290074094c3ba538ffffff7203894210c5fa11459ce9bd42a1ff"/>
+            <Line Type="bytes" Address="0x011c9941" Value="e92abd5e00909090"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Balanced Lighting" Note="Trims a few lighting passes with little visual impact." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Balanced Lighting - CUSA00236" Note="Trims a few lighting passes with little visual impact. Use only for CUSA00236." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x0085a892" Value="4183ff04"/>
+            <Line Type="bytes" Address="0x0085a89c" Value="4183fc03"/>
+            <Line Type="bytes" Address="0x0085acb6" Value="4183fc04"/>
+            <Line Type="bytes" Address="0x0085aea2" Value="4183fc03"/>
+            <Line Type="bytes" Address="0x0085af13" Value="4183fc03"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Reduced Auxiliary Rendering - CUSA00236" Note="Skips an auxiliary render pass for a small performance gain. Use only for CUSA00236." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00851885" Value="9090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="60 FPS - CUSA00176" Note="Enables 60 FPS gameplay. Use only for CUSA00176." Author="cuesta4" PatchVer="2.1" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00850001" Value="58020000"/>
+            <Line Type="bytes" Address="0x00893e85" Value="e88614f20090"/>
+            <Line Type="bytes" Address="0x00893f02" Value="e83914f20090"/>
+            <Line Type="bytes" Address="0x013bd9f0" Value="0000003f0000003f0000003f0000003f"/>
+            <Line Type="bytes" Address="0x013bda5c" Value="59d69f3d"/>
+            <Line Type="bytes" Address="0x013bda60" Value="64127bbe"/>
+            <Line Type="bytes" Address="0x011f04f7" Value="e8744e5c009090909090"/>
+            <Line Type="bytes" Address="0x01088296" Value="be00000000"/>
+            <Line Type="bytes" Address="0x010a78ac" Value="c745bc03000000"/>
+            <Line Type="bytes" Address="0x013b8034" Value="00007042"/>
+            <Line Type="bytes" Address="0x008b6a5a" Value="8988883c"/>
+            <Line Type="bytes" Address="0x008b6a66" Value="00007042"/>
+            <Line Type="bytes" Address="0x013c5c58" Value="2ef9643f"/>
+            <Line Type="bytes" Address="0x008b88c1" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013c5c78" Value="00007042"/>
+            <Line Type="bytes" Address="0x009f8f4d" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013c603c" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013bb4a8" Value="8988883c"/>
+            <Line Type="bytes" Address="0x013bb4ac" Value="8988883c"/>
+            <Line Type="bytes" Address="0x01685914" Value="8988883c"/>
+            <Line Type="bytes" Address="0x017b4e00" Value="0000803f"/>
+            <Line Type="bytes" Address="0x017b4e04" Value="00000000"/>
+            <Line Type="bytes" Address="0x017b4e10" Value="00000080000000800000008000000080"/>
+            <Line Type="bytes" Address="0x017b4e20" Value="e8eb168dff488945d8488b4b184885c9742f488b53084885d27426488b4118482b45d87e1cc4e1fa2ac0c5fa590566308300c5fa104a0cc5f258c9c5f82ec1770d4c89f7e8a77d90ffe95cb28ffff390e974b38fff"/>
+            <Line Type="bytes" Address="0x017b4e80" Value="4183bd88040000000f8ecd0000004154415631db498bbcdd801c00004531e4488d05fa3b01004839077529488b4f684885c97420488d05c53a010048390175148b477083f801770c488d04404c8da4c15005000041f6859c1200000174424d85e474190fb7477a66c7477a00004d8b342441090424f7d04121442404488b07498bb550200000c5fa1085ecfdffffc5fa58c0ff50104d85e4742d4d893424eb274d85e47422488b05641a840031c980780900750f418b4c2404f7d141230c24660b4f7a66894f7a48ffc3413b9d880400000f8c3dffffff415e415ce9f9c10bff"/>
+            <Line Type="bytes" Address="0x00886d71" Value="48c7407400000000909090"/>
+            <Line Type="bytes" Address="0x00886bfb" Value="48c7477400000000909090"/>
+            <Line Type="bytes" Address="0x017b5310" Value="c5fa1015e8faffffc4c16a5c5520c5ea5f15defaffffc5ea51d2c5ea5c15cefaffffc5e85715d6faffffc5e8c6d200c3"/>
+            <Line Type="bytes" Address="0x017b5340" Value="c5fa1015b8faffffc4c16a5c5528c5ea5f15aefaffffc5ea51d2c5ea5c159efaffffc5e85715a6faffffc5e8c6d200c3"/>
+            <Line Type="bytes" Address="0x017b5370" Value="c4c17a108c24d0030000c5f828d1c5e854158afaffffc5e857d1c5ea5c156efaffffc5e8571576faffffc5ea5f1562faffffc5ea51d2c5ea5c1552faffffc5e857155afaffffc5f0540d52faffffc5f056cac3"/>
+            <Line Type="bytes" Address="0x010b00c2" Value="e9594d7000909090"/>
+            <Line Type="bytes" Address="0x0087111f" Value="e95c3df400909090"/>
+            <Line Type="bytes" Address="0x017b5400" Value="488b05511484004885c0746cc5fa1045b4c5f057c9c5f82ec1765df6809c120000017446c744241800010000c745b40000000083bae0000000007f3c488b42404885c0740983b8a0000000007f2a488b42604885c0740983b800040000007f18b8ffffffffe90a13a1ffc5fa1045b4c5fa58c0c5fa1145b4e85314a1ffe9f212a1ff"/>
+            <Line Type="bytes" Address="0x011c676f" Value="e98cec5e00"/>
+            <Line Type="bytes" Address="0x017b5490" Value="ffcbd1e83245280f85ff14a1ffc6452a00807d29000f843515a1ff5051525657415041514152415341544155415641574883ec184189f548c78538ffffffffffffff4585ff0f8eb7000000410fbf042483f80d7e05e98b00000083f8010f8c82000000410fbf54240283fa02744583fa01757283f801750d41817c24040000803f7562eb2e83f802750a41837c2404007553eb1f83f804750a41837c2404007544eb1083f806753d41817c24040000803f7532488b45904885c07429488b40284885c07420488b7d80488b7588418b54240c488d0c24ffd0a80174094c89a538ffffffeb27b8100000006641833c24327c05b8200000004901c441ffcfe940ffffff41f6c5017422c6452a014883c418415f415e415d415c415b415a415941585f5e5a5958e92614a1ff4883c418415f415e415d415c415b415a415941585f5e5a5958e9c413a1ff"/>
+            <Line Type="bytes" Address="0x011c6993" Value="e9f8ea5e0090909090"/>
+            <Line Type="bytes" Address="0x017b55e0" Value="0fb64d2ac1e108894c2418e9541ca1ff"/>
+            <Line Type="bytes" Address="0x011c723c" Value="e99fe35e00909090"/>
+            <Line Type="bytes" Address="0x017b55f0" Value="410fbf0c24807d290074184c3ba538ffffff730f83f90d740f83f90e740a83f9137305e96d16a1ff41b601e9f01aa1ff"/>
+            <Line Type="bytes" Address="0x011c6c80" Value="e96be95e00"/>
+            <Line Type="bytes" Address="0x017b5620" Value="807d290074094c3ba538ffffff720441894510c5fa11459ce90016a1ff"/>
+            <Line Type="bytes" Address="0x011c6c34" Value="e9e7e95e0090909090"/>
+            <Line Type="bytes" Address="0x017b5640" Value="488b05111284004885c0744ec5fa1045b4c5f057c9c5f82ec1763ff6809c120000017428c744241800010000c745b40000000083ba8c000000007f1e837a68007f18b8ffffffffe99ee6a3ffc5fa1045b4c5fa58c0c5fa1145b4e8e1e7a3ffe986e6a3ff"/>
+            <Line Type="bytes" Address="0x011f3d25" Value="e916195c00"/>
+            <Line Type="bytes" Address="0x017b56b0" Value="41ffcdd1e83245280f8596e8a3ffc6452a00807d29000f84d4e8a3ff5051525657415041514152415341544155415641574883ec184189cd48c78538ffffffffffffff4585ff0f8ec8000000410fbf042483f80d7e05e98e00000083f8010f8c85000000410fbf54240283fa02744583fa01757583f801750d41817c24040000803f7565eb2e83f802750a41837c2404007556eb1f83f804750a41837c2404007547eb1083f806754041817c24040000803f7535488b45884885c0742c488b40284885c07423488bbd78ffffff488b7580418b54240c488d0c24ffd0a80174094c89a538ffffffeb35b8200000006641833c24127f13410fbf54240283ea0d83fa057605b8100000004901c441ffcfe92fffffff41f6c5017422c6452a014883c418415f415e415d415c415b415a415941585f5e5a5958e9b4e7a3ff4883c418415f415e415d415c415b415a415941585f5e5a5958e94ae7a3ff"/>
+            <Line Type="bytes" Address="0x011f3f4a" Value="e961175c009090909090"/>
+            <Line Type="bytes" Address="0x017b5810" Value="0fb64d2ac1e108894c2418e917f0a3ff"/>
+            <Line Type="bytes" Address="0x011f482f" Value="e9dc0f5c00909090"/>
+            <Line Type="bytes" Address="0x017b5820" Value="410fbf0c24807d290074184c3ba538ffffff730f83f90d740f83f90e740a83f9137305e9fde9a3ff41b601e9b0eea3ff"/>
+            <Line Type="bytes" Address="0x011f4240" Value="e9db155c00"/>
+            <Line Type="bytes" Address="0x017b5850" Value="807d290074094c3ba538ffffff7203894210c5fa11459ce983e9a3ff"/>
+            <Line Type="bytes" Address="0x011f41e7" Value="e964165c00909090"/>
+            <Line Type="bytes" Address="0x017b5870" Value="488b05e10f84004885c07457c5fa1045b4c5f057c9c5f82ec17648f6809c120000017431c744241800010000c745b400000000837a18007f2a488b42084885c0740983b818010000007f18b8ffffffffe9cd3da1ffc5fa1045b4c5fa58c0c5fa1145b4e8283fa1ffe9b53da1ff"/>
+            <Line Type="bytes" Address="0x011c968d" Value="e9dec15e00"/>
+            <Line Type="bytes" Address="0x017b58e0" Value="ffc9d1e83245280f85ea3fa1ffc6452a00807d29000f842540a1ff5051525657415041514152415341544155415641574883ec184189f548c78538ffffffffffffff4585ff0f8ebc000000410fbf042483f80d7e05e98c00000083f8010f8c83000000410fbf54240283fa02744583fa01757383f801750d41817c24040000803f7563eb2e83f802750a41837c2404007554eb1f83f804750a41837c2404007545eb1083f806753e41817c24040000803f7533488b4424504885c07429488b40284885c07420488b7d80488b7588418b54240c488d0c24ffd0a80174094c89a538ffffffeb2bb820000000410fbf1424ffca83fa127305b8100000004901c441ffcfe93bffffff41f6c5017422c6452a014883c418415f415e415d415c415b415a415941585f5e5a5958e9113fa1ff4883c418415f415e415d415c415b415a415941585f5e5a5958e9aa3ea1ff"/>
+            <Line Type="bytes" Address="0x011c98ce" Value="e90dc05e0090909090"/>
+            <Line Type="bytes" Address="0x017b5a30" Value="0fb64d2ac1e108894c2418e98847a1ff"/>
+            <Line Type="bytes" Address="0x011ca1c0" Value="e96bb85e00909090"/>
+            <Line Type="bytes" Address="0x017b5a40" Value="410fbf0c24807d290074184c3ba538ffffff730f83f90d740f83f90e740a83f9137305e95d41a1ff41b601e90046a1ff"/>
+            <Line Type="bytes" Address="0x011c9bc0" Value="e97bbe5e00"/>
+            <Line Type="bytes" Address="0x017b5a70" Value="807d290074094c3ba538ffffff7203894210c5fa11459ce9ed40a1ff"/>
+            <Line Type="bytes" Address="0x011c9b71" Value="e9fabe5e00909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Balanced Lighting - CUSA00176" Note="Trims a few lighting passes with little visual impact. Use only for CUSA00176." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x0085a932" Value="4183ff04"/>
             <Line Type="bytes" Address="0x0085a93c" Value="4183fc03"/>
@@ -19,7 +161,7 @@
             <Line Type="bytes" Address="0x0085afb3" Value="4183fc03"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Reduced Auxiliary Rendering" Note="Skips an auxiliary render pass for a small performance gain." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="Dead Nation: Apocalypse Edition" Name="Reduced Auxiliary Rendering - CUSA00176" Note="Skips an auxiliary render pass for a small performance gain. Use only for CUSA00176." Author="cuesta4" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x00851925" Value="9090909090"/>
         </PatchList>
