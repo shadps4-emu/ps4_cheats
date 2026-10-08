@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01709</ID>
+    </TitleID>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.00" AppElf="eboot.bin" Name="Resolution 640x360" Note="640x360 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01863516" Value="80020000" />
+            <Line Type="bytes" Address="0x01863521" Value="68010000" />
+            <Line Type="bytes" Address="0x01862E6D" Value="BF09000000" />
+            <Line Type="bytes" Address="0x01862E72" Value="909090" />
+            <Line Type="bytes" Address="0x018F6D40" Value="909090909090" />
+            <Line Type="bytes" Address="0x018F6D72" Value="E9A7000000909090" />
+            <Line Type="bytes" Address="0x018F3B5B" Value="E9A005760190909090909090" />
+            <Line Type="bytes" Address="0x03054100" Value="B980070000B838040000E958FA89FE" />
+            <Line Type="bytes" Address="0x018F3CAE" Value="E98D0476019090909090909090" />
+            <Line Type="bytes" Address="0x03054140" Value="C5F96F8570FFFFFFC5F96F4D8041807C2435007410C5F8590513000000C5F0590D1B000000E951FB89FE660F1F44000000004040000040400000803F0000803F00004040000040400000404000004040" />
+            <Line Type="bytes" Address="0x01BB430C" Value="E92FFF49019090" />
+            <Line Type="bytes" Address="0x01BB5086" Value="E9D5F149019090" />
+            <Line Type="bytes" Address="0x03054240" Value="C5FA590538000000C5F2590D3000000031F6E8A91779FEE9B700B6FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8891779FEE9110EB6FE0F1F400000004040" />
+            <Line Type="bytes" Address="0x024737A3" Value="E9580CBE00909090" />
+            <Line Type="bytes" Address="0x03054400" Value="48C783000100008002000048C783080100006801000048C783100100008002000048C7831801000068010000C783200100000000103FE970F341FF" />
+            <Line Type="bytes" Address="0x01BB39C4" Value="E8D7084A01" />
+            <Line Type="bytes" Address="0x030542A0" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE94B1779FE" />
+            <Line Type="bytes" Address="0x024FA27F" Value="C5FA1015B5837400" />
+            <Line Type="bytes" Address="0x024FAA45" Value="C5FA100DEF7B7400" />
+            <Line Type="bytes" Address="0x02C4263C" Value="CDCCCC3E" />
+            <Line Type="bytes" Address="0x02C425EC" Value="3AB4C83E" />
+            <Line Type="bytes" Address="0x02C425F0" Value="EB432340" />
+            <Line Type="bytes" Address="0x02C425F4" Value="6EDB8E42" />
+            <Line Type="bytes" Address="0x02501D30" Value="C5FA1000C5FA590500097400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x023DBBE0" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D356A8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x023DBCD5" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x023DBD4E" Value="C5F8104140C4E279180DE0688600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.00" AppElf="eboot.bin" Name="Resolution 960x540" Note="960x540 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01863516" Value="C0030000" />
+            <Line Type="bytes" Address="0x01863521" Value="1C020000" />
+            <Line Type="bytes" Address="0x01862E6D" Value="BF09000000" />
+            <Line Type="bytes" Address="0x01862E72" Value="909090" />
+            <Line Type="bytes" Address="0x018F6D40" Value="909090909090" />
+            <Line Type="bytes" Address="0x018F6D72" Value="E9A7000000909090" />
+            <Line Type="bytes" Address="0x018F3B5B" Value="E9A005760190909090909090" />
+            <Line Type="bytes" Address="0x03054100" Value="B980070000B838040000E958FA89FE" />
+            <Line Type="bytes" Address="0x018F3CAE" Value="E98D0476019090909090909090" />
+            <Line Type="bytes" Address="0x03054140" Value="C5F96F8570FFFFFFC5F96F4D8041807C2435007410C5F8590513000000C5F0590D1B000000E951FB89FE660F1F44000000000040000000400000803F0000803F00000040000000400000004000000040" />
+            <Line Type="bytes" Address="0x01BB430C" Value="E92FFF49019090" />
+            <Line Type="bytes" Address="0x01BB5086" Value="E9D5F149019090" />
+            <Line Type="bytes" Address="0x03054240" Value="C5FA590538000000C5F2590D3000000031F6E8A91779FEE9B700B6FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8891779FEE9110EB6FE0F1F400000000040" />
+            <Line Type="bytes" Address="0x024737A3" Value="E9580CBE00909090" />
+            <Line Type="bytes" Address="0x03054400" Value="48C78300010000C003000048C783080100001C02000048C78310010000C003000048C783180100001C020000C783200100000000103FE970F341FF" />
+            <Line Type="bytes" Address="0x01BB39C4" Value="E8D7084A01" />
+            <Line Type="bytes" Address="0x030542A0" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE94B1779FE" />
+            <Line Type="bytes" Address="0x024FA27F" Value="C5FA1015B5837400" />
+            <Line Type="bytes" Address="0x024FAA45" Value="C5FA100DEF7B7400" />
+            <Line Type="bytes" Address="0x02C4263C" Value="9A99193F" />
+            <Line Type="bytes" Address="0x02C425EC" Value="2B87163F" />
+            <Line Type="bytes" Address="0x02C425F0" Value="E4AFD93F" />
+            <Line Type="bytes" Address="0x02C425F4" Value="E8793E42" />
+            <Line Type="bytes" Address="0x02501D30" Value="C5FA1000C5FA590500097400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x023DBBE0" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D356A8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x023DBCD5" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x023DBD4E" Value="C5F8104140C4E279180DE0688600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.00" AppElf="eboot.bin" Name="Resolution 1280x720" Note="1280x720 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01863516" Value="00050000" />
+            <Line Type="bytes" Address="0x01863521" Value="D0020000" />
+            <Line Type="bytes" Address="0x01862E6D" Value="BF09000000" />
+            <Line Type="bytes" Address="0x01862E72" Value="909090" />
+            <Line Type="bytes" Address="0x018F6D40" Value="909090909090" />
+            <Line Type="bytes" Address="0x018F6D72" Value="E9A7000000909090" />
+            <Line Type="bytes" Address="0x018F3B5B" Value="E9A005760190909090909090" />
+            <Line Type="bytes" Address="0x03054100" Value="B980070000B838040000E958FA89FE" />
+            <Line Type="bytes" Address="0x018F3CAE" Value="E98D0476019090909090909090" />
+            <Line Type="bytes" Address="0x03054140" Value="C5F96F8570FFFFFFC5F96F4D8041807C2435007410C5F8590513000000C5F0590D1B000000E951FB89FE660F1F4400000000C03F0000C03F0000803F0000803F0000C03F0000C03F0000C03F0000C03F" />
+            <Line Type="bytes" Address="0x01BB430C" Value="E92FFF49019090" />
+            <Line Type="bytes" Address="0x01BB5086" Value="E9D5F149019090" />
+            <Line Type="bytes" Address="0x03054240" Value="C5FA590538000000C5F2590D3000000031F6E8A91779FEE9B700B6FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8891779FEE9110EB6FE0F1F40000000C03F" />
+            <Line Type="bytes" Address="0x01BB39C4" Value="E8D7084A01" />
+            <Line Type="bytes" Address="0x030542A0" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE94B1779FE" />
+            <Line Type="bytes" Address="0x024FA27F" Value="C5FA1015B5837400" />
+            <Line Type="bytes" Address="0x024FAA45" Value="C5FA100DEF7B7400" />
+            <Line Type="bytes" Address="0x02C4263C" Value="CDCC4C3F" />
+            <Line Type="bytes" Address="0x02C425EC" Value="3AB4483F" />
+            <Line Type="bytes" Address="0x02C425F0" Value="EB43A33F" />
+            <Line Type="bytes" Address="0x02C425F4" Value="6EDB0E42" />
+            <Line Type="bytes" Address="0x02501D30" Value="C5FA1000C5FA590500097400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x023DBBE0" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D356A8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x023DBCD5" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x023DBD4E" Value="C5F8104140C4E279180DE0688600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.00" AppElf="eboot.bin" Name="Resolution 1920x1080" Note="1920x1080 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01863516" Value="80070000" />
+            <Line Type="bytes" Address="0x01863521" Value="38040000" />
+            <Line Type="bytes" Address="0x024FA27F" Value="C5FA1015B5837400" />
+            <Line Type="bytes" Address="0x024FAA45" Value="C5FA100DEF7B7400" />
+            <Line Type="bytes" Address="0x02C4263C" Value="9A99993F" />
+            <Line Type="bytes" Address="0x02C425EC" Value="2B87963F" />
+            <Line Type="bytes" Address="0x02C425F0" Value="E4AF593F" />
+            <Line Type="bytes" Address="0x02C425F4" Value="E879BE41" />
+            <Line Type="bytes" Address="0x02501D30" Value="C5FA1000C5FA590500097400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x023DBBE0" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D356A8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x023DBCD5" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x023DBD4E" Value="C5F8104140C4E279180DE0688600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.00" AppElf="eboot.bin" Name="Resolution 2560x1440" Note="2560x1440 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01863516" Value="000A0000" />
+            <Line Type="bytes" Address="0x01863521" Value="A0050000" />
+            <Line Type="bytes" Address="0x030A1408" Value="000A0000" />
+            <Line Type="bytes" Address="0x030A140C" Value="A0050000" />
+            <Line Type="bytes" Address="0x018F6D72" Value="E9A7000000909090" />
+            <Line Type="bytes" Address="0x018F3B5B" Value="E9A005760190909090909090" />
+            <Line Type="bytes" Address="0x03054100" Value="B980070000B838040000E958FA89FE" />
+            <Line Type="bytes" Address="0x018F3CAE" Value="E98D0476019090909090909090" />
+            <Line Type="bytes" Address="0x03054140" Value="C5F96F8570FFFFFFC5F96F4D8041807C2435007410C5F8590513000000C5F0590D1B000000E951FB89FE660F1F4400000000403F0000403F0000803F0000803F0000403F0000403F0000403F0000403F" />
+            <Line Type="bytes" Address="0x01BB430C" Value="E92FFF49019090" />
+            <Line Type="bytes" Address="0x01BB5086" Value="E9D5F149019090" />
+            <Line Type="bytes" Address="0x03054240" Value="C5FA590538000000C5F2590D3000000031F6E8A91779FEE9B700B6FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8891779FEE9110EB6FE0F1F40000000403F" />
+            <Line Type="bytes" Address="0x01BB39C4" Value="E8D7084A01" />
+            <Line Type="bytes" Address="0x030542A0" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE94B1779FE" />
+            <Line Type="bytes" Address="0x024FA27F" Value="C5FA1015B5837400" />
+            <Line Type="bytes" Address="0x024FAA45" Value="C5FA100DEF7B7400" />
+            <Line Type="bytes" Address="0x02C4263C" Value="CDCCCC3F" />
+            <Line Type="bytes" Address="0x02C425EC" Value="3AB4C83F" />
+            <Line Type="bytes" Address="0x02C425F0" Value="EB43233F" />
+            <Line Type="bytes" Address="0x02C425F4" Value="6EDB8E41" />
+            <Line Type="bytes" Address="0x02501D30" Value="C5FA1000C5FA590500097400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x023DBBE0" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D356A8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x023DBCD5" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x023DBD4E" Value="C5F8104140C4E279180DE0688600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.00" AppElf="eboot.bin" Name="Resolution 3840x2160" Note="3840x2160 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x0186354C" Value="9090" />
+            <Line Type="bytes" Address="0x01862E72" Value="909090" />
+            <Line Type="bytes" Address="0x018F6D72" Value="E9A7000000909090" />
+            <Line Type="bytes" Address="0x018F3B5B" Value="E9A005760190909090909090" />
+            <Line Type="bytes" Address="0x03054100" Value="B980070000B838040000E958FA89FE" />
+            <Line Type="bytes" Address="0x018F3CAE" Value="E98D0476019090909090909090" />
+            <Line Type="bytes" Address="0x03054140" Value="C5F96F8570FFFFFFC5F96F4D8041807C2435007410C5F8590513000000C5F0590D1B000000E951FB89FE660F1F4400000000003F0000003F0000803F0000803F0000003F0000003F0000003F0000003F" />
+            <Line Type="bytes" Address="0x01BB430C" Value="E92FFF49019090" />
+            <Line Type="bytes" Address="0x01BB5086" Value="E9D5F149019090" />
+            <Line Type="bytes" Address="0x03054240" Value="C5FA590538000000C5F2590D3000000031F6E8A91779FEE9B700B6FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8891779FEE9110EB6FE0F1F40000000003F" />
+            <Line Type="bytes" Address="0x01BB39C4" Value="E8D7084A01" />
+            <Line Type="bytes" Address="0x030542A0" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE94B1779FE" />
+            <Line Type="bytes" Address="0x024FA27F" Value="C5FA1015B5837400" />
+            <Line Type="bytes" Address="0x024FAA45" Value="C5FA100DEF7B7400" />
+            <Line Type="bytes" Address="0x02C4263C" Value="9A991940" />
+            <Line Type="bytes" Address="0x02C425EC" Value="2B871640" />
+            <Line Type="bytes" Address="0x02C425F0" Value="E4AFD93E" />
+            <Line Type="bytes" Address="0x02C425F4" Value="E8793E41" />
+            <Line Type="bytes" Address="0x02501D30" Value="C5FA1000C5FA590500097400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x0186356A" Value="4D000000" />
+            <Line Type="bytes" Address="0x023DBBE0" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D356A8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x023DBCD5" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x023DBD4E" Value="C5F8104140C4E279180DE0688600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.02" AppElf="eboot.bin" Name="Resolution 640x360" Note="640x360 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01907AF5" Value="80020000" />
+            <Line Type="bytes" Address="0x01907B00" Value="68010000" />
+            <Line Type="bytes" Address="0x0190744A" Value="BF09000000" />
+            <Line Type="bytes" Address="0x0190744F" Value="909090" />
+            <Line Type="bytes" Address="0x019A73A8" Value="909090909090" />
+            <Line Type="bytes" Address="0x019A73DA" Value="E995000000909090" />
+            <Line Type="bytes" Address="0x019A413B" Value="E94070780190909090909090" />
+            <Line Type="bytes" Address="0x0312B180" Value="B980070000B838040000E9B88F87FE" />
+            <Line Type="bytes" Address="0x019A428E" Value="E92D6F78019090909090909090" />
+            <Line Type="bytes" Address="0x0312B1C0" Value="C5F96F8570FFFFFFC5F96F4D8041807C2434007410C5F8590513000000C5F0590D1B000000E9B19087FE660F1F44000000004040000040400000803F0000803F00004040000040400000404000004040" />
+            <Line Type="bytes" Address="0x01C7988C" Value="E92F1A4B019090" />
+            <Line Type="bytes" Address="0x01C7A636" Value="E9A50C4B019090" />
+            <Line Type="bytes" Address="0x0312B2C0" Value="C5FA590538000000C5F2590D3000000031F6E8F9E375FEE9B7E5B4FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8D9E375FEE941F3B4FE0F1F400000004040" />
+            <Line Type="bytes" Address="0x0253ECB3" Value="E9C8C7BE00909090" />
+            <Line Type="bytes" Address="0x0312B480" Value="48C783000100008002000048C783080100006801000048C783100100008002000048C7831801000068010000C783200100000000103FE9003841FF" />
+            <Line Type="bytes" Address="0x01C78F44" Value="E8D7234B01" />
+            <Line Type="bytes" Address="0x0312B320" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE99BE375FE" />
+            <Line Type="bytes" Address="0x025C4B5F" Value="C5FA1015B1B37400" />
+            <Line Type="bytes" Address="0x025C5325" Value="C5FA100DEBAB7400" />
+            <Line Type="bytes" Address="0x02D0FF18" Value="CDCCCC3E" />
+            <Line Type="bytes" Address="0x02D0FEC8" Value="3AB4C83E" />
+            <Line Type="bytes" Address="0x02D0FECC" Value="EB432340" />
+            <Line Type="bytes" Address="0x02D0FED0" Value="6EDB8E42" />
+            <Line Type="bytes" Address="0x025CC610" Value="C5FA1000C5FA5905FC387400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x024A6F60" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D918F8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x024A7055" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x024A70CE" Value="C5F8104140C4E279180D3C8E8600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.02" AppElf="eboot.bin" Name="Resolution 960x540" Note="960x540 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01907AF5" Value="C0030000" />
+            <Line Type="bytes" Address="0x01907B00" Value="1C020000" />
+            <Line Type="bytes" Address="0x0190744A" Value="BF09000000" />
+            <Line Type="bytes" Address="0x0190744F" Value="909090" />
+            <Line Type="bytes" Address="0x019A73A8" Value="909090909090" />
+            <Line Type="bytes" Address="0x019A73DA" Value="E995000000909090" />
+            <Line Type="bytes" Address="0x019A413B" Value="E94070780190909090909090" />
+            <Line Type="bytes" Address="0x0312B180" Value="B980070000B838040000E9B88F87FE" />
+            <Line Type="bytes" Address="0x019A428E" Value="E92D6F78019090909090909090" />
+            <Line Type="bytes" Address="0x0312B1C0" Value="C5F96F8570FFFFFFC5F96F4D8041807C2434007410C5F8590513000000C5F0590D1B000000E9B19087FE660F1F44000000000040000000400000803F0000803F00000040000000400000004000000040" />
+            <Line Type="bytes" Address="0x01C7988C" Value="E92F1A4B019090" />
+            <Line Type="bytes" Address="0x01C7A636" Value="E9A50C4B019090" />
+            <Line Type="bytes" Address="0x0312B2C0" Value="C5FA590538000000C5F2590D3000000031F6E8F9E375FEE9B7E5B4FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8D9E375FEE941F3B4FE0F1F400000000040" />
+            <Line Type="bytes" Address="0x0253ECB3" Value="E9C8C7BE00909090" />
+            <Line Type="bytes" Address="0x0312B480" Value="48C78300010000C003000048C783080100001C02000048C78310010000C003000048C783180100001C020000C783200100000000103FE9003841FF" />
+            <Line Type="bytes" Address="0x01C78F44" Value="E8D7234B01" />
+            <Line Type="bytes" Address="0x0312B320" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE99BE375FE" />
+            <Line Type="bytes" Address="0x025C4B5F" Value="C5FA1015B1B37400" />
+            <Line Type="bytes" Address="0x025C5325" Value="C5FA100DEBAB7400" />
+            <Line Type="bytes" Address="0x02D0FF18" Value="9A99193F" />
+            <Line Type="bytes" Address="0x02D0FEC8" Value="2B87163F" />
+            <Line Type="bytes" Address="0x02D0FECC" Value="E4AFD93F" />
+            <Line Type="bytes" Address="0x02D0FED0" Value="E8793E42" />
+            <Line Type="bytes" Address="0x025CC610" Value="C5FA1000C5FA5905FC387400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x024A6F60" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D918F8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x024A7055" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x024A70CE" Value="C5F8104140C4E279180D3C8E8600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.02" AppElf="eboot.bin" Name="Resolution 1280x720" Note="1280x720 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01907AF5" Value="00050000" />
+            <Line Type="bytes" Address="0x01907B00" Value="D0020000" />
+            <Line Type="bytes" Address="0x0190744A" Value="BF09000000" />
+            <Line Type="bytes" Address="0x0190744F" Value="909090" />
+            <Line Type="bytes" Address="0x019A73A8" Value="909090909090" />
+            <Line Type="bytes" Address="0x019A73DA" Value="E995000000909090" />
+            <Line Type="bytes" Address="0x019A413B" Value="E94070780190909090909090" />
+            <Line Type="bytes" Address="0x0312B180" Value="B980070000B838040000E9B88F87FE" />
+            <Line Type="bytes" Address="0x019A428E" Value="E92D6F78019090909090909090" />
+            <Line Type="bytes" Address="0x0312B1C0" Value="C5F96F8570FFFFFFC5F96F4D8041807C2434007410C5F8590513000000C5F0590D1B000000E9B19087FE660F1F4400000000C03F0000C03F0000803F0000803F0000C03F0000C03F0000C03F0000C03F" />
+            <Line Type="bytes" Address="0x01C7988C" Value="E92F1A4B019090" />
+            <Line Type="bytes" Address="0x01C7A636" Value="E9A50C4B019090" />
+            <Line Type="bytes" Address="0x0312B2C0" Value="C5FA590538000000C5F2590D3000000031F6E8F9E375FEE9B7E5B4FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8D9E375FEE941F3B4FE0F1F40000000C03F" />
+            <Line Type="bytes" Address="0x01C78F44" Value="E8D7234B01" />
+            <Line Type="bytes" Address="0x0312B320" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE99BE375FE" />
+            <Line Type="bytes" Address="0x025C4B5F" Value="C5FA1015B1B37400" />
+            <Line Type="bytes" Address="0x025C5325" Value="C5FA100DEBAB7400" />
+            <Line Type="bytes" Address="0x02D0FF18" Value="CDCC4C3F" />
+            <Line Type="bytes" Address="0x02D0FEC8" Value="3AB4483F" />
+            <Line Type="bytes" Address="0x02D0FECC" Value="EB43A33F" />
+            <Line Type="bytes" Address="0x02D0FED0" Value="6EDB0E42" />
+            <Line Type="bytes" Address="0x025CC610" Value="C5FA1000C5FA5905FC387400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x024A6F60" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D918F8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x024A7055" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x024A70CE" Value="C5F8104140C4E279180D3C8E8600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.02" AppElf="eboot.bin" Name="Resolution 1920x1080" Note="1920x1080 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01907AF5" Value="80070000" />
+            <Line Type="bytes" Address="0x01907B00" Value="38040000" />
+            <Line Type="bytes" Address="0x025C4B5F" Value="C5FA1015B1B37400" />
+            <Line Type="bytes" Address="0x025C5325" Value="C5FA100DEBAB7400" />
+            <Line Type="bytes" Address="0x02D0FF18" Value="9A99993F" />
+            <Line Type="bytes" Address="0x02D0FEC8" Value="2B87963F" />
+            <Line Type="bytes" Address="0x02D0FECC" Value="E4AF593F" />
+            <Line Type="bytes" Address="0x02D0FED0" Value="E879BE41" />
+            <Line Type="bytes" Address="0x025CC610" Value="C5FA1000C5FA5905FC387400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x024A6F60" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D918F8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x024A7055" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x024A70CE" Value="C5F8104140C4E279180D3C8E8600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.02" AppElf="eboot.bin" Name="Resolution 2560x1440" Note="2560x1440 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01907AF5" Value="000A0000" />
+            <Line Type="bytes" Address="0x01907B00" Value="A0050000" />
+            <Line Type="bytes" Address="0x0317AB28" Value="000A0000" />
+            <Line Type="bytes" Address="0x0317AB2C" Value="A0050000" />
+            <Line Type="bytes" Address="0x019A73DA" Value="E995000000909090" />
+            <Line Type="bytes" Address="0x019A413B" Value="E94070780190909090909090" />
+            <Line Type="bytes" Address="0x0312B180" Value="B980070000B838040000E9B88F87FE" />
+            <Line Type="bytes" Address="0x019A428E" Value="E92D6F78019090909090909090" />
+            <Line Type="bytes" Address="0x0312B1C0" Value="C5F96F8570FFFFFFC5F96F4D8041807C2434007410C5F8590513000000C5F0590D1B000000E9B19087FE660F1F4400000000403F0000403F0000803F0000803F0000403F0000403F0000403F0000403F" />
+            <Line Type="bytes" Address="0x01C7988C" Value="E92F1A4B019090" />
+            <Line Type="bytes" Address="0x01C7A636" Value="E9A50C4B019090" />
+            <Line Type="bytes" Address="0x0312B2C0" Value="C5FA590538000000C5F2590D3000000031F6E8F9E375FEE9B7E5B4FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8D9E375FEE941F3B4FE0F1F40000000403F" />
+            <Line Type="bytes" Address="0x01C78F44" Value="E8D7234B01" />
+            <Line Type="bytes" Address="0x0312B320" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE99BE375FE" />
+            <Line Type="bytes" Address="0x025C4B5F" Value="C5FA1015B1B37400" />
+            <Line Type="bytes" Address="0x025C5325" Value="C5FA100DEBAB7400" />
+            <Line Type="bytes" Address="0x02D0FF18" Value="CDCCCC3F" />
+            <Line Type="bytes" Address="0x02D0FEC8" Value="3AB4C83F" />
+            <Line Type="bytes" Address="0x02D0FECC" Value="EB43233F" />
+            <Line Type="bytes" Address="0x02D0FED0" Value="6EDB8E41" />
+            <Line Type="bytes" Address="0x025CC610" Value="C5FA1000C5FA5905FC387400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x024A6F60" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D918F8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x024A7055" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x024A70CE" Value="C5F8104140C4E279180D3C8E8600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.02" AppElf="eboot.bin" Name="Resolution 3840x2160" Note="3840x2160 rendering and native output." PatchVer="4.0" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01907B48" Value="9090" />
+            <Line Type="bytes" Address="0x0190744F" Value="909090" />
+            <Line Type="bytes" Address="0x019A73DA" Value="E995000000909090" />
+            <Line Type="bytes" Address="0x019A413B" Value="E94070780190909090909090" />
+            <Line Type="bytes" Address="0x0312B180" Value="B980070000B838040000E9B88F87FE" />
+            <Line Type="bytes" Address="0x019A428E" Value="E92D6F78019090909090909090" />
+            <Line Type="bytes" Address="0x0312B1C0" Value="C5F96F8570FFFFFFC5F96F4D8041807C2434007410C5F8590513000000C5F0590D1B000000E9B19087FE660F1F4400000000003F0000003F0000803F0000803F0000003F0000003F0000003F0000003F" />
+            <Line Type="bytes" Address="0x01C7988C" Value="E92F1A4B019090" />
+            <Line Type="bytes" Address="0x01C7A636" Value="E9A50C4B019090" />
+            <Line Type="bytes" Address="0x0312B2C0" Value="C5FA590538000000C5F2590D3000000031F6E8F9E375FEE9B7E5B4FE0F1F4000C5FA590518000000C5F2590D1000000031F6E8D9E375FEE941F3B4FE0F1F40000000003F" />
+            <Line Type="bytes" Address="0x01C78F44" Value="E8D7234B01" />
+            <Line Type="bytes" Address="0x0312B320" Value="C5FA5905D8FFFFFFC5F2590DD0FFFFFFE99BE375FE" />
+            <Line Type="bytes" Address="0x025C4B5F" Value="C5FA1015B1B37400" />
+            <Line Type="bytes" Address="0x025C5325" Value="C5FA100DEBAB7400" />
+            <Line Type="bytes" Address="0x02D0FF18" Value="9A991940" />
+            <Line Type="bytes" Address="0x02D0FEC8" Value="2B871640" />
+            <Line Type="bytes" Address="0x02D0FECC" Value="E4AFD93E" />
+            <Line Type="bytes" Address="0x02D0FED0" Value="E8793E41" />
+            <Line Type="bytes" Address="0x025CC610" Value="C5FA1000C5FA5905FC387400C5E259C8C5FA1149F448C741F800000000C70100000000C742F400000000C5EA59C0C5FA1142F848C742FC00000000909090" />
+            <Line Type="bytes" Address="0x01907B66" Value="4D000000" />
+            <Line Type="bytes" Address="0x024A6F60" Value="C5F8104104C5F8C6C0D8C5F8114014C4E3791780B400000003C5FA7E5914C4E279180D918F8600C5E059D9C5FA1158109090909090" />
+            <Line Type="bytes" Address="0x024A7055" Value="C4E37917583801909090" />
+            <Line Type="bytes" Address="0x024A70CE" Value="C5F8104140C4E279180D3C8E8600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
+        </PatchList>
+    </Metadata>
+</Patch>
