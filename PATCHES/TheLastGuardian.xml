@@ -39,4 +39,13 @@
             <Line Type="bytes" Address="0x0104fa6a" Value="9090909090909090909090909090909090909090909090"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="The Last Guardian" Name="Skip Intro" Note="Skips the long black wait and the SIE, Japan Studio and genDESIGN logos, so the game reaches the title screen in about 10 seconds instead of about 41. Meant for developers and testers who restart the game a lot." Author="thearturord" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x01907900" Value="00000000"/>
+            <Line Type="bytes" Address="0x01907920" Value="cdcccc3dcdcccc3dcdcccc3dcdcccc3d"/>
+            <Line Type="bytes" Address="0x01907930" Value="00000000cdcccc3dcdcccc3dcdcccc3d"/>
+            <Line Type="bytes" Address="0x018efa90" Value="0000000000000000"/>
+            <Line Type="bytes" Address="0x018efa9c" Value="00000000000000000000000000000000"/>
+        </PatchList>
+    </Metadata>
 </Patch>
