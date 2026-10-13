@@ -4998,4 +4998,22 @@
 			<Line Type="bytes" Address="0x026C45BA" Value="48B8500000002D0000004889842400020000909090"/>
 		</PatchList>
 	</Metadata>
+    <Metadata Title="Bloodborne"
+              Name="FaceGen Mesh Buffer Vertex Explosion Fix"
+              Note="Aligns and pads three FaceGen mesh buffers to 4 KiB pages to reduce vertex explosions while preserving face customization. Disable readbacks, other FaceGen-related patches and vertex explosion mods."
+              Author="Abken"
+              PatchVer="0.1"
+              AppVer="01.09"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x01c06c71" Value="488d3440488db6ff0f0000eb039090"/>
+            <Line Type="bytes" Address="0x01c06c81" Value="4881e600f0ffffba00100000ff6158"/>
+            <Line Type="bytes" Address="0x01c26971" Value="488d3449488db6ff0f0000eb139090"/>
+            <Line Type="bytes" Address="0x01c26981" Value="48c1e602488db6ff0f0000eb039090"/>
+            <Line Type="bytes" Address="0x01c26991" Value="4881e600f0ffffba00100000ff6058"/>
+            <Line Type="bytes" Address="0x01c55f66" Value="e8060dfbff9090"/>
+            <Line Type="bytes" Address="0x01c55f7f" Value="e8ed09fdff9090"/>
+            <Line Type="bytes" Address="0x01c55f94" Value="e8e809fdff9090"/>
+        </PatchList>
+    </Metadata>
 </Patch>
