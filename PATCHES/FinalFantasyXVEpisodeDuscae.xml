@@ -165,6 +165,11 @@
             <Line Type="bytes" Address="0x023DBD4E" Value="C5F8104140C4E279180DE0688600C5F859C1C5F81180A00000009090909090909090909090909090909090909090909090909090" />
         </PatchList>
     </Metadata>
+    <Metadata Title="Final Fantasy XV Episode Duscae" Name="60 FPS" Note="WIP" Author="Redcold" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x018A3900" Value="8B470C83F81E7505B83C000000C3" />
+        </PatchList>
+    </Metadata>
     <Metadata Title="Final Fantasy XV Episode Duscae" Author="WawWeFix" AppVer="01.02" AppElf="eboot.bin" Name="Resolution 640x360" Note="640x360 rendering and native output." PatchVer="4.0" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x01907AF5" Value="80020000" />
