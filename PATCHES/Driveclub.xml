@@ -348,6 +348,30 @@
         </PatchList>
     </Metadata>
     <Metadata Title="Driveclub"
+              Name="540p [960x540] Internal resolution"
+              Note="960x540 internal render resolution - 518 400 pixels (0.25x 1080p)"
+              Author="Kravickas, SercanDmr"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x016d0544" Value="c0030000"/>
+            <Line Type="bytes" Address="0x016d0554" Value="1c020000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
+              Name="540p [960x540] Output resolution"
+              Note="960x540 output resolution - 518 400 pixels (0.25x 1080p)"
+              Author="Kravickas, SercanDmr"
+              PatchVer="1.0"
+              AppVer="01.28"
+              AppElf="eboot.bin">
+         <PatchList>
+             <Line Type="bytes" Address="0x00b54c1b" Value="c0030000"/>
+             <Line Type="bytes" Address="0x00b54c21" Value="1c020000"/>
+         </PatchList>
+    </Metadata>
+    <Metadata Title="Driveclub"
               Name="720p [1280x720] Internal resolution"
               Note="1280x720 internal render resolution - 921 600 pixels (0.44x 1080p)"
               Author="Kravickas"
