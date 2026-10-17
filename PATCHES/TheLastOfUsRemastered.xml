@@ -79,6 +79,9 @@
             <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
             <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
             <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ffabaaaa3f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="48efa73f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="48efa73f"/>
         </PatchList>
     </Metadata>
     <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 3440x1440 (21:9)" Note="Resolution 3440x1440. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
@@ -134,6 +137,9 @@
             <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
             <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
             <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ff0000ac3f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="0ae6a83f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="0ae6a83f"/>
         </PatchList>
     </Metadata>
 </Patch>
