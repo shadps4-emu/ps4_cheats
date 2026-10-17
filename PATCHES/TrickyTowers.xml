@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA05198</ID>
+    </TitleID>
+    <Metadata Title="Tricky Towers" Name="Resolution 1280x720" Author="Toccata" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00b6c703" Value="41BE00050000BE00050000BBD002000090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Tricky Towers" Name="Resolution 2560x1440" Author="Toccata" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00b6c703" Value="41BE000A0000BE000A0000BBA005000090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Tricky Towers" Name="Resolution 3840x2160" Author="Toccata" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00b6c703" Value="41BE000F0000BE000F0000BB7008000090909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
