@@ -26,4 +26,114 @@
             <Line Type="bytes" Address="0x193d92c" Value="80"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1080 (21:9)" Note="Resolution 2560x1080. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +402 MB, CPU -0 MB, total direct memory 5010 MB (expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: 42.11 -> 65.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00001004"/>
+            <!-- RENDER_TARGET #134: 658.70 -> 929.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc1c3a"/>
+            <!-- RENDER_BUFFER: 368.00 -> 496.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000001f"/>
+            <!-- LEVEL_BUFFER: 256.00 -> 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: 2588.00 -> 2990.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="0000e0ba"/>
+            <!-- Direct memory size (kAllocSystemDirect) 4608 -> 5010 MB (base table) -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000203901000000"/>
+            <!-- ATTENTION: shadPS4 must provide at least 5010 MB of direct memory (dmem) to the game -->
+            <!-- 2. Resolution: the 1920x1080 slot of the Neo table -> 2560x1080 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="000a0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="38040000"/>
+            <!-- 3. Global aspect ratio 2560:1080 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="26b41740"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="26b41740"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=1.333333 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c3abaaaa3f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="0000403f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="000040bf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="000040bf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="000040bf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="000040bf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="5555d544"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="5555d544"/>
+            <!-- 9. Crosshair (disp32 -> constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D -> canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="abaaaa3f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ffabaaaa3f"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 3440x1440 (21:9)" Note="Resolution 3440x1440. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +1468 MB, CPU -0 MB, total direct memory 6076 MB (expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) (margin reduced to 1.0) -->
+            <!-- RENDER_TARGET #133: 42.11 -> 101.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00005006"/>
+            <!-- RENDER_TARGET #134: 658.70 -> 1575.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc7c62"/>
+            <!-- RENDER_BUFFER: 368.00 -> 880.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="00000037"/>
+            <!-- LEVEL_BUFFER: 256.00 -> 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: 2588.00 -> 4056.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="000080fd"/>
+            <!-- Direct memory size (kAllocSystemDirect) 4608 -> 6076 MB (base table) -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000c07b01000000"/>
+            <!-- ATTENTION: shadPS4 must provide at least 6076 MB of direct memory (dmem) to the game -->
+            <!-- 2. Resolution: the 1920x1080 slot of the Neo table -> 3440x1440 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="700d0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="a0050000"/>
+            <!-- 3. Global aspect ratio 3440:1440 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="8ee31840"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="8ee31840"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=1.343750 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c30000ac3f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="fa823e3f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="fa823ebf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="fa823ebf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="fa823ebf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="fa823ebf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="0000d744"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="0000d744"/>
+            <!-- 9. Crosshair (disp32 -> constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D -> canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="0000ac3f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ff0000ac3f"/>
+        </PatchList>
+    </Metadata>
 </Patch>
