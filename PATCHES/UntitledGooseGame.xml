@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA23081</ID>
+    </TitleID>
+    <Metadata Title="Untitled Goose Game" Name="Resolution 1280x720" Author="Toccata" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0xdc2965" Value="41bf000500009090"/>
+            <Line Type="bytes" Address="0xdc2970" Value="bbd00200009090909090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Untitled Goose Game" Name="Resolution 2560x1440" Author="Toccata" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0xdc2965" Value="41bf000a00009090"/>
+            <Line Type="bytes" Address="0xdc2970" Value="bba00500009090909090909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Untitled Goose Game" Name="Resolution 3840x2160" Author="Toccata" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0xdc2965" Value="41bf000f00009090"/>
+            <Line Type="bytes" Address="0xdc2970" Value="bb700800009090909090909090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
