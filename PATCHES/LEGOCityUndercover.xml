@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA06549</ID>
+    </TitleID>
+    <Metadata Title="LEGO® CITY UNDERCOVER" Name="Resolution 640x360" Note="Sets internal resolution to 640x360\n(default is 1920x1080)" Author="Toccata" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00dd65b9" Value="8002"/>
+            <Line Type="bytes" Address="0x00dd65be" Value="6801"/>
+            <Line Type="bytes" Address="0x014596a4" Value="8002000068010000"/>
+            <Line Type="bytes" Address="0x01459694" Value="8002000068010000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="LEGO® CITY UNDERCOVER" Name="Resolution 2560x1440" Note="Sets internal resolution to 2560x1440\n(default is 1920x1080)" Author="Toccata" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00dd65b9" Value="000a"/>
+            <Line Type="bytes" Address="0x00dd65be" Value="a005"/>
+            <Line Type="bytes" Address="0x014596a4" Value="000a0000a0050000"/>
+            <Line Type="bytes" Address="0x01459694" Value="000a0000a0050000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="LEGO® CITY UNDERCOVER" Name="Resolution 3840x2160" Note="Sets internal resolution to 3840x2160\n(default is 1920x1080)" Author="Toccata" PatchVer="1.0" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x00dd65b9" Value="000f"/>
+            <Line Type="bytes" Address="0x00dd65be" Value="7008"/>
+            <Line Type="bytes" Address="0x014596a4" Value="000f000070080000"/>
+            <Line Type="bytes" Address="0x01459694" Value="000f000070080000"/>
+        </PatchList>
+    </Metadata>
+</Patch>
