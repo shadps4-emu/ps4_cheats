@@ -6,27 +6,27 @@
         <ID>CUSA00557</ID>
         <ID>CUSA00559</ID>
     </TitleID>
-    <Metadata Title="The Last of Us Remastered" Name="Remove 2-second frame time assert" Note="WaitOnContextDone (ndgi-orbis-device.cpp:2209) halts the game via int 0x41 if a frame takes over 2.00 seconds. NOPs the ja into the halt block so the wait loop keeps spinning until the frame completes; its normal completion exit is unchanged." Author="junminlee2004" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="Remove 2-second frame time assert" Note="WaitOnContextDone (ndgi-orbis-device.cpp:2209) halts the game via int 0x41 if a frame takes over 2.00 seconds. NOPs the ja into the halt block so the wait loop keeps spinning until the frame completes; its normal completion exit is unchanged." Author="junminlee2004" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" led="false">
         <PatchList>
             <Line Type="bytes" Address="0xd92862" Value="9090"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="Remove 2-second frame time assert" Note="WaitOnContextDone (ndgi-orbis-device.cpp:2209) halts the game via int 0x41 if a frame takes over 2.00 seconds. NOPs the ja into the halt block so the wait loop keeps spinning until the frame completes; its normal completion exit is unchanged." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="Remove 2-second frame time assert" Note="WaitOnContextDone (ndgi-orbis-device.cpp:2209) halts the game via int 0x41 if a frame takes over 2.00 seconds. NOPs the ja into the halt block so the wait loop keeps spinning until the frame completes; its normal completion exit is unchanged." Author="junminlee2004" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" led="false">
         <PatchList>
             <Line Type="bytes" Address="0xf3d88f" Value="9090"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" led="false">
         <PatchList>
             <Line Type="bytes" Address="0x19175a4" Value="80"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" led="false">
         <PatchList>
             <Line Type="bytes" Address="0x193d92c" Value="80"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1440 (16:9)" Note="Resolution 2560x1440. Allocate +2000 MB dmem in shadPS4." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1440 (16:9)" Note="Resolution 2560x1440. Allocate +2000 MB dmem in shadPS4." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" led="false">
         <PatchList>
             <!-- 1. Memory budgets: GPU +908 MB, CPU -0 MB, total direct memory 5516 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
             <!-- RENDER_TARGET #133: was 42.11 MB, now 86.00 MB -->
@@ -48,7 +48,7 @@
             <!-- 16:9: aspect, camera, HUD and video shader patches are not needed (only resolution and memory) -->
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 1920x1200 (16:10)" Note="Resolution 1920x1200. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 1920x1200 (16:10)" Note="Resolution 1920x1200. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" led="false">
         <PatchList>
             <!-- 1. Memory budgets: GPU +156 MB, CPU -0 MB, total direct memory 4764 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
             <!-- RENDER_TARGET #133: was 42.11 MB, now 54.00 MB -->
@@ -106,7 +106,7 @@
             <Line Type="bytes" Address="0x014c9928" Value="5d55753f"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1600 (16:10)" Note="Resolution 2560x1600. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="true">
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1600 (16:10)" Note="Resolution 2560x1600. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" led="false">
         <PatchList>
             <!-- 1. Memory budgets: GPU +1120 MB, CPU -0 MB, total direct memory 5728 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
             <!-- RENDER_TARGET #133: was 42.11 MB, now 96.00 MB -->
@@ -164,7 +164,7 @@
             <Line Type="bytes" Address="0x014c9928" Value="5d55753f"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1080 (21:9)" Note="Resolution 2560x1080. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1080 (21:9)" Note="Resolution 2560x1080. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" led="false">
         <PatchList>
             <!-- 1. Memory budgets: GPU +402 MB, CPU -0 MB, total direct memory 5010 MB (expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
             <!-- RENDER_TARGET #133: 42.11 -> 65.00 MB -->
@@ -222,7 +222,7 @@
             <Line Type="bytes" Address="0x014c9928" Value="48efa73f"/>
         </PatchList>
     </Metadata>
-    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 3440x1440 (21:9)" Note="Resolution 3440x1440. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 3440x1440 (21:9)" Note="Resolution 3440x1440. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" led="false">
         <PatchList>
             <!-- 1. Memory budgets: GPU +1468 MB, CPU -0 MB, total direct memory 6076 MB (expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) (margin reduced to 1.0) -->
             <!-- RENDER_TARGET #133: 42.11 -> 101.00 MB -->
