@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA05158</ID>
+    </TitleID>
+    <Metadata Title="Skylanders Imaginators" Name="Signature Patch" Note="Removes the factory signature check on figure dumps, allowing unique UIDs and unreleased characters. Port of the Cemu patch by Winner Nombre, MusicDisc, MoltenLavaCore and NefariousTechSupport." Author="rhsts" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x007f4370" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x007f2bb1" Value="eb31"/>
+            <Line Type="bytes" Address="0x007e72ad" Value="eb53"/>
+            <Line Type="bytes" Address="0x007e86ea" Value="e9c0070000"/>
+        </PatchList>
+    </Metadata>
+</Patch>
