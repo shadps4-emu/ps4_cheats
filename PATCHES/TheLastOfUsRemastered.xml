@@ -26,6 +26,144 @@
             <Line Type="bytes" Address="0x193d92c" Value="80"/>
         </PatchList>
     </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1440 (16:9)" Note="Resolution 2560x1440. Allocate +2000 MB dmem in shadPS4." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +908 MB, CPU -0 MB, total direct memory 5516 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: was 42.11 MB, now 86.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00006005"/>
+            <!-- RENDER_TARGET #134: was 658.70 MB, now 1238.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc6c4d"/>
+            <!-- RENDER_BUFFER: was 368.00 MB, now 672.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000002a"/>
+            <!-- LEVEL_BUFFER: was 256.00 MB, now 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: was 2588.00 MB, now 3496.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="000080da"/>
+            <!-- Direct memory size (kAllocSystemDirect): 4608 MB, new value 5516 MB -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000c05801000000"/>
+            <!-- shadPS4 must provide at least 5516 MB of direct memory (dmem) -->
+            <!-- 2. Resolution: 2560x1440 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="000a0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="a0050000"/>
+            <!-- 16:9: aspect, camera, HUD and video shader patches are not needed (only resolution and memory) -->
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 1920x1200 (16:10)" Note="Resolution 1920x1200. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +156 MB, CPU -0 MB, total direct memory 4764 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: was 42.11 MB, now 54.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00006003"/>
+            <!-- RENDER_TARGET #134: was 658.70 MB, now 774.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc6c30"/>
+            <!-- RENDER_BUFFER: was 368.00 MB, now 416.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000001a"/>
+            <!-- LEVEL_BUFFER: was 256.00 MB, now 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: was 2588.00 MB, now 2744.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="000080ab"/>
+            <!-- Direct memory size (kAllocSystemDirect): 4608 MB, new value 4764 MB -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000c02901000000"/>
+            <!-- shadPS4 must provide at least 4764 MB of direct memory (dmem) -->
+            <!-- 2. Resolution: 1920x1200 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="80070000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="b0040000"/>
+            <!-- 3. Global aspect ratio 1920:1200 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="cdcccc3f"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="cdcccc3f"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=0.900000 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c36666663f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="e4388e3f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="e4388ebf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="e4388ebf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="00009044"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="00009044"/>
+            <!-- 9. Crosshair (disp32: constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D: canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="6666663f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ff6666663f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="5d55753f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="5d55753f"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1600 (16:10)" Note="Resolution 2560x1600. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="true">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +1120 MB, CPU -0 MB, total direct memory 5728 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: was 42.11 MB, now 96.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00000006"/>
+            <!-- RENDER_TARGET #134: was 658.70 MB, now 1376.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc0c56"/>
+            <!-- RENDER_BUFFER: was 368.00 MB, now 736.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000002e"/>
+            <!-- LEVEL_BUFFER: was 256.00 MB, now 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: was 2588.00 MB, now 3708.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="0000c0e7"/>
+            <!-- Direct memory size (kAllocSystemDirect): 4608 MB, new value 5728 MB -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000006601000000"/>
+            <!-- shadPS4 must provide at least 5728 MB of direct memory (dmem) -->
+            <!-- 2. Resolution: 2560x1600 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="000a0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="40060000"/>
+            <!-- 3. Global aspect ratio 2560:1600 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="cdcccc3f"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="cdcccc3f"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=0.900000 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c36666663f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="e4388e3f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="e4388ebf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="e4388ebf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="00009044"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="00009044"/>
+            <!-- 9. Crosshair (disp32: constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D: canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="6666663f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ff6666663f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="5d55753f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="5d55753f"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="The Last of Us Remastered" Name="Resolution Patch 2560x1080 (21:9)" Note="Resolution 2560x1080. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub." Author="sanyagames227" PatchVer="1.0" AppVer="01.11" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <!-- 1. Memory budgets: GPU +402 MB, CPU -0 MB, total direct memory 5010 MB (expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
