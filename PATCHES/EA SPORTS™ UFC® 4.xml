@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA14209</ID>
+        <ID>CUSA14204</ID>
+    </TitleID>
+    <Metadata Title="UFC 4" Name="60+ FPS (but bug mouth)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" Note="The game may not start the first time, so try many times." isEnabled="true">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 85 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b803000000909083f804740983f801"/>
+            <Line Type="mask" Address="8A 00 41 88 85 EB 00 00 00" Value="41c685eb0000000090"/>
+            <Line Type="mask" Address="E8 C9 0E D5 FF 41" Value="31c0909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="60+ FPS (but bug mouth)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="The game may not start the first time, so try many times." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 85 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b803000000909083f804740983f801"/>
+            <Line Type="mask" Address="8A 00 41 88 85 EB 00 00 00" Value="41c685eb0000000090"/>
+            <Line Type="mask" Address="E8 C9 0E D5 FF 41" Value="31c0909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 960x540" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b81c020000bec003000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 1280x720" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b8d0020000be0005000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 800x450 (Ultra Performance)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b8c2010000be2003000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 640x360 (Extreme Performance)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b868010000be8002000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 480x270 (Potato Mode)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b80e010000bee001000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 2560x1440" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b8a0050000be000a000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 100x100 (Square Potato)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b864000000be6400000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 960x540" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b81c020000bec003000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 1280x720" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b8d0020000be0005000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 800x450 (Ultra Performance)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b8c2010000be2003000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 640x360 (Extreme Performance)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b868010000be8002000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 480x270 (Potato Mode)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b80e010000bee001000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 2560x1440" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b8a0050000be000a000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Resolution 100x100 (Square Potato)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="07 00 00 eb 15 b8 84 03 00 00 be 40 06 00 00 89" Value="070000eb15b864000000be6400000089"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable All Shadows" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="8B 46 20 89 85 60 FE FF FF 8B 46 24 89 85 64 FE FF FF" Value="8b01000000898560feffff898564feffff90"/>
+            <Line Type="mask" Address="0F 8E B7 00 00 00 4C 8D A5" Value="e9b8000000904c8da5"/>
+            <Line Type="mask" Address="0F 8E 4F 01 00 00 4C" Value="e950010000904c"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Shadows In Octagon" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E 4F 01 00 00 4C" Value="e950010000904c"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Shadows Fighters" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E B7 00 00 00 4C 8D A5" Value="e9b8000000904c8da5"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable All Shadows" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="8B 46 20 89 85 60 FE FF FF 8B 46 24 89 85 64 FE FF FF" Value="8b01000000898560feffff898564feffff90"/>
+            <Line Type="mask" Address="0F 8E B7 00 00 00 4C 8D A5" Value="e9b8000000904c8da5"/>
+            <Line Type="mask" Address="0F 8E 4F 01 00 00 4C" Value="e950010000904c"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Shadows In Octagon" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E 4F 01 00 00 4C" Value="e950010000904c"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Shadows Fighters" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="0F 8E B7 00 00 00 4C 8D A5" Value="e9b8000000904c8da5"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Crowd (Plus 5-10 fps)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="02 48 85 FF 49 89 DF 74 18" Value="024885ff4989dfeb18"/>
+            <Line Type="mask" Address="E8 31 0F 00 00 48 8B" Value="9090909090488b"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Crowd (Plus 5-10 fps)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="02 48 85 FF 49 89 DF 74 18" Value="024885ff4989dfeb18"/>
+            <Line Type="mask" Address="E8 31 0F 00 00 48 8B" Value="9090909090488b"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Extreme boost fps (no octagon)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" Note="Fighters can fall through the octagon" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="A3 FF 85 C0 75 B0" Value="a3ff85c0ebb0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Extreme boost fps (no octagon)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="Fighters can fall through the octagon" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="A3 FF 85 C0 75 B0" Value="a3ff85c0ebb0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Object Motion Blur" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="8A 00 41 88 85 EA 00 00 00" Value="41c685ea0000000090"/>
+            <Line Type="mask" Address="E8 11 0F D5 FF 41 88 87 EA 00 00 00" Value="31c0909090418887ea000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Disable Object Motion Blur" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="8A 00 41 88 85 EA 00 00 00" Value="41c685ea0000000090"/>
+            <Line Type="mask" Address="E8 11 0F D5 FF 41 88 87 EA 00 00 00" Value="31c0909090418887ea000000"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Mesh Wrap" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="mask" Address="8A 00 41 88 85 F9 00 00 00" Value="41c685f90000000090"/>
+            <Line Type="mask" Address="E8 59 0F D5 FF" Value="31c0909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Skinning Method 2 (Force GPU Compute)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 85 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b802000000909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Skinning Method 2 (Force GPU Compute)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 85 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b802000000909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Skinning Method 0 (Force CPU)" Author="Lepexa" PatchVer="1.0" AppVer="28.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 85 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b800000000909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="UFC 4" Name="Skinning Method 0 (Force CPU)" Author="Lepexa" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" Note="No need to enable if the 60+ FPS patch is enabled. Forces CPU Skinning. Offers the most stable geometry processing, completely eliminating character mesh stretching bugs. May cause minor vertex blinking when using high-resolution custom textures." isEnabled="false">
+        <PatchList>
+            <Line Type="mask" Address="41 8B 85 E0 00 00 00 83 F8 04 74 09 83 F8 01" Value="b800000000909083f804740983f801"/>
+        </PatchList>
+    </Metadata>
+</Patch>
