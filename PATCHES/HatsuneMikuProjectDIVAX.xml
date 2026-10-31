@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <TitleID>
+    <ID>CUSA04518</ID>
+  </TitleID>
+  <Metadata Title="Hatsune Miku: Project DIVA X" Name="Movie Crash Fix" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+    <PatchList>
+      <Line Type="bytes" Address="0x00aedc00" Value="4c89ffe8e839c2ff4989c74c89f7e8dd39c2ff4d85ff74104885c0740b4889c74c89fee85845c2ffe9b26bc3ff" />
+      <Line Type="bytes" Address="0x007247d2" Value="e929943c009090909090909090" />
+    </PatchList>
+  </Metadata>
+  <Metadata Title="Hatsune Miku: Project DIVA X" Name="Movie Crash Fix" AppVer="01.02" AppElf="eboot.bin" isEnabled="false">
+    <PatchList>
+      <Line Type="bytes" Address="0x00c3b700" Value="4c89ffe8a879beff4989c74c89f7e89d79beff4d85ff74104885c0740b4889c74c89fee86888beffe9f07cc0ff" />
+      <Line Type="bytes" Address="0x00843410" Value="e9eb823f009090909090909090" />
+    </PatchList>
+  </Metadata>
+</Patch>
