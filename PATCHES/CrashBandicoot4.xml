@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA19035</ID>
+        <ID>CUSA23470</ID>
+        <ID>CUSA23511</ID>
+        <ID>CUSA23512</ID>
+    </TitleID>
+    <Metadata Title="Crash Bandicoot 4: It's About Time" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x144f572" Value="80"/>
+            <Line Type="bytes" Address="0x144f58a" Value="90"/>
+            <Line Type="bytes" Address="0x144f5ac" Value="8002"/>
+            <Line Type="bytes" Address="0x144f5be" Value="16"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x14503be" Value="80"/>
+            <Line Type="bytes" Address="0x14503cd" Value="90"/>
+            <Line Type="bytes" Address="0x14503ef" Value="8002"/>
+            <Line Type="bytes" Address="0x1450401" Value="16"/>
+
+            <!-- Defining memory areas -->
+            <Line Type="bytes" Address="0x14632a9" Value="C0"/>
+            <Line Type="bytes" Address="0x1463396" Value="B0"/>
+            <Line Type="bytes" Address="0x146347b" Value="80"/>
+            <Line Type="bytes" Address="0x14634a8" Value="90"/>
+            <Line Type="bytes" Address="0x14634d4" Value="A0"/>
+
+            <!-- Defining memory areas - data constants -->
+            <Line Type="bytes" Address="0x542ce84" Value="80"/>
+            <Line Type="bytes" Address="0x542ce94" Value="90"/>
+            <Line Type="bytes" Address="0x542cea4" Value="A0"/>
+            <Line Type="bytes" Address="0x542ceb4" Value="B0"/>
+            <Line Type="bytes" Address="0x542cec4" Value="D0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Crash Bandicoot 4: It's About Time" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.05" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x13b0402" Value="80"/>
+            <Line Type="bytes" Address="0x13b041a" Value="90"/>
+            <Line Type="bytes" Address="0x13b043c" Value="8002"/>
+            <Line Type="bytes" Address="0x13b044e" Value="16"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x13b124e" Value="80"/>
+            <Line Type="bytes" Address="0x13b125d" Value="90"/>
+            <Line Type="bytes" Address="0x13b127f" Value="8002"/>
+            <Line Type="bytes" Address="0x13b1291" Value="16"/>
+
+            <!-- Defining memory areas -->
+            <Line Type="bytes" Address="0x13c4149" Value="C0"/>
+            <Line Type="bytes" Address="0x13c4236" Value="B0"/>
+            <Line Type="bytes" Address="0x13c431b" Value="80"/>
+            <Line Type="bytes" Address="0x13c4348" Value="90"/>
+            <Line Type="bytes" Address="0x13c4374" Value="A0"/>
+
+            <!-- Defining memory areas - data constants -->
+            <Line Type="bytes" Address="0x52fcae4" Value="80"/>
+            <Line Type="bytes" Address="0x52fcaf4" Value="90"/>
+            <Line Type="bytes" Address="0x52fcb04" Value="A0"/>
+            <Line Type="bytes" Address="0x52fcb14" Value="B0"/>
+            <Line Type="bytes" Address="0x52fcb24" Value="D0"/>
+        </PatchList>
+    </Metadata>
+</Patch>

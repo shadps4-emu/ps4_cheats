@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA35016</ID>
+    </TitleID>
+    <Metadata Title="Sonic Racing: CrossWorlds" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x40b4ee" Value="80"/>
+            <Line Type="bytes" Address="0x40b506" Value="90"/>
+            <Line Type="bytes" Address="0x40b528" Value="8002"/>
+            <Line Type="bytes" Address="0x40b53a" Value="16"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x40bcf9" Value="80"/>
+            <Line Type="bytes" Address="0x40bd0f" Value="90"/>
+            <Line Type="bytes" Address="0x40bda0" Value="8002"/>
+            <Line Type="bytes" Address="0x40bdb2" Value="16"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x40c067" Value="80"/>
+            <Line Type="bytes" Address="0x40c079" Value="90"/>
+            <Line Type="bytes" Address="0x40c0d3" Value="8002"/>
+            <Line Type="bytes" Address="0x40c0e5" Value="16"/>
+
+            <!-- Defining memory areas -->
+            <Line Type="bytes" Address="0x4252d1" Value="B0"/>
+            <Line Type="bytes" Address="0x4252db" Value="80"/>
+            <Line Type="bytes" Address="0x4253f0" Value="90"/>
+            <Line Type="bytes" Address="0x425475" Value="A0"/>
+            <Line Type="bytes" Address="0x42557d" Value="D0"/>
+            <Line Type="bytes" Address="0x425663" Value="80"/>
+            <Line Type="bytes" Address="0x425712" Value="90"/>
+            <Line Type="bytes" Address="0x425744" Value="A0"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x4265ac" Value="80"/>
+            <Line Type="bytes" Address="0x42661b" Value="90"/>
+            <Line Type="bytes" Address="0x42666e" Value="8002"/>
+            <Line Type="bytes" Address="0x426680" Value="16"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Sonic Racing: CrossWorlds" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.41" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x40b4de" Value="80"/>
+            <Line Type="bytes" Address="0x40b4f6" Value="90"/>
+            <Line Type="bytes" Address="0x40b518" Value="8002"/>
+            <Line Type="bytes" Address="0x40b52a" Value="16"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x40bce9" Value="80"/>
+            <Line Type="bytes" Address="0x40bcff" Value="90"/>
+            <Line Type="bytes" Address="0x40bd90" Value="8002"/>
+            <Line Type="bytes" Address="0x40bda2" Value="16"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x40c057" Value="80"/>
+            <Line Type="bytes" Address="0x40c069" Value="90"/>
+            <Line Type="bytes" Address="0x40c0c3" Value="8002"/>
+            <Line Type="bytes" Address="0x40c0d5" Value="16"/>
+
+            <!-- Defining memory areas -->
+            <Line Type="bytes" Address="0x425351" Value="B0"/>
+            <Line Type="bytes" Address="0x42535b" Value="80"/>
+            <Line Type="bytes" Address="0x425470" Value="90"/>
+            <Line Type="bytes" Address="0x4254f5" Value="A0"/>
+            <Line Type="bytes" Address="0x4255fd" Value="D0"/>
+            <Line Type="bytes" Address="0x4256e3" Value="80"/>
+            <Line Type="bytes" Address="0x425792" Value="90"/>
+            <Line Type="bytes" Address="0x4257c4" Value="A0"/>
+
+            <!-- Calculating memory area index from address -->
+            <Line Type="bytes" Address="0x42662c" Value="80"/>
+            <Line Type="bytes" Address="0x42669b" Value="90"/>
+            <Line Type="bytes" Address="0x4266ee" Value="8002"/>
+            <Line Type="bytes" Address="0x426700" Value="16"/>
+        </PatchList>
+    </Metadata>
+</Patch>

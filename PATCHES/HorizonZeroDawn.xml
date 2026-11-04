@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01021</ID>
+        <ID>CUSA01967</ID>
+        <ID>CUSA05661</ID>
+        <ID>CUSA05682</ID>
+        <ID>CUSA07319</ID>
+        <ID>CUSA07320</ID>
+        <ID>CUSA07326</ID>
+        <ID>CUSA07350</ID>
+        <ID>CUSA07762</ID>
+        <ID>CUSA07798</ID>
+        <ID>CUSA10211</ID>
+        <ID>CUSA10212</ID>
+        <ID>CUSA10213</ID>
+        <ID>CUSA10218</ID>
+        <ID>CUSA10234</ID>
+        <ID>CUSA10237</ID>
+    </TitleID>
+    <Metadata Title="Horizon Zero Dawn" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.54" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x1cb06a4" Value="0x82"/>
+            <Line Type="byte" Address="0x60ac73" Value="0x80"/>
+            <Line Type="byte" Address="0x643894" Value="0x80"/>
+            <Line Type="byte" Address="0x643bc5" Value="0x80"/>
+            <Line Type="byte" Address="0x64985e" Value="0x80"/>
+            <Line Type="byte" Address="0x98bd25" Value="0x80"/>
+            <Line Type="byte" Address="0xa565b6" Value="0x80"/>
+            <Line Type="byte" Address="0xb61909" Value="0x80"/>
+            <Line Type="byte" Address="0xb755d1" Value="0x80"/>
+            <Line Type="byte" Address="0xb75732" Value="0x80"/>
+            <Line Type="byte" Address="0xb75900" Value="0x80"/>
+            <Line Type="byte" Address="0xb75cc6" Value="0x80"/>
+            <Line Type="byte" Address="0xb86ebf" Value="0x80"/>
+            <Line Type="byte" Address="0xb86f8d" Value="0x80"/>
+            <Line Type="byte" Address="0xb87976" Value="0x80"/>
+            <Line Type="byte" Address="0xb88a3e" Value="0x80"/>
+            <Line Type="byte" Address="0xb88cb3" Value="0x80"/>
+            <Line Type="byte" Address="0xb88d8f" Value="0x80"/>
+            <Line Type="byte" Address="0xb8a660" Value="0x80"/>
+            <Line Type="byte" Address="0xb8a74e" Value="0x80"/>
+            <Line Type="byte" Address="0xb902b1" Value="0x80"/>
+            <Line Type="byte" Address="0xb9089b" Value="0x80"/>
+            <Line Type="byte" Address="0xb93c6d" Value="0x80"/>
+            <Line Type="byte" Address="0xb93efb" Value="0x80"/>
+            <Line Type="byte" Address="0xb94a0f" Value="0x80"/>
+            <Line Type="byte" Address="0xb94de8" Value="0x80"/>
+            <Line Type="byte" Address="0xb9e442" Value="0x80"/>
+            <Line Type="byte" Address="0xba96a3" Value="0x80"/>
+            <Line Type="byte" Address="0xba9c8f" Value="0x80"/>
+            <Line Type="byte" Address="0xba9d8f" Value="0x80"/>
+            <Line Type="byte" Address="0xba9e7b" Value="0x80"/>
+            <Line Type="byte" Address="0xbb39fc" Value="0x80"/>
+            <Line Type="byte" Address="0xbb9a89" Value="0x80"/>
+            <Line Type="byte" Address="0xbcb99f" Value="0x80"/>
+            <Line Type="byte" Address="0xbd08f3" Value="0x80"/>
+            <Line Type="byte" Address="0xbd2218" Value="0x80"/>
+            <Line Type="byte" Address="0xbd40d0" Value="0x80"/>
+            <Line Type="byte" Address="0xbd415e" Value="0x80"/>
+            <Line Type="byte" Address="0xbe578e" Value="0x80"/>
+            <Line Type="byte" Address="0xbe58b0" Value="0x80"/>
+            <Line Type="byte" Address="0xbe592d" Value="0x80"/>
+            <Line Type="byte" Address="0xbe6259" Value="0x80"/>
+            <Line Type="byte" Address="0xbe62a3" Value="0x80"/>
+            <Line Type="byte" Address="0xbe9734" Value="0x80"/>
+            <Line Type="byte" Address="0xbea398" Value="0x80"/>
+            <Line Type="byte" Address="0xbea416" Value="0x80"/>
+            <Line Type="byte" Address="0xc0b0f5" Value="0x80"/>
+            <Line Type="byte" Address="0xc11fd7" Value="0x80"/>
+            <Line Type="byte" Address="0xc17b39" Value="0x80"/>
+            <Line Type="byte" Address="0xc1b989" Value="0x80"/>
+            <Line Type="byte" Address="0xc1da02" Value="0x80"/>
+            <Line Type="byte" Address="0xc1ed63" Value="0x80"/>
+            <Line Type="byte" Address="0xc31ad6" Value="0x80"/>
+            <Line Type="byte" Address="0xc31b75" Value="0x80"/>
+            <Line Type="byte" Address="0xc43e0e" Value="0x80"/>
+            <Line Type="byte" Address="0xc7caa8" Value="0x80"/>
+            <Line Type="byte" Address="0xc7ce76" Value="0x80"/>
+            <Line Type="byte" Address="0xc7d604" Value="0x80"/>
+            <Line Type="byte" Address="0x109b85b" Value="0x80"/>
+            <Line Type="byte" Address="0x12dffd4" Value="0x80"/>
+            <Line Type="byte" Address="0x12e6c15" Value="0x80"/>
+            <Line Type="byte" Address="0x12e76f2" Value="0x80"/>
+            <Line Type="byte" Address="0x12e7a86" Value="0x80"/>
+            <Line Type="byte" Address="0x172806e" Value="0x80"/>
+            <Line Type="byte" Address="0x1b77a33" Value="0x80"/>
+            <Line Type="byte" Address="0x1b77da1" Value="0x80"/>
+            <Line Type="byte" Address="0x1b78022" Value="0x80"/>
+            <Line Type="byte" Address="0x1c9c745" Value="0x80"/>
+            <Line Type="byte" Address="0x1ec8cf4" Value="0x80"/>
+            <Line Type="byte" Address="0x1ecc80b" Value="0x80"/>
+            <Line Type="byte" Address="0x1ecd3ec" Value="0x80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Horizon Zero Dawn" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x1ca6b84" Value="0x82"/>
+            <Line Type="byte" Address="0x60a3b3" Value="0x80"/>
+            <Line Type="byte" Address="0x642f84" Value="0x80"/>
+            <Line Type="byte" Address="0x6432b5" Value="0x80"/>
+            <Line Type="byte" Address="0x648f4e" Value="0x80"/>
+            <Line Type="byte" Address="0x98b415" Value="0x80"/>
+            <Line Type="byte" Address="0xa55ca6" Value="0x80"/>
+            <Line Type="byte" Address="0xb60ff9" Value="0x80"/>
+            <Line Type="byte" Address="0xb74cc1" Value="0x80"/>
+            <Line Type="byte" Address="0xb74e22" Value="0x80"/>
+            <Line Type="byte" Address="0xb74ff0" Value="0x80"/>
+            <Line Type="byte" Address="0xb753b6" Value="0x80"/>
+            <Line Type="byte" Address="0xb865af" Value="0x80"/>
+            <Line Type="byte" Address="0xb8667d" Value="0x80"/>
+            <Line Type="byte" Address="0xb87066" Value="0x80"/>
+            <Line Type="byte" Address="0xb8812e" Value="0x80"/>
+            <Line Type="byte" Address="0xb883a3" Value="0x80"/>
+            <Line Type="byte" Address="0xb8847f" Value="0x80"/>
+            <Line Type="byte" Address="0xb89d50" Value="0x80"/>
+            <Line Type="byte" Address="0xb89e3e" Value="0x80"/>
+            <Line Type="byte" Address="0xb8f9a1" Value="0x80"/>
+            <Line Type="byte" Address="0xb8ff8b" Value="0x80"/>
+            <Line Type="byte" Address="0xb9335d" Value="0x80"/>
+            <Line Type="byte" Address="0xb935eb" Value="0x80"/>
+            <Line Type="byte" Address="0xb940ff" Value="0x80"/>
+            <Line Type="byte" Address="0xb944d8" Value="0x80"/>
+            <Line Type="byte" Address="0xb9db32" Value="0x80"/>
+            <Line Type="byte" Address="0xba8d93" Value="0x80"/>
+            <Line Type="byte" Address="0xba937f" Value="0x80"/>
+            <Line Type="byte" Address="0xba947f" Value="0x80"/>
+            <Line Type="byte" Address="0xba956b" Value="0x80"/>
+            <Line Type="byte" Address="0xbb30ec" Value="0x80"/>
+            <Line Type="byte" Address="0xbb9179" Value="0x80"/>
+            <Line Type="byte" Address="0xbcb08f" Value="0x80"/>
+            <Line Type="byte" Address="0xbcffe3" Value="0x80"/>
+            <Line Type="byte" Address="0xbd1908" Value="0x80"/>
+            <Line Type="byte" Address="0xbd37c0" Value="0x80"/>
+            <Line Type="byte" Address="0xbd384e" Value="0x80"/>
+            <Line Type="byte" Address="0xbe4e7e" Value="0x80"/>
+            <Line Type="byte" Address="0xbe4fa0" Value="0x80"/>
+            <Line Type="byte" Address="0xbe501d" Value="0x80"/>
+            <Line Type="byte" Address="0xbe5949" Value="0x80"/>
+            <Line Type="byte" Address="0xbe5993" Value="0x80"/>
+            <Line Type="byte" Address="0xbe8e24" Value="0x80"/>
+            <Line Type="byte" Address="0xbea088" Value="0x80"/>
+            <Line Type="byte" Address="0xbea106" Value="0x80"/>
+            <Line Type="byte" Address="0xc0a7e5" Value="0x80"/>
+            <Line Type="byte" Address="0xc116c7" Value="0x80"/>
+            <Line Type="byte" Address="0xc17229" Value="0x80"/>
+            <Line Type="byte" Address="0xc1b079" Value="0x80"/>
+            <Line Type="byte" Address="0xc1d0f2" Value="0x80"/>
+            <Line Type="byte" Address="0xc1e453" Value="0x80"/>
+            <Line Type="byte" Address="0xc311c6" Value="0x80"/>
+            <Line Type="byte" Address="0xc31265" Value="0x80"/>
+            <Line Type="byte" Address="0xc434fe" Value="0x80"/>
+            <Line Type="byte" Address="0xc7c198" Value="0x80"/>
+            <Line Type="byte" Address="0xc7c566" Value="0x80"/>
+            <Line Type="byte" Address="0xc7ccf4" Value="0x80"/>
+            <Line Type="byte" Address="0x109af4b" Value="0x80"/>
+            <Line Type="byte" Address="0x12df6c4" Value="0x80"/>
+            <Line Type="byte" Address="0x12e6305" Value="0x80"/>
+            <Line Type="byte" Address="0x12e6de2" Value="0x80"/>
+            <Line Type="byte" Address="0x12e7176" Value="0x80"/>
+            <Line Type="byte" Address="0x172775e" Value="0x80"/>
+            <Line Type="byte" Address="0x1b77123" Value="0x80"/>
+            <Line Type="byte" Address="0x1b77491" Value="0x80"/>
+            <Line Type="byte" Address="0x1b77712" Value="0x80"/>
+            <Line Type="byte" Address="0x1c9be35" Value="0x80"/>
+            <Line Type="byte" Address="0x1ec83e4" Value="0x80"/>
+            <Line Type="byte" Address="0x1ecc4fb" Value="0x80"/>
+            <Line Type="byte" Address="0x1ecd0dc" Value="0x80"/>
+        </PatchList>
+    </Metadata>
+</Patch>

@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA11116</ID>
+    </TitleID>
+    <Metadata Title="NHL 19" Name="Resolution 2560x1440 (16:9)" Note="Sets the internal render resolution to 2560x1440, 3 686 400 pixels, and scales the video memory to match. Set Additional DMem to 3500 MB or more." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02d3bd70" Value="b8000a0000"/>
+            <Line Type="bytes" Address="0x02d3bd75" Value="ba000a0000"/>
+            <Line Type="bytes" Address="0x02d3bd7a" Value="b9a0050000"/>
+            <Line Type="bytes" Address="0x02d3bd7f" Value="bea0050000"/>
+            <Line Type="bytes" Address="0x02d3bdaa" Value="41c74558000a0000"/>
+            <Line Type="bytes" Address="0x005736ea" Value="e988198c049090"/>
+            <Line Type="bytes" Address="0x04e35077" Value="483d00000040721348b90000c090000000004839c8740448c1e001498b0e483b4de8e953e673fb"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Resolution 3840x2160 (16:9)" Note="Sets the internal render resolution to 3840x2160, 8 294 400 pixels, and scales the video memory to match. Set Additional DMem to 3500 MB or more." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02d3bd70" Value="b8000f0000"/>
+            <Line Type="bytes" Address="0x02d3bd75" Value="ba000f0000"/>
+            <Line Type="bytes" Address="0x02d3bd7a" Value="b970080000"/>
+            <Line Type="bytes" Address="0x02d3bd7f" Value="be70080000"/>
+            <Line Type="bytes" Address="0x02d3bdaa" Value="41c74558000f0000"/>
+            <Line Type="bytes" Address="0x005736ea" Value="e988198c049090"/>
+            <Line Type="bytes" Address="0x04e35077" Value="483d00000040721348b90000c090000000004839c8740448c1e001498b0e483b4de8e953e673fb"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Resolution 5120x2880 (16:9)" Note="Sets the internal render resolution to 5120x2880, 14 745 600 pixels, and scales the video memory to match. Set Additional DMem to 6000 MB or more." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02d3bd70" Value="b800140000"/>
+            <Line Type="bytes" Address="0x02d3bd75" Value="ba00140000"/>
+            <Line Type="bytes" Address="0x02d3bd7a" Value="b9400b0000"/>
+            <Line Type="bytes" Address="0x02d3bd7f" Value="be400b0000"/>
+            <Line Type="bytes" Address="0x02d3bdaa" Value="41c7455800140000"/>
+            <Line Type="bytes" Address="0x005736ea" Value="e988198c049090"/>
+            <Line Type="bytes" Address="0x04e35077" Value="483d00000040721348b90000c090000000004839c87404486bc003498b0e483b4de8e953e673fb"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Resolution 7680x4320 (16:9)" Note="Sets the internal render resolution to 7680x4320, 33 177 600 pixels, and scales the video memory to match. Set Additional DMem to 12000 MB or more. Experimental." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02d3bd70" Value="b8001e0000"/>
+            <Line Type="bytes" Address="0x02d3bd75" Value="ba001e0000"/>
+            <Line Type="bytes" Address="0x02d3bd7a" Value="b9e0100000"/>
+            <Line Type="bytes" Address="0x02d3bd7f" Value="bee0100000"/>
+            <Line Type="bytes" Address="0x02d3bdaa" Value="41c74558001e0000"/>
+            <Line Type="bytes" Address="0x005736ea" Value="e988198c049090"/>
+            <Line Type="bytes" Address="0x04e35077" Value="483d00000040721348b90000c090000000004839c87404486bc005498b0e483b4de8e953e673fb"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="60 FPS replays" Note="Forces the video out flip rate to every vblank so replays and other 30 FPS sequences run at 60 FPS." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02cec8df" Value="bb01000000"/>
+            <Line Type="bytes" Address="0x02cec8ef" Value="909090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect English language" Note="Skips the language selection screen the game shows on every boot and forces English language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 8." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be080000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Swedish language" Note="Skips the language selection screen the game shows on every boot and forces Swedish language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 26." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be1a0000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Finnish language" Note="Skips the language selection screen the game shows on every boot and forces Finnish language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 9." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be090000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect German language" Note="Skips the language selection screen the game shows on every boot and forces German language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 11." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be0b0000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect French language" Note="Skips the language selection screen the game shows on every boot and forces French language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 10." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be0a0000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Czech language" Note="Skips the language selection screen the game shows on every boot and forces Czech language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 4." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be040000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Autoselect Russian language" Note="Skips the language selection screen the game shows on every boot and forces Russian language. GetIsLanguageBoot is redirected to return false so the frontend never opens the language list, and the language the game resolves before loading its localisation data is replaced with id 23." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02b7270e" Value="488d05d8972c02"/>
+            <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
+            <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
+            <Line Type="bytes" Address="0x04e36c8d" Value="be170000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+</Patch>

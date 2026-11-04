@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA08804</ID>
+        <ID>CUSA08809</ID>
+        <ID>CUSA08034</ID>
+    </TitleID>
+    <Metadata Title="Shadow of the Colossus" Name="Debug Menu" Author="illusion" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x004244f8" Value="e9f0000000"/>
+            <Line Type="bytes" Address="0x004245ed" Value="488b03"/>
+            <Line Type="bytes" Address="0x004245f0" Value="483b4308"/>
+            <Line Type="bytes" Address="0x004245f4" Value="c6053589dd0200"/>
+            <Line Type="bytes" Address="0x004245fb" Value="e9fffeffff"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Shadow of the Colossus" Name="Skip Splash Logo + Demo Screens" Author="illusion" PatchVer="1.0" AppVer="01.01" AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x032fae20" Value="01"/>
+            <Line Type="bytes" Address="0x008c95bc" Value="c683c000000001"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Shadow of the Colossus"
+        Name="Custom Debug Menu Config with Graphics Lite (READ NOTES)"
+        Note="It is recommended to use this alongside the Debug Menu patch. Also, you can edit the string (up to 928 characters), and add, remove, or change any options you want. Variable names can be obtained from the debug menu by pressing R1. The other ways you can achieve the same result is to pass these arguments from the command line, or by adding them to CommandLineArgs.txt in the game root."
+        Author="kalaposfos"
+        PatchVer="1.0"
+        AppVer="01.01"
+        AppElf="eboot.bin">
+        <PatchList>
+            <Line Type="bytes" Address="0x009367b9" Value="488d35b574ac00"/>
+            <Line Type="utf8" Address="0x013fdc75" Value="+VSyncWindow=10% +drawJustOccluders=true +globalDebugTextScale=1.5 +show_memory=false +show_buildversion=false +targetFramesPerSeconds=30 +fixedTimeStep=true"/>
+        </PatchList>
+    </Metadata>
+</Patch>

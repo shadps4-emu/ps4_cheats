@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA24765</ID>
+        <ID>CUSA24767</ID>
+        <ID>CUSA24769</ID>
+        <ID>CUSA24771</ID>
+    </TitleID>
+
+    <Metadata Title="Gran Turismo 7" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="squidbus" PatchVer="1.0" AppVer="01.70" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x5ef6e7c" Value="80"/>
+        </PatchList>
+    </Metadata>
+</Patch>

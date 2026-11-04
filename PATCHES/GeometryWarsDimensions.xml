@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA00755</ID>
+    </TitleID>
+    <Metadata Title="Geometry Wars³: Dimensions" Name="Resolution 640x360" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x5d3500" Value="8002"/>
+            <Line Type="bytes" Address="0x5d350d" Value="6801"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Geometry Wars³: Dimensions" Name="Resolution 1280x720" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x5d3500" Value="0005"/>
+            <Line Type="bytes" Address="0x5d350d" Value="d002"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Geometry Wars³: Dimensions" Name="Resolution 2560x1440" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x5d3500" Value="000a"/>
+            <Line Type="bytes" Address="0x5d350d" Value="a005"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Geometry Wars³: Dimensions" Name="Resolution 3840x2160" Author="Toccata" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x5d3500" Value="000f"/>
+            <Line Type="bytes" Address="0x5d350d" Value="7008"/>
+        </PatchList>
+    </Metadata>
+</Patch>

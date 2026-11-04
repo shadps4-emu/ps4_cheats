@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA05571</ID>
+        <ID>CUSA05572</ID>
+        <ID>CUSA05573</ID>
+        <ID>CUSA05574</ID>
+        <ID>CUSA05644</ID>
+        <ID>CUSA05725</ID>
+    </TitleID>
+    <Metadata Title="The Witcher 3" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="04.06" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x2cac314" Value="0x80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="The Witcher 3" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="byte" Address="0x2da02ec" Value="0x80"/>
+        </PatchList>
+    </Metadata>
+</Patch>

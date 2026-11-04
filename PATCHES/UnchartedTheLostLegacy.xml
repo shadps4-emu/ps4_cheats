@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA07737</ID>
+        <ID>CUSA07875</ID>
+        <ID>CUSA08347</ID>
+        <ID>CUSA09564</ID>
+        <ID>CUSA09597</ID>
+    </TitleID>
+    <Metadata Title="Uncharted: The Lost Legacy" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.00" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x26d5a2c" Value="80"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Uncharted: The Lost Legacy" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="mavethee" PatchVer="1.0" AppVer="01.09" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x26e4dac" Value="80"/>
+        </PatchList>
+    </Metadata>
+</Patch>
