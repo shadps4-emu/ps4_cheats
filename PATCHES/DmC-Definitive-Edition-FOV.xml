@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA01022</ID>
+    </TitleID>
+    <Metadata Title="DmC: Devil May Cry Definitive Edition" Name="FOV original (ative somente esta opção)" Note="Restaura a câmera original. Ative somente uma opção de FOV." Author="Matheus / local build" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="dmc_fov" Address="0" Value="0"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="DmC: Devil May Cry Definitive Edition" Name="FOV 90 (ative somente esta opção)" Note="Campo de visão 90. Ative somente uma opção de FOV." Author="Matheus / local build" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="dmc_fov" Address="0" Value="90"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="DmC: Devil May Cry Definitive Edition" Name="FOV 100 (ative somente esta opção)" Note="Campo de visão 100. Ative somente uma opção de FOV." Author="Matheus / local build" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="dmc_fov" Address="0" Value="100"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="DmC: Devil May Cry Definitive Edition" Name="FOV 110 (ative somente esta opção)" Note="Campo de visão 110. Ative somente uma opção de FOV." Author="Matheus / local build" PatchVer="1.0" AppVer="01.03" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="dmc_fov" Address="0" Value="110"/>
+        </PatchList>
+    </Metadata>
+</Patch>
