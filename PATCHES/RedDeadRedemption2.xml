@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA08519</ID>
+    </TitleID>
+    <Metadata Title="Red Dead Redemption 2" Name="macOS Memory Workaround" Notes="Works around memory mapping issue on macOS." Author="sK3n0b1" PatchVer="1.0" AppVer="01.32" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x57ab63" Value="80"/>
+        </PatchList>
+    </Metadata>
+</Patch>
