@@ -26,4 +26,426 @@
             <Line Type="bytes" Address="0x193d92c" Value="80"/>
         </PatchList>
     </Metadata>
+    <Metadata
+        Title="The Last of Us Remastered"
+        Name="Resolution Patch 2560x1440 (16:9)"
+        Note="Resolution 2560x1440. Allocate +2000 MB dmem in shadPS4."
+        Author="sanyagames227"
+        PatchVer="1.0"
+        AppVer="01.11"
+        AppElf="eboot.bin"
+        isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +908 MB, CPU -0 MB, total direct memory 5516 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: was 42.11 MB, now 86.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00006005"/>
+            <!-- RENDER_TARGET #134: was 658.70 MB, now 1238.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc6c4d"/>
+            <!-- RENDER_BUFFER: was 368.00 MB, now 672.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000002a"/>
+            <!-- LEVEL_BUFFER: was 256.00 MB, now 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: was 2588.00 MB, now 3496.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="000080da"/>
+            <!-- Direct memory size (kAllocSystemDirect): 4608 MB, new value 5516 MB -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000c05801000000"/>
+            <!-- shadPS4 must provide at least 5516 MB of direct memory (dmem) -->
+            <!-- 2. Resolution: 2560x1440 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="000a0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="a0050000"/>
+            <!-- 16:9: aspect, camera, HUD and video shader patches are not needed (only resolution and memory) -->
+        </PatchList>
+    </Metadata>
+    <Metadata
+        Title="The Last of Us Remastered"
+        Name="Resolution Patch 1920x1200 (16:10)"
+        Note="Resolution 1920x1200. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges."
+        Author="sanyagames227"
+        PatchVer="1.0"
+        AppVer="01.11"
+        AppElf="eboot.bin"
+        isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +156 MB, CPU -0 MB, total direct memory 4764 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: was 42.11 MB, now 54.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00006003"/>
+            <!-- RENDER_TARGET #134: was 658.70 MB, now 774.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc6c30"/>
+            <!-- RENDER_BUFFER: was 368.00 MB, now 416.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000001a"/>
+            <!-- LEVEL_BUFFER: was 256.00 MB, now 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: was 2588.00 MB, now 2744.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="000080ab"/>
+            <!-- Direct memory size (kAllocSystemDirect): 4608 MB, new value 4764 MB -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000c02901000000"/>
+            <!-- shadPS4 must provide at least 4764 MB of direct memory (dmem) -->
+            <!-- 2. Resolution: 1920x1200 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="80070000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="b0040000"/>
+            <!-- 3. Global aspect ratio 1920:1200 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="cdcccc3f"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="cdcccc3f"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=0.900000 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c36666663f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="e4388e3f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="e4388ebf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="e4388ebf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="00009044"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="00009044"/>
+            <!-- 9. Crosshair (disp32: constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D: canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="6666663f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ff6666663f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="5d55753f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="5d55753f"/>
+            <!-- 13. Full-canvas HUD quads (pause background, blood, dimming, fades) stretched to the whole screen; the rest of the HUD stays 16:9 -->
+            <Line Type="bytes" Address="0x00ef8d84" Value="48894da066894102498d9580000000c4c17a105d00c5e25c1ac5e259dbc4c17a106504c5da5c6204c5da59e4e92f000000"/>
+            <Line Type="bytes" Address="0x00ef8de4" Value="8b055a9667008945988b0559966700894594c5f82e1d4a0000007218c5f82e2544000000720ec74598cdcccc3ac74594000080bfc3"/>
+            <Line Type="bytes" Address="0x00ef8e48" Value="20e3c4498024f648"/>
+            <Line Type="bytes" Address="0x00ef8e98" Value="e8e7feffff0f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f41" Value="c5fa5945980f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f51" Value="c5fa5845940f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f74" Value="c5fa5945980f1f00"/>
+            <!-- 14. Sniper scope: black side bars extended to the screen edges -->
+            <Line Type="bytes" Address="0x00ef8d40" Value="e97bb0970090"/>
+            <Line Type="bytes" Address="0x01873dc0" Value="554889e541574881ec280100004889bc24000100004889b42408010000c5fa11"/>
+            <Line Type="bytes" Address="0x01873de0" Value="842410010000c784241801000000000000488bb42408010000c57a1026c57a10"/>
+            <Line Type="bytes" Address="0x01873e00" Value="ae80000000c57829e3c4c1625dddc57829e4c4c15a5fe5c5fa106e04c5fa1096"/>
+            <Line Type="bytes" Address="0x01873e20" Value="84000000c5f828f5c5d25deac5ca5ff2c5f828fec5c25cfdc5f82e3d8c010000"/>
+            <Line Type="bytes" Address="0x01873e40" Value="0f8261010000837e20000f8557010000837e24000f854d010000837e28000f85"/>
+            <Line Type="bytes" Address="0x01873e60" Value="43010000c5f82e1d640100000f8235010000c5f82e255a0100000f8727010000"/>
+            <Line Type="bytes" Address="0x01873e80" Value="c57828c4c53a5cc3c5782e0548010000720ec5f82e3d420100000f8307010000"/>
+            <Line Type="bytes" Address="0x01873ea0" Value="83bc2418010000007531c5f82e1d2e0100000f87d9000000c57828c3c57a101d"/>
+            <Line Type="bytes" Address="0x01873ec0" Value="2401000031d2b880000000c441782ee57638ba8000000031c0eb2fc5f82e2501"/>
+            <Line Type="bytes" Address="0x01873ee0" Value="0100000f82a8000000c57828c4c57a101df7000000ba8000000031c0c441782e"/>
+            <Line Type="bytes" Address="0x01873f00" Value="e5760731d2b880000000c57a100d32e5cfffc57a101532e5cfffc441225cdac4"/>
+            <Line Type="bytes" Address="0x01873f20" Value="41225ed9c57a107c160cc57a1074060cc4410a5cf7c50a5935b3000000c4410a"/>
+            <Line Type="bytes" Address="0x01873f40" Value="58f74889e7b920000000fcf348a54531c0c4a17a100404c4c1782ec07406c421"/>
+            <Line Type="bytes" Address="0x01873f60" Value="7a111c04c4217a1174040c4983c0404981f80001000072d9488bbc2400010000"/>
+            <Line Type="bytes" Address="0x01873f80" Value="4889e6c5fa10842410010000e8af4d68ff838424180100000183bc2418010000"/>
+            <Line Type="bytes" Address="0x01873fa0" Value="020f824afeffff488bbc2400010000488bb42408010000c5fa10842410010000"/>
+            <Line Type="bytes" Address="0x01873fc0" Value="4881c428010000e97a4d68ff000096430000f0c10080a34400e09e4400403144"/>
+            <Line Type="bytes" Address="0x01873fe0" Value="0000003f00b89f44cdcc8cbfcdcc8c3f0ad7a33c"/>
+            <!-- 15. Aim reticle / aiming circle fix: x/R + 640*(1-1/R), R=0.900000 -->
+            <Line Type="bytes" Address="0x00ead8e6" Value="e4388e3fe4388ec2"/>
+            <Line Type="bytes" Address="0x010fa5e8" Value="c5fa5905f632dbffc5fa5805f232dbffe95335dbff"/>
+            <Line Type="bytes" Address="0x00699467" Value="e87c11a600"/>
+        </PatchList>
+    </Metadata>
+    <Metadata
+        Title="The Last of Us Remastered"
+        Name="Resolution Patch 2560x1600 (16:10)"
+        Note="Resolution 2560x1600. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub. NOTE: aspect ratio narrower than 16:9 - the UI (HUD) will be cropped at the edges."
+        Author="sanyagames227"
+        PatchVer="1.0"
+        AppVer="01.11"
+        AppElf="eboot.bin"
+        isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +1120 MB, CPU -0 MB, total direct memory 5728 MB(expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: was 42.11 MB, now 96.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00000006"/>
+            <!-- RENDER_TARGET #134: was 658.70 MB, now 1376.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc0c56"/>
+            <!-- RENDER_BUFFER: was 368.00 MB, now 736.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000002e"/>
+            <!-- LEVEL_BUFFER: was 256.00 MB, now 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: was 2588.00 MB, now 3708.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="0000c0e7"/>
+            <!-- Direct memory size (kAllocSystemDirect): 4608 MB, new value 5728 MB -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000006601000000"/>
+            <!-- shadPS4 must provide at least 5728 MB of direct memory (dmem) -->
+            <!-- 2. Resolution: 2560x1600 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="000a0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="40060000"/>
+            <!-- 3. Global aspect ratio 2560:1600 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="cdcccc3f"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="cdcccc3f"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=0.900000 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c36666663f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="e4388e3f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="e4388ebf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="e4388ebf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="398ee33a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="e4388ebf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="00009044"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="00009044"/>
+            <!-- 9. Crosshair (disp32: constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D: canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="6666663f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ff6666663f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="5d55753f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="5d55753f"/>
+            <!-- 13. Full-canvas HUD quads (pause background, blood, dimming, fades) stretched to the whole screen; the rest of the HUD stays 16:9 -->
+            <Line Type="bytes" Address="0x00ef8d84" Value="48894da066894102498d9580000000c4c17a105d00c5e25c1ac5e259dbc4c17a106504c5da5c6204c5da59e4e92f000000"/>
+            <Line Type="bytes" Address="0x00ef8de4" Value="8b055a9667008945988b0559966700894594c5f82e1d4a0000007218c5f82e2544000000720ec74598cdcccc3ac74594000080bfc3"/>
+            <Line Type="bytes" Address="0x00ef8e48" Value="20e3c4498024f648"/>
+            <Line Type="bytes" Address="0x00ef8e98" Value="e8e7feffff0f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f41" Value="c5fa5945980f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f51" Value="c5fa5845940f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f74" Value="c5fa5945980f1f00"/>
+            <!-- 14. Sniper scope: black side bars extended to the screen edges -->
+            <Line Type="bytes" Address="0x00ef8d40" Value="e97bb0970090"/>
+            <Line Type="bytes" Address="0x01873dc0" Value="554889e541574881ec280100004889bc24000100004889b42408010000c5fa11"/>
+            <Line Type="bytes" Address="0x01873de0" Value="842410010000c784241801000000000000488bb42408010000c57a1026c57a10"/>
+            <Line Type="bytes" Address="0x01873e00" Value="ae80000000c57829e3c4c1625dddc57829e4c4c15a5fe5c5fa106e04c5fa1096"/>
+            <Line Type="bytes" Address="0x01873e20" Value="84000000c5f828f5c5d25deac5ca5ff2c5f828fec5c25cfdc5f82e3d8c010000"/>
+            <Line Type="bytes" Address="0x01873e40" Value="0f8261010000837e20000f8557010000837e24000f854d010000837e28000f85"/>
+            <Line Type="bytes" Address="0x01873e60" Value="43010000c5f82e1d640100000f8235010000c5f82e255a0100000f8727010000"/>
+            <Line Type="bytes" Address="0x01873e80" Value="c57828c4c53a5cc3c5782e0548010000720ec5f82e3d420100000f8307010000"/>
+            <Line Type="bytes" Address="0x01873ea0" Value="83bc2418010000007531c5f82e1d2e0100000f87d9000000c57828c3c57a101d"/>
+            <Line Type="bytes" Address="0x01873ec0" Value="2401000031d2b880000000c441782ee57638ba8000000031c0eb2fc5f82e2501"/>
+            <Line Type="bytes" Address="0x01873ee0" Value="0100000f82a8000000c57828c4c57a101df7000000ba8000000031c0c441782e"/>
+            <Line Type="bytes" Address="0x01873f00" Value="e5760731d2b880000000c57a100d32e5cfffc57a101532e5cfffc441225cdac4"/>
+            <Line Type="bytes" Address="0x01873f20" Value="41225ed9c57a107c160cc57a1074060cc4410a5cf7c50a5935b3000000c4410a"/>
+            <Line Type="bytes" Address="0x01873f40" Value="58f74889e7b920000000fcf348a54531c0c4a17a100404c4c1782ec07406c421"/>
+            <Line Type="bytes" Address="0x01873f60" Value="7a111c04c4217a1174040c4983c0404981f80001000072d9488bbc2400010000"/>
+            <Line Type="bytes" Address="0x01873f80" Value="4889e6c5fa10842410010000e8af4d68ff838424180100000183bc2418010000"/>
+            <Line Type="bytes" Address="0x01873fa0" Value="020f824afeffff488bbc2400010000488bb42408010000c5fa10842410010000"/>
+            <Line Type="bytes" Address="0x01873fc0" Value="4881c428010000e97a4d68ff000096430000f0c10080a34400e09e4400403144"/>
+            <Line Type="bytes" Address="0x01873fe0" Value="0000003f00b89f44cdcc8cbfcdcc8c3f0ad7a33c"/>
+            <!-- 15. Aim reticle / aiming circle fix: x/R + 640*(1-1/R), R=0.900000 -->
+            <Line Type="bytes" Address="0x00ead8e6" Value="e4388e3fe4388ec2"/>
+            <Line Type="bytes" Address="0x010fa5e8" Value="c5fa5905f632dbffc5fa5805f232dbffe95335dbff"/>
+            <Line Type="bytes" Address="0x00699467" Value="e87c11a600"/>
+        </PatchList>
+    </Metadata>
+    <Metadata
+        Title="The Last of Us Remastered"
+        Name="Resolution Patch 2560x1080 (21:9)"
+        Note="Resolution 2560x1080. Allocate +1500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub."
+        Author="sanyagames227"
+        PatchVer="1.0"
+        AppVer="01.11"
+        AppElf="eboot.bin"
+        isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +402 MB, CPU -0 MB, total direct memory 5010 MB (expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) -->
+            <!-- RENDER_TARGET #133: 42.11 -> 65.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00001004"/>
+            <!-- RENDER_TARGET #134: 658.70 -> 929.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc1c3a"/>
+            <!-- RENDER_BUFFER: 368.00 -> 496.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="0000001f"/>
+            <!-- LEVEL_BUFFER: 256.00 -> 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: 2588.00 -> 2990.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="0000e0ba"/>
+            <!-- Direct memory size (kAllocSystemDirect) 4608 -> 5010 MB (base table) -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000203901000000"/>
+            <!-- ATTENTION: shadPS4 must provide at least 5010 MB of direct memory (dmem) to the game -->
+            <!-- 2. Resolution: the 1920x1080 slot of the Neo table -> 2560x1080 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="000a0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="38040000"/>
+            <!-- 3. Global aspect ratio 2560:1080 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="26b41740"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="26b41740"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=1.333333 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c3abaaaa3f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="0000403f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="000040bf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="000040bf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="000040bf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="9a99993a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="000040bf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="5555d544"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="5555d544"/>
+            <!-- 9. Crosshair (disp32 -> constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D -> canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="abaaaa3f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ffabaaaa3f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="48efa73f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="48efa73f"/>
+            <!-- 13. Full-canvas HUD quads (pause background, blood, dimming, fades) stretched to the whole screen; the rest of the HUD stays 16:9 -->
+            <Line Type="bytes" Address="0x00ef8d84" Value="48894da066894102498d9580000000c4c17a105d00c5e25c1ac5e259dbc4c17a106504c5da5c6204c5da59e4e92f000000"/>
+            <Line Type="bytes" Address="0x00ef8de4" Value="8b055a9667008945988b0559966700894594c5f82e1d4a0000007218c5f82e2544000000720ec74598cdcccc3ac74594000080bfc3"/>
+            <Line Type="bytes" Address="0x00ef8e48" Value="20e3c4498024f648"/>
+            <Line Type="bytes" Address="0x00ef8e98" Value="e8e7feffff0f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f41" Value="c5fa5945980f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f51" Value="c5fa5845940f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f74" Value="c5fa5945980f1f00"/>
+            <!-- 14. Sniper scope: black side bars extended to the screen edges -->
+            <Line Type="bytes" Address="0x00ef8d40" Value="e97bb0970090"/>
+            <Line Type="bytes" Address="0x01873dc0" Value="554889e541574881ec280100004889bc24000100004889b42408010000c5fa11"/>
+            <Line Type="bytes" Address="0x01873de0" Value="842410010000c784241801000000000000488bb42408010000c57a1026c57a10"/>
+            <Line Type="bytes" Address="0x01873e00" Value="ae80000000c57829e3c4c1625dddc57829e4c4c15a5fe5c5fa106e04c5fa1096"/>
+            <Line Type="bytes" Address="0x01873e20" Value="84000000c5f828f5c5d25deac5ca5ff2c5f828fec5c25cfdc5f82e3d8c010000"/>
+            <Line Type="bytes" Address="0x01873e40" Value="0f8261010000837e20000f8557010000837e24000f854d010000837e28000f85"/>
+            <Line Type="bytes" Address="0x01873e60" Value="43010000c5f82e1d640100000f8235010000c5f82e255a0100000f8727010000"/>
+            <Line Type="bytes" Address="0x01873e80" Value="c57828c4c53a5cc3c5782e0548010000720ec5f82e3d420100000f8307010000"/>
+            <Line Type="bytes" Address="0x01873ea0" Value="83bc2418010000007531c5f82e1d2e0100000f87d9000000c57828c3c57a101d"/>
+            <Line Type="bytes" Address="0x01873ec0" Value="2401000031d2b880000000c441782ee57638ba8000000031c0eb2fc5f82e2501"/>
+            <Line Type="bytes" Address="0x01873ee0" Value="0100000f82a8000000c57828c4c57a101df7000000ba8000000031c0c441782e"/>
+            <Line Type="bytes" Address="0x01873f00" Value="e5760731d2b880000000c57a100d32e5cfffc57a101532e5cfffc441225cdac4"/>
+            <Line Type="bytes" Address="0x01873f20" Value="41225ed9c57a107c160cc57a1074060cc4410a5cf7c50a5935b3000000c4410a"/>
+            <Line Type="bytes" Address="0x01873f40" Value="58f74889e7b920000000fcf348a54531c0c4a17a100404c4c1782ec07406c421"/>
+            <Line Type="bytes" Address="0x01873f60" Value="7a111c04c4217a1174040c4983c0404981f80001000072d9488bbc2400010000"/>
+            <Line Type="bytes" Address="0x01873f80" Value="4889e6c5fa10842410010000e8af4d68ff838424180100000183bc2418010000"/>
+            <Line Type="bytes" Address="0x01873fa0" Value="020f824afeffff488bbc2400010000488bb42408010000c5fa10842410010000"/>
+            <Line Type="bytes" Address="0x01873fc0" Value="4881c428010000e97a4d68ff000096430000f0c10080a34400e09e4400403144"/>
+            <Line Type="bytes" Address="0x01873fe0" Value="0000003f00b89f44cdcc8cbfcdcc8c3f0ad7a33c"/>
+            <!-- 15. Aim reticle / aiming circle fix: x/R + 640*(1-1/R), R=1.333333 -->
+            <Line Type="bytes" Address="0x00ead8e6" Value="0000403f00002043"/>
+            <Line Type="bytes" Address="0x010fa5e8" Value="c5fa5905f632dbffc5fa5805f232dbffe95335dbff"/>
+            <Line Type="bytes" Address="0x00699467" Value="e87c11a600"/>
+        </PatchList>
+    </Metadata>
+    <Metadata
+        Title="The Last of Us Remastered"
+        Name="Resolution Patch 3440x1440 (21:9)"
+        Note="Resolution 3440x1440. Allocate +2500 MB dmem in shadPS4. WARNING: introduces a cutscenes stretch, for the fix search for 'sanyagames227/tlou_r_shadps4_ultrawide' on GitHub."
+        Author="sanyagames227"
+        PatchVer="1.0"
+        AppVer="01.11"
+        AppElf="eboot.bin"
+        isEnabled="false">
+        <PatchList>
+            <!-- 1. Memory budgets: GPU +1468 MB, CPU -0 MB, total direct memory 6076 MB (expanded: the direct-memory constant is patched, shadPS4 needs enough dmem) (margin reduced to 1.0) -->
+            <!-- RENDER_TARGET #133: 42.11 -> 101.00 MB -->
+            <Line Type="bytes" Address="0x018a6708" Value="00005006"/>
+            <!-- RENDER_TARGET #134: 658.70 -> 1575.81 MB -->
+            <Line Type="bytes" Address="0x018a6728" Value="00fc7c62"/>
+            <!-- RENDER_BUFFER: 368.00 -> 880.00 MB -->
+            <Line Type="bytes" Address="0x018a6768" Value="00000037"/>
+            <!-- LEVEL_BUFFER: 256.00 -> 236.00 MB -->
+            <Line Type="bytes" Address="0x018a6788" Value="0000c00e"/>
+            <!-- GPU_MEMORY: 2588.00 -> 4056.00 MB -->
+            <Line Type="bytes" Address="0x018a5908" Value="000080fd"/>
+            <!-- Direct memory size (kAllocSystemDirect) 4608 -> 6076 MB (base table) -->
+            <Line Type="bytes" Address="0x006f5e46" Value="0000c07b01000000"/>
+            <!-- ATTENTION: shadPS4 must provide at least 6076 MB of direct memory (dmem) to the game -->
+            <!-- 2. Resolution: the 1920x1080 slot of the Neo table -> 3440x1440 -->
+            <Line Type="bytes" Address="0x0156bfbc" Value="700d0000"/>
+            <Line Type="bytes" Address="0x0156bfdc" Value="a0050000"/>
+            <!-- 3. Global aspect ratio 3440:1440 -->
+            <Line Type="bytes" Address="0x00eb091b" Value="8ee31840"/>
+            <Line Type="bytes" Address="0x00eb0594" Value="8ee31840"/>
+            <!-- 4. Game camera clipping bounds: x * R, R=1.343750 -->
+            <Line Type="bytes" Address="0x00eb0673" Value="c5fa590501000000c30000ac3f"/>
+            <Line Type="bytes" Address="0x00eb05f1" Value="c5fa5985e0fdffffe975000000"/>
+            <Line Type="bytes" Address="0x0069234c" Value="e8a0e281000f1f00"/>
+            <Line Type="bytes" Address="0x00eb0663" Value="c5fa5945f0e906000000"/>
+            <Line Type="bytes" Address="0x0069374b" Value="e813cf8100"/>
+            <Line Type="bytes" Address="0x00eb0691" Value="c5fa5985a0feffffe9d5ffffff"/>
+            <Line Type="bytes" Address="0x006965a4" Value="e8e8a081000f1f00"/>
+            <!-- 5. Render camera: cot(fov/2) / R -->
+            <Line Type="bytes" Address="0x00e223c7" Value="fa823e3f"/>
+            <Line Type="bytes" Address="0x00e252ac" Value="17d1ffff"/>
+            <!-- 6. HUD/UI quads: X scale 2/(1280*R), offset -1/R -->
+            <Line Type="bytes" Address="0x01572444" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0157244c" Value="fa823ebf"/>
+            <!-- 7. Dev Menu UI -->
+            <Line Type="bytes" Address="0x0156ced0" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0156ced8" Value="fa823ebf"/>
+            <Line Type="bytes" Address="0x0156cee0" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0156cee8" Value="fa823ebf"/>
+            <Line Type="bytes" Address="0x0156cf20" Value="c868983a"/>
+            <Line Type="bytes" Address="0x0156cf28" Value="fa823ebf"/>
+            <!-- 8. Font: canvas width 1280*R -->
+            <Line Type="bytes" Address="0x01586bb8" Value="0000d744"/>
+            <Line Type="bytes" Address="0x01586bc4" Value="0000d744"/>
+            <!-- 9. Crosshair (disp32 -> constant of block 8) -->
+            <Line Type="bytes" Address="0x00a250dc" Value="d81ab600"/>
+            <!-- 10. 3D -> canvas projection: X * R -->
+            <Line Type="bytes" Address="0x01586f80" Value="0000ac3f"/>
+            <!-- 11. Interact/pickup icons: world->canvas X * R (code cave) -->
+            <Line Type="bytes" Address="0x00ead8c1" Value="e99b231f0090909090909090"/>
+            <Line Type="bytes" Address="0x0109fc61" Value="c5d2592d11000000c5d258eec5d2592dc7bf4c00e953dce0ff0000ac3f"/>
+            <!-- 12. Collectibles preview (pickup notification / inventory artifacts): scene camera fov keeps the 16:9 vertical view -->
+            <Line Type="bytes" Address="0x014c9890" Value="0ae6a83f"/>
+            <Line Type="bytes" Address="0x014c9928" Value="0ae6a83f"/>
+            <!-- 13. Full-canvas HUD quads (pause background, blood, dimming, fades) stretched to the whole screen; the rest of the HUD stays 16:9 -->
+            <Line Type="bytes" Address="0x00ef8d84" Value="48894da066894102498d9580000000c4c17a105d00c5e25c1ac5e259dbc4c17a106504c5da5c6204c5da59e4e92f000000"/>
+            <Line Type="bytes" Address="0x00ef8de4" Value="8b055a9667008945988b0559966700894594c5f82e1d4a0000007218c5f82e2544000000720ec74598cdcccc3ac74594000080bfc3"/>
+            <Line Type="bytes" Address="0x00ef8e48" Value="20e3c4498024f648"/>
+            <Line Type="bytes" Address="0x00ef8e98" Value="e8e7feffff0f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f41" Value="c5fa5945980f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f51" Value="c5fa5845940f1f00"/>
+            <Line Type="bytes" Address="0x00ef8f74" Value="c5fa5945980f1f00"/>
+            <!-- 14. Sniper scope: black side bars extended to the screen edges -->
+            <Line Type="bytes" Address="0x00ef8d40" Value="e97bb0970090"/>
+            <Line Type="bytes" Address="0x01873dc0" Value="554889e541574881ec280100004889bc24000100004889b42408010000c5fa11"/>
+            <Line Type="bytes" Address="0x01873de0" Value="842410010000c784241801000000000000488bb42408010000c57a1026c57a10"/>
+            <Line Type="bytes" Address="0x01873e00" Value="ae80000000c57829e3c4c1625dddc57829e4c4c15a5fe5c5fa106e04c5fa1096"/>
+            <Line Type="bytes" Address="0x01873e20" Value="84000000c5f828f5c5d25deac5ca5ff2c5f828fec5c25cfdc5f82e3d8c010000"/>
+            <Line Type="bytes" Address="0x01873e40" Value="0f8261010000837e20000f8557010000837e24000f854d010000837e28000f85"/>
+            <Line Type="bytes" Address="0x01873e60" Value="43010000c5f82e1d640100000f8235010000c5f82e255a0100000f8727010000"/>
+            <Line Type="bytes" Address="0x01873e80" Value="c57828c4c53a5cc3c5782e0548010000720ec5f82e3d420100000f8307010000"/>
+            <Line Type="bytes" Address="0x01873ea0" Value="83bc2418010000007531c5f82e1d2e0100000f87d9000000c57828c3c57a101d"/>
+            <Line Type="bytes" Address="0x01873ec0" Value="2401000031d2b880000000c441782ee57638ba8000000031c0eb2fc5f82e2501"/>
+            <Line Type="bytes" Address="0x01873ee0" Value="0100000f82a8000000c57828c4c57a101df7000000ba8000000031c0c441782e"/>
+            <Line Type="bytes" Address="0x01873f00" Value="e5760731d2b880000000c57a100d32e5cfffc57a101532e5cfffc441225cdac4"/>
+            <Line Type="bytes" Address="0x01873f20" Value="41225ed9c57a107c160cc57a1074060cc4410a5cf7c50a5935b3000000c4410a"/>
+            <Line Type="bytes" Address="0x01873f40" Value="58f74889e7b920000000fcf348a54531c0c4a17a100404c4c1782ec07406c421"/>
+            <Line Type="bytes" Address="0x01873f60" Value="7a111c04c4217a1174040c4983c0404981f80001000072d9488bbc2400010000"/>
+            <Line Type="bytes" Address="0x01873f80" Value="4889e6c5fa10842410010000e8af4d68ff838424180100000183bc2418010000"/>
+            <Line Type="bytes" Address="0x01873fa0" Value="020f824afeffff488bbc2400010000488bb42408010000c5fa10842410010000"/>
+            <Line Type="bytes" Address="0x01873fc0" Value="4881c428010000e97a4d68ff000096430000f0c10080a34400e09e4400403144"/>
+            <Line Type="bytes" Address="0x01873fe0" Value="0000003f00b89f44cdcc8cbfcdcc8c3f0ad7a33c"/>
+            <!-- 15. Aim reticle / aiming circle fix: x/R + 640*(1-1/R), R=1.343750 -->
+            <Line Type="bytes" Address="0x00ead8e6" Value="fa823e3f8fb82343"/>
+            <Line Type="bytes" Address="0x010fa5e8" Value="c5fa5905f632dbffc5fa5805f232dbffe95335dbff"/>
+            <Line Type="bytes" Address="0x00699467" Value="e87c11a600"/>
+        </PatchList>
+    </Metadata>
 </Patch>
