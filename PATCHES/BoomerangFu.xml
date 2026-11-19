@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Patch>
+    <TitleID>
+        <ID>CUSA29291</ID>
+    </TitleID>
+    <Metadata Title="Boomerang Fu" Name="Resolution 1280x720" Author="Toccata" PatchVer="1.0" AppVer="01.06" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01005a61" Value="4c8b742420bb000500008d04db9090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Boomerang Fu" Name="Resolution 2560x1440" Author="Toccata" PatchVer="1.0" AppVer="01.06" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01005a61" Value="4c8b742420bb000a00008d04db9090"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="Boomerang Fu" Name="Resolution 3840x2160" Author="Toccata" PatchVer="1.0" AppVer="01.06" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x01005a61" Value="4c8b742420bb000f00008d04db9090"/>
+        </PatchList>
+    </Metadata>
+</Patch>
