@@ -3,6 +3,15 @@
     <TitleID>
         <ID>CUSA11116</ID>
     </TitleID>
+    <Metadata Title="NHL 19" Name="Resolution 1280x720 (16:9)" Note="Sets the internal render resolution to 1280x720, 921 600 pixels." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02d3bd70" Value="b800050000"/>
+            <Line Type="bytes" Address="0x02d3bd75" Value="ba00050000"/>
+            <Line Type="bytes" Address="0x02d3bd7a" Value="b9d0020000"/>
+            <Line Type="bytes" Address="0x02d3bd7f" Value="bed0020000"/>
+            <Line Type="bytes" Address="0x02d3bdaa" Value="41c7455800050000"/>
+        </PatchList>
+    </Metadata>
     <Metadata Title="NHL 19" Name="Resolution 2560x1440 (16:9)" Note="Sets the internal render resolution to 2560x1440, 3 686 400 pixels, and scales the video memory to match. Set Additional DMem to 3500 MB or more." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x02d3bd70" Value="b8000a0000"/>
@@ -107,6 +116,11 @@
             <Line Type="bytes" Address="0x04e3beed" Value="31c0c3"/>
             <Line Type="bytes" Address="0x02f02cb1" Value="e9d73ff301"/>
             <Line Type="bytes" Address="0x04e36c8d" Value="be170000004489e2e91cc00cfe"/>
+        </PatchList>
+    </Metadata>
+    <Metadata Title="NHL 19" Name="Disable compute features - Slight Performance boost" Note="Sets ren_compute_enabled to false: compute-shader mesh features are switched off. Cloth physics off, compute blend shapes and the dynamic mesh output are skipped." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+        <PatchList>
+            <Line Type="bytes" Address="0x02d37dc0" Value="c605815e880300"/>
         </PatchList>
     </Metadata>
 </Patch>
