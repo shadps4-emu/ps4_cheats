@@ -3,12 +3,13 @@
     <TitleID>
         <ID>CUSA11116</ID>
     </TitleID>
-    <Metadata Title="NHL 19" Name="Resolution 1280x720 (16:9)" Note="Sets the internal render resolution to 1280x720, 921 600 pixels. The HUD stays at 1920x1080." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
+    <Metadata Title="NHL 19" Name="Resolution 1280x720 (16:9)" Note="Sets the internal render resolution to 1280x720, 921 600 pixels." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
         <PatchList>
             <Line Type="bytes" Address="0x02d3bd70" Value="b800050000"/>
             <Line Type="bytes" Address="0x02d3bd75" Value="ba00050000"/>
             <Line Type="bytes" Address="0x02d3bd7a" Value="b9d0020000"/>
-            <Line Type="bytes" Address="0x02d3bd87" Value="0f1f00"/>
+            <Line Type="bytes" Address="0x02d3bd7f" Value="bed0020000"/>
+            <Line Type="bytes" Address="0x02d3bdaa" Value="41c7455800050000"/>
         </PatchList>
     </Metadata>
     <Metadata Title="NHL 19" Name="Resolution 2560x1440 (16:9)" Note="Sets the internal render resolution to 2560x1440, 3 686 400 pixels, and scales the video memory to match. Set Additional DMem to 3500 MB or more." Author="Kravickas" PatchVer="1.0" AppVer="01.60" AppElf="eboot.bin" isEnabled="false">
